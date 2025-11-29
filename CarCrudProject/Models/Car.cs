@@ -116,12 +116,12 @@ namespace CarCrudProject.Models
             this.IsUsed = isUsed;
             this.Mileage = mileage;
         }
-
+        
         public void ShowInfo()
         {
-            Console.WriteLine("_______________________________________________");
             Console.WriteLine($"ID: {Id}");
-            Console.Write($"{Company}, Model: {Model}.\nIt has: {FuelType} fueltype, {Engine} engine, " +
+            Console.WriteLine("_______________________________________________");
+            Console.Write($"{Company}, Model: {Model}.\nIt has: {FuelType} fuel type, {Engine} engine, " +
                           $"{HorsePower} HP, {Seat} seats.\n");
             if (IsUsed) Console.Write($"Car status: used, mileage: {Mileage} km.\n");
             else Console.Write("This car is brand new!\n");

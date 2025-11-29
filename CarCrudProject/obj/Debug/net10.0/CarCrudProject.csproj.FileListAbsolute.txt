@@ -12,3 +12,17 @@ C:\Users\TimZhu\source\repos\CarCrudProject\CarCrudProject\obj\Debug\net10.0\ref
 C:\Users\TimZhu\source\repos\CarCrudProject\CarCrudProject\obj\Debug\net10.0\CarCrudProject.pdb
 C:\Users\TimZhu\source\repos\CarCrudProject\CarCrudProject\obj\Debug\net10.0\CarCrudProject.genruntimeconfig.cache
 C:\Users\TimZhu\source\repos\CarCrudProject\CarCrudProject\obj\Debug\net10.0\ref\CarCrudProject.dll
+D:\prog-cs\CarCrud\CarCrudProject\bin\Debug\net10.0\CarCrudProject.exe
+D:\prog-cs\CarCrud\CarCrudProject\bin\Debug\net10.0\CarCrudProject.deps.json
+D:\prog-cs\CarCrud\CarCrudProject\bin\Debug\net10.0\CarCrudProject.runtimeconfig.json
+D:\prog-cs\CarCrud\CarCrudProject\bin\Debug\net10.0\CarCrudProject.dll
+D:\prog-cs\CarCrud\CarCrudProject\bin\Debug\net10.0\CarCrudProject.pdb
+D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.AssemblyInfoInputs.cache
+D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.AssemblyInfo.cs
+D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.csproj.CoreCompileInputs.cache
+D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.dll
+D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\refint\CarCrudProject.dll
+D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.pdb
+D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.genruntimeconfig.cache
+D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\ref\CarCrudProject.dll

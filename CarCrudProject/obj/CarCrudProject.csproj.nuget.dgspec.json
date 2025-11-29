@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\CarCrudProject.csproj": {}
+    "D:\\prog-cs\\CarCrud\\CarCrudProject\\CarCrudProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\CarCrudProject.csproj": {
+    "D:\\prog-cs\\CarCrud\\CarCrudProject\\CarCrudProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\CarCrudProject.csproj",
+        "projectUniqueName": "D:\\prog-cs\\CarCrud\\CarCrudProject\\CarCrudProject.csproj",
         "projectName": "CarCrudProject",
-        "projectPath": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\CarCrudProject.csproj",
-        "packagesPath": "C:\\Users\\TimZhu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\obj\\",
+        "projectPath": "D:\\prog-cs\\CarCrud\\CarCrudProject\\CarCrudProject.csproj",
+        "packagesPath": "C:\\Users\\Tima\\.nuget\\packages\\",
+        "outputPath": "D:\\prog-cs\\CarCrud\\CarCrudProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\TimZhu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tima\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Users\\Tima\\.dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

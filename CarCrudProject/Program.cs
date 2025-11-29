@@ -2,13 +2,21 @@
 using System;
 using System.IO;
 using System.Linq;
+using CarCrudProject.Services;
 
 public class Test
 {
     public static void Main(string[] args)
     {
+        App app = new App();
 
-        //
-        CarList.Initialize();
+        string asciiArt = "                              _.-=\"_-         _\n                         _.-=\"   _-          | ||\"\"\"\"\"\"\"---._______     __..\n             ___.===\"\"\"\"-.______-,,,,,,,,,,,,`-''----\" \"\"\"\"\"       \"\"\"\"\"  __'\n      __.--\"\"     __        ,'                   o \\           __        [__|\n __-\"\"=======.--\"\"  \"\"--.=================================.--\"\"  \"\"--.=======:\n]       [w] : /        \\ : |========================|    : /        \\ :  [w] :\nV___________:|          |: |========================|    :|          |:   _-\"\n V__________: \\        / :_|=======================/_____: \\        / :__-\"\n -----------'  \"-____-\"  `-------------------------------'  \"-____-\"";
+        
+        Console.WriteLine(asciiArt);
+        Console.WriteLine();
+        Console.WriteLine();
+        
+        //initialization
+        app.Run();
     }
 }
