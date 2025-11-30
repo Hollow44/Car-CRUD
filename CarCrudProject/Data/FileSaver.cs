@@ -5,7 +5,7 @@ namespace CarCrudProject.Data;
 
 public static class FileSaver
 {
-    public static void SaveAs(string path, string fileName)
+    public static void SaveAs(string path)
     {
         if (FileName.IsValidFileName(fileName) && !FileName.IsReservedName(fileName))
         {

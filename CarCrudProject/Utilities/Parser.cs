@@ -34,6 +34,14 @@ public static class Parser
         return line.Split(',');
     }
 
+    public static bool ParseChoiceYesOrNo(string userInput)
+    {
+        if (string.IsNullOrEmpty(userInput)) return false;
+        
+        userInput = userInput.Trim().ToLower();
+        return userInput == "y";
+    }
+
     public static string[] ParseCommand(string userInput)
     {
         if (string.IsNullOrWhiteSpace(userInput)) return Array.Empty<string>();

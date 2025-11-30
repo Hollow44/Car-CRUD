@@ -7,7 +7,7 @@ namespace CarCrudProject.Services;
 
 public class Controller
 {
-    private readonly CarFactory factory = new();
+    
     private readonly CarRepository repo = new();
     public void ProcessInput(string str)
     {
@@ -30,7 +30,7 @@ public class Controller
                     break;
 
                 case "exit":
-                    Environment.Exit(0);
+                    Commands.Exit();
                     break;
 
                 default:
@@ -41,56 +41,44 @@ public class Controller
         else
         {
             string argument = userInput[1];
-            // add model, company, price, hp
-            // ["add", "model,", "company," "price,", "hp,"]
+            
+            // show id
+            // show all
+            // show where price > 0
+            
+            // edit id
+            // edit id model Mercedez benz, horsepower 8
+            
+            // delete id
+            
+            // saveas path
+            
+            // --help [command]
+            
             switch (command)
             {
                 case "add":
-                    string[] arguments = argument.Split(',');
-
-                    if (arguments.Length == 9)
-                    {
-                        if (Parser.IsValidNumberToParse(arguments[3])
-                            && Parser.IsValidNumberToParse(arguments[4])
-                            && Parser.IsValidNumberToParse(arguments[6])
-                            && Parser.IsValidNumberToParse(arguments[8]))
-                        {
-                            var car = factory.Create(arguments, repo.NextId);
-                            repo.Add(car);
-                        }
-                        else Commands.Help("add");
-                    }
-                    else Commands.Help("add");
+                    Commands.Add(argument);
                     break;
                 
                 case "show":
-                    if (Parser.IsValidNumberToParse(argument))
-                    {
-                        int id = Parser.ParseNumber(argument);
-                        Commands.Show(id);
-                    }
-                    else
-                    {
-                        argument = argument.ToLower();
-                        if (argument == "all") Commands.Show();
-                        else Console.WriteLine($"'show '{argument}' is not a valid command. See '--help show'");
-                    }
+                    Commands.Show(argument);
                     break;
                 
                 case "edit":
-                    // Edit(id);
+                    Commands.Edit(argument);
                     break;
                 
                 case "delete":
-                    // Delete(id);
+                    Commands.Delete(argument);
                     break;
                 
                 case "saveas":
-                    // SaveAs(path);
+                    FileSaver.SaveAs(argument);
                     break;
                 
                 case "--help":
-                    // Help(command);
+                    Commands.Help(argument);
                     break;
                 
                 default:
