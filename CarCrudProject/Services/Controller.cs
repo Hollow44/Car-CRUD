@@ -7,12 +7,8 @@ namespace CarCrudProject.Services;
 
 public class Controller
 {
-    
-    private readonly CarRepository repo = new();
     public void ProcessInput(string str)
-    {
-        // TODO: добавить отдельные методы проверки и тд. Чтобы в каждом свитч кейсе был просто 1 метод, например 'Add()'
-        
+    {    
         string[] userInput = Parser.ParseCommand(str);
 
         string command = userInput[0];
@@ -41,20 +37,7 @@ public class Controller
         else
         {
             string argument = userInput[1];
-            
-            // show id
-            // show all
-            // show where price > 0
-            
-            // edit id
-            // edit id model Mercedez benz, horsepower 8
-            
-            // delete id
-            
-            // saveas path
-            
-            // --help [command]
-            
+
             switch (command)
             {
                 case "add":
@@ -68,7 +51,7 @@ public class Controller
                 case "edit":
                     Commands.Edit(argument);
                     break;
-                
+
                 case "delete":
                     Commands.Delete(argument);
                     break;

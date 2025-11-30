@@ -12,7 +12,7 @@ public class CarDataSetImporter
 
     public void Import()
     {
-        string path = @"D:\prog-cs\CarCrud\CarCrudProject\cars_dataset_modified_final";
+        string path = @"C:\Users\TimZhu\source\repos\CarCrudProject\CarCrudProject\cars_dataset_modified_final.csv";
         var lines = loader.Load(path).Skip(1); // 1 строчка это названия колонок
 
         foreach (var line in lines)

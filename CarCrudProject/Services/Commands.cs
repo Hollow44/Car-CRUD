@@ -1,5 +1,6 @@
 ﻿using CarCrudProject.Repositories;
 using CarCrudProject.Utilities;
+using CarCrudProject.Models;
 
 namespace CarCrudProject.Services;
 
@@ -8,6 +9,23 @@ public static class Commands
     private static readonly CarRepository repo = new();
     private static readonly CarFactory factory = new();
 
+    /* TODO:
+        show id
+        show all
+        show where price > 0
+            
+        edit id
+        edit id model Mercedez benz, horsepower 8
+            
+        saveas path
+
+        save
+            
+        --help
+        --help [command]
+
+        добавить логирование
+     */
     public static void Show()
     {
         foreach (var car in repo.Cars)
@@ -16,28 +34,66 @@ public static class Commands
         }
     }
 
-    // TODO: нужно добавить отдельную проверку является ли argument 'id' или 'all'
     public static void Show(string argument) 
     {
-        foreach (var car in repo.Cars)
+        if (argument == "all")
         {
-            if (car.GetId() == id)
+            foreach (var car in repo.Cars)
             {
                 car.ShowInfo();
             }
         }
     }
-    
 
+    public static void Edit(string argument)
+    {
+
+    }
+
+    public static void Delete(string userIput)
+    {
+        if (Parser.IsValidNumberToParse(userIput))
+        {
+            int id = Parser.ParseNumber(userIput);
+
+            if (id <= 0 || id >= repo.NextId)
+                Console.WriteLine($"'delete {id}' invalid id");
+
+            if (repo.Cars.Exists(car => car.GetId() == id))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"you are about to delete this car:");
+                Console.ResetColor();
+                repo.Cars[id - 1].ShowInfo();
+                Console.WriteLine("are you sure you want to delete this car?");
+                Console.WriteLine("press 'Y' to confirm OR type anything to decline");
+
+                string userInput = Console.ReadLine() ?? "";
+
+                if (Parser.ParseChoiceIsYes(userInput))
+                {
+                    repo.Cars[id - 1] = null;
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"car with id '{id}' has been removed successfully");
+                    Console.ResetColor();
+                }
+            }
+            else Console.WriteLine($"there is no car with id '{id}'. See '--help delete'");
+        }
+        else
+        {
+            Console.WriteLine($"'delete {userIput}' is not correct command. See '--help delete'");
+        }
+    }
     public static void Exit()
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Are you sure you want to exit the app?");
+        Console.WriteLine("are you sure you want to exit the app?");
         Console.ResetColor();
-        Console.WriteLine("Press 'Y' to confirm OR type anything to decline");
+        Console.WriteLine("press 'Y' to confirm OR type anything to decline");
         string userInput = Console.ReadLine() ?? "";
 
-        if (Parser.ParseChoiceYesOrNo(userInput)) Environment.Exit(0);
+        if (Parser.ParseChoiceIsYes(userInput)) Environment.Exit(0);
     }
 
     public static void Add(string argument)

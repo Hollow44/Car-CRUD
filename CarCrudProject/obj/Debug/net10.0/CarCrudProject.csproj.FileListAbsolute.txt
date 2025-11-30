@@ -26,3 +26,4 @@ D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\refint\CarCrudProject.dll
 D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.pdb
 D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.genruntimeconfig.cache
 D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\ref\CarCrudProject.dll
+C:\Users\TimZhu\source\repos\CarCrudProject\CarCrudProject\obj\Debug\net10.0\CarCrudProject.sourcelink.json

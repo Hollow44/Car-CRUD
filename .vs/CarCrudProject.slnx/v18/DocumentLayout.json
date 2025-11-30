@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|c:\\users\\timzhu\\source\\repos\\carcrudproject\\carcrudproject\\models\\carlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|solutionrelative:carcrudproject\\models\\carlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|c:\\users\\timzhu\\source\\repos\\carcrudproject\\carcrudproject\\services\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|solutionrelative:carcrudproject\\services\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|c:\\users\\timzhu\\source\\repos\\carcrudproject\\carcrudproject\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|solutionrelative:carcrudproject\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|c:\\users\\timzhu\\source\\repos\\carcrudproject\\carcrudproject\\services\\cardatasetimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|solutionrelative:carcrudproject\\services\\cardatasetimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|c:\\users\\timzhu\\source\\repos\\carcrudproject\\carcrudproject\\data\\fileloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|solutionrelative:carcrudproject\\data\\fileloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|c:\\users\\timzhu\\source\\repos\\carcrudproject\\carcrudproject\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|solutionrelative:carcrudproject\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|c:\\users\\timzhu\\source\\repos\\carcrudproject\\carcrudproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|solutionrelative:carcrudproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|c:\\users\\timzhu\\source\\repos\\carcrudproject\\carcrudproject\\data\\filesaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|solutionrelative:carcrudproject\\data\\filesaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|c:\\users\\timzhu\\source\\repos\\carcrudproject\\carcrudproject\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7183D9E8-F13A-8429-5EC5-A86E3ECF848C}|CarCrudProject\\CarCrudProject.csproj|solutionrelative:carcrudproject\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CarList.cs",
-              "DocumentMoniker": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Models\\CarList.cs",
-              "RelativeDocumentMoniker": "CarCrudProject\\Models\\CarList.cs",
-              "ToolTip": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Models\\CarList.cs",
-              "RelativeToolTip": "CarCrudProject\\Models\\CarList.cs",
-              "ViewState": "AgIAAC0DAAAAAAAAAAAuwKMAAABIAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "App.cs",
+              "DocumentMoniker": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\App.cs",
+              "RelativeDocumentMoniker": "CarCrudProject\\App.cs",
+              "ToolTip": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\App.cs",
+              "RelativeToolTip": "CarCrudProject\\App.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T12:47:02.194Z",
+              "WhenOpened": "2025-11-30T19:20:40.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CarDataSetImporter.cs",
+              "DocumentMoniker": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Services\\CarDataSetImporter.cs",
+              "RelativeDocumentMoniker": "CarCrudProject\\Services\\CarDataSetImporter.cs",
+              "ToolTip": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Services\\CarDataSetImporter.cs",
+              "RelativeToolTip": "CarCrudProject\\Services\\CarDataSetImporter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T19:20:20.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileLoader.cs",
+              "DocumentMoniker": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Data\\FileLoader.cs",
+              "RelativeDocumentMoniker": "CarCrudProject\\Data\\FileLoader.cs",
+              "ToolTip": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Data\\FileLoader.cs",
+              "RelativeToolTip": "CarCrudProject\\Data\\FileLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T19:20:04.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FileSaver.cs",
+              "DocumentMoniker": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Data\\FileSaver.cs",
+              "RelativeDocumentMoniker": "CarCrudProject\\Data\\FileSaver.cs",
+              "ToolTip": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Data\\FileSaver.cs",
+              "RelativeToolTip": "CarCrudProject\\Data\\FileSaver.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwC4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T19:18:34.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Commands.cs",
+              "DocumentMoniker": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Services\\Commands.cs",
+              "RelativeDocumentMoniker": "CarCrudProject\\Services\\Commands.cs",
+              "ToolTip": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Services\\Commands.cs",
+              "RelativeToolTip": "CarCrudProject\\Services\\Commands.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwCUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T18:00:42.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Car.cs",
               "DocumentMoniker": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Models\\Car.cs",
               "RelativeDocumentMoniker": "CarCrudProject\\Models\\Car.cs",
               "ToolTip": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Models\\Car.cs",
               "RelativeToolTip": "CarCrudProject\\Models\\Car.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAgwIEAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAA3wIEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T05:07:38.358Z"
+              "WhenOpened": "2025-11-27T05:07:38.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Program.cs",
               "RelativeDocumentMoniker": "CarCrudProject\\Program.cs",
               "ToolTip": "C:\\Users\\TimZhu\\source\\repos\\CarCrudProject\\CarCrudProject\\Program.cs",
               "RelativeToolTip": "CarCrudProject\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T04:55:09.537Z"
+              "WhenOpened": "2025-11-27T04:55:09.537Z",
+              "EditorCaption": ""
             }
           ]
         }

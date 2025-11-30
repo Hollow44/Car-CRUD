@@ -7,6 +7,8 @@ public class App
     
     public void Run()
     {
+        CarDataSetImporter carDataSetImporter = new CarDataSetImporter();
+        carDataSetImporter.Import();
         while (IsRunning)
         {
             string userInput = Console.ReadLine() ?? "";

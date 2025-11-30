@@ -34,7 +34,7 @@ public static class Parser
         return line.Split(',');
     }
 
-    public static bool ParseChoiceYesOrNo(string userInput)
+    public static bool ParseChoiceIsYes(string userInput)
     {
         if (string.IsNullOrEmpty(userInput)) return false;
         
