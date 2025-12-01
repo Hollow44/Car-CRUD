@@ -1,15 +1,16 @@
-﻿using CarCrudProject.Services;
+﻿using CarCrudProject.Repositories;
+using CarCrudProject.Services;
+using CarCrudProject.Data;
 
 public class App
 {
-    private bool IsRunning = true;
     private Controller controller = new Controller();
     
-    public void Run()
+    public void Run(string path)
     {
-        CarDataSetImporter carDataSetImporter = new CarDataSetImporter();
-        carDataSetImporter.Import();
-        while (IsRunning)
+        FileLoader.Load(path);
+        
+        while (true)
         {
             string userInput = Console.ReadLine() ?? "";
             controller.ProcessInput(userInput);

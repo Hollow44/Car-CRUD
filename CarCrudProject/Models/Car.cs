@@ -119,8 +119,8 @@ namespace CarCrudProject.Models
         
         public void ShowInfo()
         {
-            Console.WriteLine($"ID: {Id}");
             Console.WriteLine("_______________________________________________");
+            Console.WriteLine($"ID: {Id}");
             Console.Write($"{Company}, Model: {Model}.\nIt has: {FuelType} fuel type, {Engine} engine, " +
                           $"{HorsePower} HP, {Seat} seats.\n");
             if (IsUsed) Console.Write($"Car status: used, mileage: {Mileage} km.\n");
@@ -128,6 +128,18 @@ namespace CarCrudProject.Models
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"Price: {Price} $");
             Console.ResetColor();
+        }
+
+        public void ShowInfoForEdit()
+        {
+            Console.WriteLine($"COMPANY: [{this.Company}], MODEL: [{this.Model}], ENGINE: [{this.Engine}], HORSEPOWER: [{this.HorsePower}], PRICE: [{this.Price}], " +
+                              $"FUEL TYPE: [{this.FuelType}], NUMBER OF SEATS: [{this.Seat}], CAR IS USED: [{this.IsUsed}], MILEAGE: [{this.Mileage}]");
+        }
+
+        public void ShowInfoForDelete()
+        {
+            Console.WriteLine($"ID: {this.GetId()}, {this.Company} {this.Model}, ENGINE: {this.Engine}, {this.HorsePower} HP, PRICE: {this.Price}$, " +
+                              $"FUEL TYPE: {this.FuelType}, NUMBER OF SEATS: {this.Seat}, CAR IS USED: {this.IsUsed}, MILEAGE: {this.Mileage} KM");
         }
     }
 }

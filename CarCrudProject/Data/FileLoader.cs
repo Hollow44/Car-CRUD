@@ -1,13 +1,24 @@
 ﻿using CarCrudProject.Models;
 using CarCrudProject.Utilities;
+using CarCrudProject.Services;
+using CarCrudProject.Repositories;
 
 namespace CarCrudProject.Data;
 
-public class FileLoader
+public static class FileLoader
 {
-    public IEnumerable<string> Load(string path)
+    private static readonly CarFactory factory = new();
+    public static void Load(string path)
     {
-        return File.ReadLines(path)
-            .Where(line => !string.IsNullOrWhiteSpace(line));
+        foreach (var line in File.ReadLines(path).Skip(1))
+        {
+            if (string.IsNullOrWhiteSpace(line)) continue;
+            
+            var columns = Parser.ParseCsv(line);
+            if (columns.Length != 9) continue;
+            
+            var car = factory.Create(columns, CarRepository.NextId);
+            CarRepository.Add(car);
+        }
     }
 }

@@ -42,13 +42,29 @@ public static class Parser
         return userInput == "y";
     }
 
+    public static bool IsValidCarStatus(string userInput)
+    {
+        userInput = userInput.ToLower();
+
+        if (userInput == "new" || userInput == "used") return true;
+        return false;
+    }
+
+    public static bool ParseCarStatus(string userInput)
+    {
+        userInput = userInput.ToLower();
+
+        if (userInput == "used") return true;
+        return false;
+    }
+
     public static string[] ParseCommand(string userInput)
     {
-        if (string.IsNullOrWhiteSpace(userInput)) return Array.Empty<string>();
+        if (string.IsNullOrWhiteSpace(userInput)) return new string[]{""};
 
         userInput = userInput.Trim();
 
-        int firstSpaceIndex = userInput.IndexOf(' '); // понадобится для того чтобы первую комануд схватить
+        int firstSpaceIndex = userInput.IndexOf(" "); // понадобится для того чтобы первую комануд схватить
 
         if (firstSpaceIndex == -1) return new[] { userInput }; // если команда в одно слово - save || clear etc.
 
@@ -70,10 +86,10 @@ public static class Parser
         }
 
         // это для команд у которых только 1 аргумент (delete ID || edit ID etc.)
-        if (arguments.Contains(' '))
-        {
-            throw new Exception($"'{userInput}' commands with 1 argument - do not support multiple arguments.\nFor more info check --help [command name]");
-        }
+        // if (arguments.Contains(' '))
+        // {
+        //     Console.WriteLine($"'{command}' is not a correct command. See '--help'");
+        // }
 
         return new[] { command, arguments };
     }
