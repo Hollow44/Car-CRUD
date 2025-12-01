@@ -8,15 +8,16 @@ namespace CarCrudProject.Services;
 public class Controller
 {
     public void ProcessInput(string str)
-    {    
+    {
         string[] userInput = Parser.ParseCommand(str);
-
-        string command = userInput[0];
+        
+        string command = userInput[0].ToLower();
 
         if (userInput.Length == 1)
         {
             switch (command)
             {
+                // TODO
                 case "save":
                     FileSaver.Save();
                     break;
@@ -28,9 +29,37 @@ public class Controller
                 case "exit":
                     Commands.Exit();
                     break;
+                
+                case "--help":
+                    Commands.Help();
+                    break;
+                
+                case "delete":
+                    Console.WriteLine($"'{command}' you can't use this command without passing the 'id' parameter. See '--help {command}'");
+                    break;
+                
+                case "show":
+                    Console.WriteLine($"'{command}' you can't use this command without passing the 'id' or 'all' parameter. See '--help {command}'");
+                    break;
+                
+                case "add":
+                    Console.WriteLine($"'{command}' you can't use this command without passing the 'company', 'model', " +
+                                      $"'engine', 'horsepower', 'price', 'fuel type', 'number of seats', 'car status' and 'mileage'  parameters. See '--help {command}'");
+                    break;
+                
+                case "edit":
+                    Console.WriteLine($"'{command}' you can't use this command without passing the 'id' parameter. See '--help {command}'");
+                    break;
+                
+                case "saveas":
+                    Console.WriteLine($"'{command}' you can't use this command without passing the 'path' parameter. See '--help {command}'");
+                    break;
+                
+                case "":
+                    break;
 
                 default:
-                    Commands.Help();
+                    Console.WriteLine($"'{str}' is not a correct command. See '--help'");
                     break;
             }
         }
@@ -38,16 +67,20 @@ public class Controller
         {
             string argument = userInput[1];
 
+            string addArguments = string.Join(",", userInput
+                .Where((arg,index) => index != 0));
+            
             switch (command)
             {
                 case "add":
-                    Commands.Add(argument);
+                    Commands.Add(addArguments);
                     break;
                 
                 case "show":
                     Commands.Show(argument);
                     break;
                 
+                // TODO
                 case "edit":
                     Commands.Edit(argument);
                     break;
@@ -56,6 +89,7 @@ public class Controller
                     Commands.Delete(argument);
                     break;
                 
+                // TODO
                 case "saveas":
                     FileSaver.SaveAs(argument);
                     break;
@@ -65,7 +99,7 @@ public class Controller
                     break;
                 
                 default:
-                    Commands.Help();
+                    Console.WriteLine($"'{str}' is not a correct command. See '--help'");
                     break;
             }
         }

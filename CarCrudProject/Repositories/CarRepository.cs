@@ -8,17 +8,19 @@ using CarCrudProject.Models;
 
 namespace CarCrudProject.Repositories;
 
-public class CarRepository
+public static class CarRepository
 {
-    public List<Car> Cars = new List<Car>();
-    private int _nextId = 1;
+    public static List<Car> Cars = new List<Car>();
+    private static int _nextId = 1;
 
-    public void Add(Car car)
+    public static void Add(Car car)
     {
         Cars.Add(car);
         _nextId++;
     }
+    
+    
 
-    public int NextId => _nextId;
+    public static int NextId => _nextId;
 }
 

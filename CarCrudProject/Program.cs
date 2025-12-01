@@ -4,8 +4,9 @@ using System.IO;
 using System.Linq;
 using CarCrudProject.Services;
 
-public class Test
+public class Program
 {
+    public static readonly string path = @"D:\__MY-STUFF\prog\carCrud\CarCrudProject\cars_dataset_modified_final.csv";
     public static void Main(string[] args)
     {
         App app = new App();
@@ -17,6 +18,6 @@ public class Test
         Console.WriteLine();
         
         //initialization
-        app.Run();
+        app.Run(path);
     }
 }
