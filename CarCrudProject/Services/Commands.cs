@@ -127,15 +127,19 @@ public static class Commands
                     }
                     else
                     {
-                        Console.WriteLine($"'edit {argument}' horsepower, price and seat can not less than 1, mileage can not be less than 0. See '--help edit'");
+                        Console.WriteLine($"'edit {argument}' horsepower, price and seat can not less than 1, " +
+                                          $"mileage can not be less than 0. Car status should " +
+                                          $"only be 'new' or 'used'. See '--help edit'");
                     }
                 }
                 else Console.WriteLine($"'edit {argument}' invalid numeric arguments. See '--help edit'");
             }
             else Console.WriteLine($"'edit {argument}' invalid arguments. See '--help edit'");
         }
-
-        
+        else
+        {
+            Console.WriteLine($"'{userInput}' incorrect arguments. See '--help edit'");
+        }
     }
 
     public static void Delete(string argument)

@@ -41,3 +41,4 @@ D:\__MY-STUFF\prog\carCrud\CarCrudProject\obj\Debug\net10.0\refint\CarCrudProjec
 D:\__MY-STUFF\prog\carCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.pdb
 D:\__MY-STUFF\prog\carCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.genruntimeconfig.cache
 D:\__MY-STUFF\prog\carCrud\CarCrudProject\obj\Debug\net10.0\ref\CarCrudProject.dll
+D:\prog-cs\CarCrud\CarCrudProject\obj\Debug\net10.0\CarCrudProject.sourcelink.json
