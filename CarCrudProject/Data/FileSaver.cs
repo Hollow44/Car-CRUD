@@ -7,28 +7,15 @@ namespace CarCrudProject.Data;
 public static class FileSaver
 {
     
-    public static void SaveAs(string path)
+    public static void SaveAs()
     {
-        //if (FileName.IsValidFileName(fileName) && !FileName.IsReservedName(fileName))
-        //{
-        //    int numberOfCars = CarList.Cars.Count;
-        //    string[] file = new string[numberOfCars + 1];
-        //    file[0] = "id,company,model,engine,horse power,price,fuel type, number of seats, status of the car,mileage";
-        //    for (int i = 0, j = 1; i < numberOfCars; i++)
-        //    {
-        //        file[j] += $"{CarList.Cars[i].GetId()}," +
-        //                   $"{CarList.Cars[i].GetCompany()}," +
-        //                   $"{CarList.Cars[i].GetModel()}," +
-        //                   $"{CarList.Cars[i].GetEngine()}," +
-        //                   $"{CarList.Cars[i].GetHorsePower()}," +
-        //                   $"{CarList.Cars[i].GetPrice()}," +
-        //                   $"{CarList.Cars[i].GetFuelType()}," +
-        //                   $"{CarList.Cars[i].GetSeat()}," +
-        //                   $"{CarList.Cars[i].GetIsUsed()}," +
-        //                   $"{CarList.Cars[i].GetMileage()}\n";
-        //    }
-        //    File.WriteLines(path, file);
-        //}
+        Console.WriteLine(@"enter the path and filename (for example: C:\Desktop\cars.csv)");
+        Console.WriteLine("or press 'Enter', to save it in output.csv in current folder:");
+        Console.WriteLine(Program.path);
+
+        string userInput = Console.ReadLine() ?? "";
+        
+        
     }
     
     public static void Save()
@@ -39,6 +26,7 @@ public static class FileSaver
         file[0] = "company,model,engine,horse power,price,fuel type, number of seats, status of the car,mileage";
         for (int i = 0, j = 1; i < numberOfCars; i++)
         {
+            if (CarRepository.Cars[i].Equals(null)) continue;
             file[j] += $"{CarRepository.Cars[i].GetCompany()}," +
                        $"{CarRepository.Cars[i].GetModel()}," +
                        $"{CarRepository.Cars[i].GetEngine()}," +

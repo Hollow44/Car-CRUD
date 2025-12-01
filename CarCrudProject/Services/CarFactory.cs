@@ -30,7 +30,7 @@ public class CarFactory
         if (Parser.IsValidNumberToParse(seatStr)) seat = Parser.ParseNumber(seatStr);
 
         // new or used
-        bool isUsed = data[7].ToLower() == "used";
+        bool isUsed = data[7].ToLower() == "true";
             
         // mileage
         string mileageStr = data[8];

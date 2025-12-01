@@ -17,7 +17,6 @@ public class Controller
         {
             switch (command)
             {
-                // TODO
                 case "save":
                     FileSaver.Save();
                     break;
@@ -30,6 +29,7 @@ public class Controller
                     Commands.Exit();
                     break;
                 
+                // TODO
                 case "--help":
                     Commands.Help();
                     break;
@@ -51,8 +51,9 @@ public class Controller
                     Console.WriteLine($"'{command}' you can't use this command without passing the 'id' parameter. See '--help {command}'");
                     break;
                 
+                // TODO
                 case "saveas":
-                    Console.WriteLine($"'{command}' you can't use this command without passing the 'path' parameter. See '--help {command}'");
+                    FileSaver.SaveAs();
                     break;
                 
                 case "":
@@ -76,11 +77,14 @@ public class Controller
                     Commands.Add(addArguments);
                     break;
                 
+                // TODO: добавить возможность фильтрации, например - show cars where price < 100_000 and status is new
                 case "show":
                     Commands.Show(argument);
                     break;
                 
-                // TODO
+                // TODO: добавить возможность обновления только конкретного поля, например - edit 12.
+                // На экран выходит машина с id 12 и теперь можно только отдельные поля ей заменить
+                // например, model TESLA
                 case "edit":
                     Commands.Edit(argument);
                     break;
@@ -90,10 +94,6 @@ public class Controller
                     break;
                 
                 // TODO
-                case "saveas":
-                    FileSaver.SaveAs(argument);
-                    break;
-                
                 case "--help":
                     Commands.Help(argument);
                     break;
