@@ -9,21 +9,8 @@ public static class Commands
     private static readonly CarFactory factory = new();
 
     /* TODO:
-        show id
-        show all
         show where price > 0
-            
-        edit id
         edit id model Mercedez benz, horsepower 8
-            
-        saveas path
-
-        save
-            
-        --help
-        --help [command]
-
-        добавить логирование
      */
   
     public static void Show(string argument)
@@ -35,22 +22,32 @@ public static class Commands
             {
                 car.ShowInfo();
             }
+            Logger.Write("SHOW","displayed all the cars");
         }
         else if (Parser.IsValidNumberToParse(argument))
         {
             int id = Parser.ParseNumber(argument);
 
             if (id <= 0 || id >= CarRepository.NextId)
-                Console.WriteLine($"'show {id}' invalid id");
-
-            var car = CarRepository.Cars.FirstOrDefault(car => car.GetId() == id);
+            {
+                Console.WriteLine($"'show {id}' invalid id"); 
+                Logger.LogError($"'show {id}' invalid id");
+            }
             
-            if (car == null) Console.WriteLine($"'show {id}' car with this id already been deleted");
+            var car = CarRepository.Cars.FirstOrDefault(car => car.GetId() == id);
+
+            if (car == null)
+            {
+                Console.WriteLine($"'show {id}' car with this id already been deleted");
+                Logger.Write("INFO",$"'show {id}' car with this id already been deleted");
+            }
             else car.ShowInfo();
+            Logger.Write("SHOW", car!.GetInfo());
         }
         else
         {
             Console.WriteLine($"'show {argument}' is not correct command. See '--help show'");
+            Logger.LogError($"'show {argument}' is not correct command");
         }
     }
 
@@ -59,23 +56,34 @@ public static class Commands
         if (!Parser.IsValidNumberToParse(argument))
         {
             Console.WriteLine($"'edit {argument}' is not correct command. See '--help edit'");
+            Logger.LogError($"'edit {argument}' is not correct command");
             return;
         }
 
         int id = Parser.ParseNumber(argument);
-
-        var car = CarRepository.Cars.FirstOrDefault(car => car != null && car.GetId() == id);
+        
+        if (id < 1 || id > (CarRepository.NextId - 1))
+        {
+            Console.WriteLine($"'edit {id}' invalid id. See '--help edit'");    
+            Logger.LogError($"'edit {id}' invalid id");
+            return;
+        }
+        
+        var car = CarRepository.Cars.FirstOrDefault(car => car.GetId() == id);
 
         if (car == null)
         {
             Console.WriteLine($"there is no car with id '{id}'");
+            Logger.LogError($"there is no car with id '{id}'");
             return;
         }
         
         Console.WriteLine($"ID: {car.GetId()}");
         car.ShowInfoForEdit();
+        Logger.Write("EDIT", $"{car.GetInfo()}");
 
         string userInput = Console.ReadLine() ?? "";
+        Logger.Write("USER INPUT", userInput);
         
         if (userInput.Contains(','))
         {
@@ -111,6 +119,9 @@ public static class Commands
 
                     if (hp > 0 && price > 0 && seat > 0 && mileage >= 0)
                     {
+                        Logger.Write("EDIT", $"before EDIT: ID {car.GetId()},{car.GetCompany()} {car.GetModel()}," +
+                                     $"{car.GetEngine()},{car.GetHorsePower()},{car.GetPrice()},{car.GetFuelType()}," +
+                                     $"{car.GetSeat()},{car.GetIsUsed()},{car.GetMileage()}");
                         car.SetCompany(company);
                         car.SetModel(model);
                         car.SetEngine(engine);
@@ -121,8 +132,13 @@ public static class Commands
                         car.SetIsUsed(carStatus);
                         car.SetMileage(mileage);
 
+                        Logger.Write("EDIT", $"after EDIT: ID {car.GetId()},{car.GetCompany()} {car.GetModel()}," +
+                                             $"{car.GetEngine()},{car.GetHorsePower()},{car.GetPrice()},{car.GetFuelType()}," +
+                                             $"{car.GetSeat()},{car.GetIsUsed()},{car.GetMileage()}");
+                        
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine($"car with id '{id}' has been updated");
+                        Logger.Write("EDIT", $"car with id '{id}' has been updated");
                         Console.ResetColor();
                     }
                     else
@@ -130,15 +146,26 @@ public static class Commands
                         Console.WriteLine($"'edit {argument}' horsepower, price and seat can not less than 1, " +
                                           $"mileage can not be less than 0. Car status should " +
                                           $"only be 'new' or 'used'. See '--help edit'");
+                        Logger.LogError($"'{userInput}' wrong parameters for editing cars data");
                     }
                 }
-                else Console.WriteLine($"'edit {argument}' invalid numeric arguments. See '--help edit'");
+                else
+                {
+                    Console.WriteLine($"'edit {argument}' invalid numeric arguments. See '--help edit'");
+                    Logger.LogError($"'edit {argument}' invalid numeric arguments");
+                }
+                
             }
-            else Console.WriteLine($"'edit {argument}' invalid arguments. See '--help edit'");
+            else
+            {
+                Console.WriteLine($"'edit {argument}' invalid arguments. See '--help edit'");
+                Logger.LogError($"'edit {argument}' invalid arguments");
+            }
         }
         else
         {
             Console.WriteLine($"'{userInput}' incorrect arguments. See '--help edit'");
+            Logger.LogError($"'{userInput}' incorrect arguments (EDIT)");
         }
     }
 
@@ -147,16 +174,22 @@ public static class Commands
         if (!Parser.IsValidNumberToParse(argument))
         {
             Console.WriteLine($"'delete {argument}' is not correct command. See '--help delete'");
+            Logger.LogError($"'delete {argument}' is not correct command");
             return;
         }
 
         int id = Parser.ParseNumber(argument);
-
-        var car = CarRepository.Cars.FirstOrDefault(car => car != null && car.GetId() == id);
+        if (id < 1 || id > CarRepository.NextId - 1)
+        {
+            Console.WriteLine($"'delete {id}' invalid id. See '--help delete'");
+            Logger.LogError($"'delete {id}' invalid id");
+        }
+        var car = CarRepository.Cars.FirstOrDefault(car => car.GetId() == id);
 
         if (car == null)
         {
             Console.WriteLine($"there is no car with id '{id}'");
+            Logger.LogError($"'there is no car with id '{id}'");
             return;
         }
         
@@ -166,11 +199,14 @@ public static class Commands
         car.ShowInfoForDelete();
         Console.WriteLine("are you sure you want to delete this car?");
         Console.WriteLine("press 'Y' to confirm OR type anything to decline");
+        Logger.Write("DELETE", "waiting for user's confirmation");
 
         string userInput = Console.ReadLine() ?? "";
+        Logger.Write("USER INPUT", userInput);
         
         if (Parser.ParseChoiceIsYes(userInput))
         {
+            Logger.Write("DELETE", $"car with ID {id} was deleted ({car.GetCompany()} {car.GetModel()})");
             CarRepository.Cars.Remove(car);
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"car with id '{id}' has been removed successfully");
@@ -183,9 +219,16 @@ public static class Commands
         Console.WriteLine("are you sure you want to exit the app?");
         Console.ResetColor();
         Console.WriteLine("press 'Y' to confirm OR type anything to decline");
+        Logger.Write("EXIT", "waiting for user's confirmation to EXIT the app");
         string userInput = Console.ReadLine() ?? "";
+        Logger.Write("USER INPUT", userInput);
+        
 
-        if (Parser.ParseChoiceIsYes(userInput)) Environment.Exit(0);
+        if (Parser.ParseChoiceIsYes(userInput))
+        {
+            Logger.Write("EXIT", "app closed");
+            Environment.Exit(0);
+        }
     }
     
     public static void Add(string argument)
@@ -211,7 +254,6 @@ public static class Commands
                 int price = Parser.ParseNumber(priceStr);
                 int seat = Parser.ParseNumber(seatStr);
                 int mileage = Parser.ParseNumber(mileageStr);
-                bool carStatus = Parser.ParseCarStatus(carStatusStr);
 
                 if (hp > 0 && price > 0 && seat > 0 && mileage >= 0)
                 {
@@ -219,22 +261,35 @@ public static class Commands
                     
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine($"new car with id: {CarRepository.NextId} has been added successfully");
+                    Logger.Write("ADD", $"new car with ID {CarRepository.NextId} was added successfully " +
+                                        $"({arguments[0]} {arguments[1]})");
                     Console.ResetColor();
                     
                     CarRepository.Add(car);
                 }
                 else
                 {
-                    Console.WriteLine($"'add {argument}' horsepower, price and seat can not less than 1, mileage can not be less than 0. See '--help add'");
+                    Console.WriteLine($"'add {argument}' horsepower, price and seat can not be less than 1, " +
+                                      $"mileage can not be less than 0. See '--help add'");
+                    Logger.LogError($"'add {argument}' incorrect numeric input");
                 }
             }
-            else Console.WriteLine($"'add {argument}' invalid numeric arguments. See '--help add'");
+            else
+            {
+                Console.WriteLine($"'add {argument}' invalid numeric arguments. See '--help add'");
+                Logger.LogError($"'add {argument}' invalid numeric input");
+            }
         }
-        else Console.WriteLine($"'add {argument}' invalid arguments. See '--help add'");
+        else
+        {
+            Console.WriteLine($"'add {argument}' invalid arguments. See '--help add'");
+            Logger.LogError($"'add {argument}' invalid arguments");
+        }
     }
 
     public static void Help()
     {
+        Logger.Write("HELP", "displayed '--help' menu");
         Console.WriteLine("display all the cars or 1 particular car");
         Console.WriteLine("\tshow all\tShows the list of all cars with detailed information");
         Console.WriteLine("\tshow [id]\tShow the details about 1 car with the particular 'id'");
@@ -278,12 +333,14 @@ public static class Commands
         switch (command)
         {
             case "show":
+                Logger.Write("HELP", $"displayed '--help {command}' menu");
                 Console.WriteLine("display all the cars or 1 particular car");
                 Console.WriteLine("\tshow all\tShows the list of all cars with detailed information");
                 Console.WriteLine("\tshow [id]\tShow the details about 1 car with the particular 'id'");
                 break;
             
             case "add":
+                Logger.Write("HELP", $"displayed '--help {command}' menu");
                 Console.WriteLine("add the car to the list");
                 Console.WriteLine("\tadd [company], [model], [engine], [horse power], [price], [fuel type], [seat], [car status], [mileage]." +
                                   " Add car to the list by passing correct arguments (all the arguments must be separated with ','." +
@@ -293,33 +350,40 @@ public static class Commands
                 break;
             
             case "edit":
+                Logger.Write("HELP", $"displayed '--help {command}' menu");
                 Console.WriteLine("edit the existing car's information");
-                Console.WriteLine("\tedit [id]\tPass only [id] argument to be able to edit all of the particular's car information");
+                Console.WriteLine("\tedit [id]\tPass only [id] argument to be able to edit all of the particular's car information. " +
+                                  "Id can't be lower than 1 or higher than ID of the last car on the list");
                 Console.WriteLine("\tedit [id] [argument]\tHere in argument you can edit the particular argument of the particular's car." +
                                   "For example: edit [3] [model] ");
                 break;
             
             case "delete":
+                Logger.Write("HELP", $"displayed '--help {command}' menu");
                 Console.WriteLine("delete the existing car's information");
                 Console.WriteLine("\tdelete [id]\tPass only [id] argument to be able to delete all of the particular's car information");
                 break;
             
             case "clear":
+                Logger.Write("HELP", $"displayed '--help {command}' menu");
                 Console.WriteLine("clear the console");
                 Console.WriteLine("\tclear\tType this command to clear the console");
                 break;
             
             case "exit":
+                Logger.Write("HELP", $"displayed '--help {command}' menu");
                 Console.WriteLine("exit the application");
                 Console.WriteLine("\texit\tType this command in order to quit the application");
                 break;
             
             case "save":
+                Logger.Write("HELP", $"displayed '--help {command}' menu");
                 Console.WriteLine("saving the car list");
                 Console.WriteLine($"\tsave\tSave the current car list state into the initial file that you are working from - {Program.path}");
                 break;
             
             case "saveas":
+                Logger.Write("HELP", $"displayed '--help {command}' menu");
                 Console.WriteLine("saving the car list");
                 Console.WriteLine("\tsaveAs\tSave the car list state into the path and file format that you choose yourself");
                 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -336,6 +400,7 @@ public static class Commands
                 break;
             default:
                 Console.WriteLine($"'--help {command}' incorrect argument '{command}'");
+                Logger.LogError($"'--help {command}' incorrect argument '{command}'");
                 break;
         }
     }

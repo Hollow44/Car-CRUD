@@ -6,7 +6,7 @@ using CarCrudProject.Services;
 
 public class Program
 {
-    public static readonly string path = @"..\..\..\..\CarCrudProject/cars_dataset_modified_final.csv";
+    public static readonly string path = @"..\..\..\..\CarCrudProject\Data/cars_dataset_modified_final.csv";
     public static void Main(string[] args)
     {
         App app = new App();
@@ -18,6 +18,7 @@ public class Program
         Console.WriteLine();
         
         //initialization
+        Logger.Write("START","Application started");
         app.Run(path);
     }
 }

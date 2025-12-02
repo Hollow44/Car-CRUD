@@ -23,6 +23,7 @@ public class Controller
 
                 case "clear":
                     Console.Clear();
+                    Logger.Write("CLEAR","console got cleared");
                     break;
 
                 case "exit":

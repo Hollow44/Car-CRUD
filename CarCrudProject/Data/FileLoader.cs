@@ -20,5 +20,6 @@ public static class FileLoader
             var car = factory.Create(columns, CarRepository.NextId);
             CarRepository.Add(car);
         }
+        Logger.Write("LOAD",$"Dataset has been loaded ({CarRepository.Cars.Count} cars)");
     }
 }

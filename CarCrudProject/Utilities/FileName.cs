@@ -1,4 +1,6 @@
-﻿namespace CarCrudProject.Utilities;
+﻿using CarCrudProject.Services;
+
+namespace CarCrudProject.Utilities;
 
 public static class FileName
 {
@@ -12,6 +14,7 @@ public static class FileName
             Console.WriteLine($"'{path}'");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"ERROR! Name of the file can't be higher than 260 symbols");
+            Logger.LogError($"'{path}' - name of the file can't be higher than 260 symbols");
             Console.ResetColor();
             return false;
         }
@@ -26,13 +29,12 @@ public static class FileName
                 Console.WriteLine($"ATTENTION! File already exists, do you want to rewrite it?");
                 Console.ResetColor();
                 Console.WriteLine("press 'Y' to confirm OR type anything to decline");
+                Logger.Write("USER INPUT", "waiting for user to confirm rewriting the file while saving");
 
                 string userInput = Console.ReadLine() ?? "";
-                return Parser.ParseChoiceIsYes(userInput);
-            }
-            else
-            {
+                Logger.Write("USER INPUT", userInput);
                 
+                return Parser.ParseChoiceIsYes(userInput);
             }
 
             string[] pathParts = fullPath.Split(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
@@ -43,7 +45,8 @@ public static class FileName
             {
                 Console.WriteLine($"'{path}'");
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"ERROR! Name of the file can't end with empty space ' '");
+                Console.WriteLine($"ERROR! Name of the file can't end with an empty space ' '");
+                Logger.LogError("name of the file can't end with an empty space ' '");
                 Console.ResetColor();
                 return false;
             }
@@ -58,6 +61,7 @@ public static class FileName
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"'{part}' ERROR! Invalid name, see '--help saveAs'");
+                    Logger.LogError($"{part} invalid name");
                     Console.ResetColor();
                     return false;
                 }
@@ -66,11 +70,13 @@ public static class FileName
                 || pathParts.Last().EndsWith(".csv", StringComparison.OrdinalIgnoreCase)) return true;
 
             Console.WriteLine($"'{path}' incorrect path. See '--help saveAs'");
+            Logger.LogError($"'{path}' incorrect path");
             return false;
         }
         catch
         {
             Console.WriteLine($"'{path}' incorrect path. See '--help saveAs'");
+            Logger.LogError($"'{path}' incorrect path");
             return false;
         }
     }

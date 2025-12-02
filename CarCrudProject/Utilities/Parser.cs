@@ -18,15 +18,8 @@ public static class Parser
     
     public static int ParseNumber(string userInput)
     {
-        
         double num = double.Parse(userInput, CultureInfo.InvariantCulture);
         return (int)Math.Round(num, MidpointRounding.AwayFromZero);
-    }
-
-    public static bool IsUsedCar(string userInput)
-    {
-        userInput = userInput.ToLower().Trim();
-        return userInput == "used";
     }
 
     public static string[] ParseCsv(string line)

@@ -18,8 +18,6 @@ public static class CarRepository
         Cars.Add(car);
         _nextId++;
     }
-    
-    
 
     public static int NextId => _nextId;
 }
