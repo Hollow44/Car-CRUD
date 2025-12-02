@@ -29,7 +29,6 @@ public class Controller
                     Commands.Exit();
                     break;
                 
-                // TODO
                 case "--help":
                     Commands.Help();
                     break;
@@ -51,7 +50,6 @@ public class Controller
                     Console.WriteLine($"'{command}' you can't use this command without passing the 'id' parameter. See '--help {command}'");
                     break;
                 
-                // TODO
                 case "saveas":
                     FileSaver.SaveAs();
                     break;
@@ -93,7 +91,6 @@ public class Controller
                     Commands.Delete(argument);
                     break;
                 
-                // TODO
                 case "--help":
                     Commands.Help(argument);
                     break;

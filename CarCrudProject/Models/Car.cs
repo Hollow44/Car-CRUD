@@ -141,5 +141,11 @@ namespace CarCrudProject.Models
             Console.WriteLine($"ID: {this.GetId()}, {this.Company} {this.Model}, ENGINE: {this.Engine}, {this.HorsePower} HP, PRICE: {this.Price}$, " +
                               $"FUEL TYPE: {this.FuelType}, NUMBER OF SEATS: {this.Seat}, CAR IS USED: {this.IsUsed}, MILEAGE: {this.Mileage} KM");
         }
+
+        public string GetInfo()
+        {
+            return $"{this.GetId()},{this.GetCompany()},{this.GetModel()},{this.GetEngine()},{this.GetHorsePower()}," +
+                   $"{this.GetPrice()},{this.GetFuelType()},{this.GetSeat()},{this.GetIsUsed()},{this.GetMileage()}";
+        }
     }
 }

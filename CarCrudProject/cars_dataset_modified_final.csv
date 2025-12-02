@@ -1213,6 +1213,8 @@ Toyota,4Runner (6th Gen),2.4L Turbo I4 (i-FORCE MAX Hybrid),326,50000,Hybrid,7,F
 Toyota,Corolla Cross,2.0L Gas / 2.0L Hybrid,182,27172,Gas / Hybrid,5,False,0
 Toyota,C-HR+,1.8L / 2.0L Hybrid,169,33000,Hybrid,5,True,370263
 Toyota,RAV4 (6th Gen),2.5L Hybrid / Plug-in Hybrid,260,36000,Hybrid / Plug-in,5,True,82000
+test company,test model,v500,200,100000,gasoline,2,False,0
+
 
 
 

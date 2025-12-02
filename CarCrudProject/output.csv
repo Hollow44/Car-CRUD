@@ -1,0 +1,1216 @@
+id,company,model,engine,horse power,price,fuel type,number of seats,status of the car,mileage
+1,FERRARI,SF90 STRADALE,V8,963,1100000,plug in hyrbrid,2,True,686279
+2,ROLLS ROYCE,PHANTOM,V12,563,460000,Petrol,5,False,0
+3,Ford,KA+,1.2L Petrol,77,13500,Petrol,5,True,654334
+4,MERCEDES,GT 63 S,V8,630,161000,Petrol,4,False,0
+5,AUDI,AUDI R8 Gt,V10,602,253290,Petrol,2,True,654032
+6,BMW,Mclaren 720s,V8,710,499000,Petrol,2,False,0
+7,ASTON MARTIN,VANTAGE F1,V8,656,193440,Petrol,2,False,0
+8,BENTLEY,Continental GT Azure,V8,550,311000,Petrol,4,True,91232
+9,LAMBORGHINI,VENENO ROADSTER,V12,750,4500000,Petrol,2,True,504885
+10,FERRARI,F8 TRIBUTO,V8,710,280000,Petrol,2,True,147555
+11,FERRARI,812 GTS,V12,789,350000,Petrol,2,True,345976
+12,FERRARI,PORTOFINO,V8,592,210000,Petrol,0,False,0
+13,FERRARI,ROMA,V8,612,230000,Petrol,0,True,60025
+14,FERRARI,MONZA SP2,V12,789,1700000,Petrol,2,False,0
+15,FERRARI,F8 SPIDER,V8,710,280000,Petrol,2,True,485604
+16,FERRARI,PORTOFINO M,V8,612,220000,Petrol,0,True,393261
+17,FERRARI,ROMA SPIDER,V8,612,240000,Petrol,0,False,0
+18,TOYOTA,GR SUPRA,I4,382,53900,Petrol,2,False,0
+19,TOYOTA,TOYOTA 86,BOXER-4,205,27000,Petrol,0,False,0
+20,TOYOTA,TOYOTA  GR86,BOXER-4,228,30000,Petrol,4,True,835157
+21,TOYOTA,TOYOTA LAND CRUISER,V8,381,85000,Diesel,7,True,109282
+22,TOYOTA,TOYOTA SEQUOIA,V8,381,50000,Petrol,7,True,874085
+23,NISSAN,GT-R,V6,600,113000,Petrol,4,True,904770
+24,NISSAN,370Z,V6,332,30000,Petrol,2,True,468471
+25,NISSAN,Z PROTO,V6,400,40000,Petrol,2,False,0
+26,NISSAN,ALTIMA,I4,188,25000,Petrol,5,True,27618
+27,NISSAN,MAXIMA,V6,300,35000,Petrol,5,True,51898
+28,NISSAN,SENTRA,I4,149,20000,Petrol,5,True,462145
+29,NISSAN,ROGUE,I4,201,28000,Petrol,5,False,0
+30,NISSAN,PATHFINDER,V6,284,35000,Petrol,7,True,904173
+31,NISSAN,FRONTIER,V6,310,30000,Petrol,5,False,0
+32,NISSAN,TITAN,V8,400,40000,Petrol,5,True,930019
+33,ASTON MARTIN,VALKYRIE,V12,1160,3200000,Hybrid,2,False,0
+34,ASTON MARTIN,VALHALLA,V8,1000,1100000,Hybrid,2,True,464515
+35,ASTON MARTIN,DBS SUPERLEGGERA,V12,715,316000,Petrol,2,False,0
+36,ASTON MARTIN,DB11,V12,600,208000,Petrol,4,True,103018
+37,ASTON MARTIN,VANTAGE,V8,503,142000,Petrol,2,True,15684
+38,ASTON MARTIN,DBX,V8,542,189000,Petrol,5,False,0
+39,ASTON MARTIN,RAPIDE AMR,V12,580,240000,Petrol,4,False,0
+40,ASTON MARTIN,VANQUISH,V12,580,294000,Petrol,2,False,0
+41,ASTON MARTIN,LAGONDA TARAF,V12,540,1100000,Petrol,4,True,342849
+42,ASTON MARTIN,VICTOR,V12,836,1300000,Petrol,2,True,393323
+43,LAMBORGHINI,SIAN,V12,819,2800000,Hybrid,2,True,821427
+44,LAMBORGHINI,AVENTADOR SVJ,V12,759,518000,Petrol,2,False,0
+45,LAMBORGHINI,HURACAN PERFORMANTE,V10,640,274000,Petrol,2,True,907347
+46,LAMBORGHINI,HURACAN EVO,V10,640,261000,Petrol,2,True,498163
+47,LAMBORGHINI,AVENTADOR SV,V12,740,493000,Petrol,2,False,0
+48,LAMBORGHINI,URUS,V8,641,211000,Petrol,5,False,0
+49,LAMBORGHINI,HURACAN SPYDER,V10,610,287000,Petrol,2,False,0
+50,LAMBORGHINI,AVENTADOR ROADSTER,V12,700,445000,Petrol,2,True,582294
+51,LAMBORGHINI,HURACAN  PERFORMANTE SPYDER,V10,640,308000,Petrol,2,False,0
+52,LAMBORGHINI,AVENTADOR S,V12,740,421000,Petrol,2,True,271125
+53,LAMBORGHINI,HURACAN EVO SPYDER,V10,640,287000,Petrol,2,True,782099
+54,LAMBORGHINI,URUS PERFORMANTE,V8,641,242000,Petrol,5,False,0
+55,LAMBORGHINI,AVENTADOR ULTIMAE,V12,769,545000,Petrol,2,True,434800
+56,LAMBORGHINI,HURACAN EVO RWD,V10,610,258000,Petrol,2,True,352729
+57,LAMBORGHINI,AVENTADOR SVJ ROADSTER,V12,759,573000,Petrol,2,True,978835
+58,LAMBORGHINI,URUS S,V8,671,263000,Petrol,5,True,661673
+59,LAMBORGHINI,HURACAN STO,V10,640,327000,Petrol,2,True,862099
+60,LAMBORGHINI,AVENTADOR LP 780-4 ULTIMATE,V12,769,545000,Petrol,2,False,0
+61,LAMBORGHINI,HURACAN EVO RWD SPYDER,V10,610,273000,Petrol,2,True,775033
+62,LAMBORGHINI,AVENTADOR SVJ XAGO,V12,759,603000,Petrol,2,False,0
+63,LAMBORGHINI,URUS GRAPHITE CAPSULE,V8,641,253000,Petrol,5,True,455592
+64,LAMBORGHINI,HURACAN STO EVO,V10,640,342000,Petrol,2,True,638754
+65,LAMBORGHINI,AVENTADOR LP 780-4 ULTIMATE ROADSTER,V12,769,573000,Petrol,2,False,0
+66,ROLLS ROYCE,GHOST,V12,591,332000,Petrol,5,True,554195
+67,ROLLS ROYCE,WRAITH,V12,624,330000,Petrol,4,False,0
+68,ROLLS ROYCE,DAWN,V12,624,360000,Petrol,4,False,0
+69,ROLLS ROYCE,CULLINAN,V12,563,325000,Petrol,5,True,734466
+70,ROLLS ROYCE,PHANTOM EXTENDED,V12,563,500000,Petrol,5,True,55861
+71,ROLLS ROYCE,GHOST EXTENDED,V12,591,370000,Petrol,5,False,0
+72,ROLLS ROYCE,WRAITH BLACK BADGE,V12,624,360000,Petrol,4,False,0
+73,ROLLS ROYCE,DAWN BLACK BADGE,V12,624,390000,Petrol,4,True,74293
+74,ROLLS ROYCE,CULLINAN BLACK BADGE,V12,563,350000,Petrol,5,True,542138
+75,ROLLS ROYCE,PHANTOM COUPE,V12,563,450000,Petrol,4,False,0
+76,ROLLS ROYCE,GHOST COUPE,V12,591,340000,Petrol,4,True,812168
+77,ROLLS ROYCE,WRAITH COUPE,V12,624,330000,Petrol,4,False,0
+78,ROLLS ROYCE,DAWN CONVERTIBLE,V12,624,380000,Petrol,4,True,706643
+79,ROLLS ROYCE,CULLINAN SUV,V12,563,320000,Petrol,5,True,460756
+80,MERCEDES,BENZ S-CLASS S 580,V8,496,116000,Petrol,5,False,0
+81,MERCEDES,BENZ E-CLASS E 63 S,V8,603,104000,Petrol,5,False,0
+82,MERCEDES,BENZ CLA 45 AMG,I4,382,53000,Petrol,5,True,962762
+83,MERCEDES,BENZ GLE 63 S,V8,603,113000,Petrol,5,False,0
+84,MERCEDES,BENZ S-CLASS S 500,V6,429,109000,Petrol,5,False,0
+85,MERCEDES,BENZ E-CLASS E 450,V6,362,62000,Petrol,5,True,685359
+86,MERCEDES,BENZ CLS 450,V6,362,70000,Petrol,5,True,256574
+87,MERCEDES,BENZ GT 53,V6,429,99000,Petrol,5,False,0
+88,MERCEDES,BENZ GLE 450,V6,362,63000,Petrol,5,False,0
+89,MERCEDES,BENZ A-CLASS A 45 S,I4,416,53000,Petrol,5,True,438849
+90,MERCEDES,BENZ C-CLASS C 43,V6,402,52000,Petrol,5,True,998639
+91,MERCEDES,BENZ E-CLASS E 350,I4,255,49000,Petrol,5,True,384894
+92,MERCEDES,BENZ GLE 350,I4,255,53000,Petrol,5,True,961353
+93,MERCEDES,BENZ GLC 43,V6,402,54000,Petrol,5,False,0
+94,MERCEDES,BENZ GLA 45,I4,382,48000,Petrol,5,False,0
+95,MERCEDES,BENZ GLC 350,I4,255,46000,Petrol,5,False,0
+96,MERCEDES,BENZ GLE 53,V6,429,71000,Petrol,5,False,0
+97,MERCEDES,BENZ S-CLASS S 350,I4,255,90000,Petrol,5,True,801037
+98,MERCEDES,BENZ EQS 53,ELECTRIC MOTOR,751,102000,Electric,5,True,872122
+99,MERCEDES,BENZ MAYBACH S 680,V12,630,200000,Petrol,5,True,288563
+100,BMW,M5 CS,V8,627,142000,Petrol,5,False,0
+101,BMW,M4 GTS,I6,493,133000,Petrol,4,True,436569
+102,BMW,M3 COMPETITION,I6,503,76000,Petrol,5,True,392214
+103,BMW,M2 CS,I6,444,83000,Petrol,4,True,135027
+104,BMW,X5 M COMPETITION,V8,523,114000,Petrol,5,True,2992
+105,BMW,X3 M COMPETITION,I6,503,69000,Petrol,5,False,0
+106,BMW,M8 GRAN COUPE,V8,523,146000,Petrol,5,True,946977
+107,BMW,M850i DRIVE COUPE,V8,523,108000,Petrol,4,False,0
+108,ROLLS ROYCE,DAWN BLACK BADGE VOLANTE,V12,563,398000,Petrol,4,False,0
+109,ROLLS ROYCE,CULLINAN BLACK BADGE SUV,V12,563,381000,Petrol,5,True,246378
+110,ROLLS ROYCE,PHATOM TRANQUILITY,V12,563,475000,Petrol,5,True,183725
+111,ROLLS ROYCE,GHOST ZENITH,V12,563,335000,Petrol,5,True,234721
+112,ROLLS ROYCE,WRAITH EAGLE VIII,V12,623,349000,Petrol,4,False,0
+113,ROLLS ROYCE,PHATOM ORCHID,V12,563,495000,Petrol,5,True,267522
+114,ROLLS ROYCE,GHOST AZURE,V12,563,355000,Petrol,5,False,0
+115,ROLLS ROYCE,WRAITH KRYPTOS,V12,623,369000,Petrol,4,True,290542
+116,ROLLS ROYCE,DAWN SILVER BULLET,V12,563,418000,Petrol,4,False,0
+117,ROLLS ROYCE,CULLINAN FUX ORANGE,V12,563,401000,Petrol,5,True,679787
+118,ROLLS ROYCE,PHANTOM CELESTIAL,V12,563,515000,Petrol,5,True,904534
+119,ROLLS ROYCE,GHOST MYSORE,V12,563,375000,Petrol,5,False,0
+120,ROLLS ROYCE,WRAITH LUMINARY,V12,623,389000,Petrol,4,True,551686
+121,ROLLS ROYCE,DAWN BLACK BADGE ADAMAS,V12,563,439000,Petrol,4,True,42033
+122,ROLLS ROYCE,CULLINAN RED DIAMOND,V12,563,421000,Petrol,5,True,207309
+123,AUDI,R8 V10 PLUS,V10,610,194000,Petrol,2,False,0
+124,AUDI,RS7 SPORTBACK,V8,591,114000,Petrol,5,True,715239
+125,AUDI,S8,V8,563,101000,Petrol,5,False,0
+126,AUDI,RS6 AVANT,V8,591,109000,Petrol,5,True,133799
+127,AUDI,S7 SPORTBACK,V8,563,96000,Petrol,5,False,0
+128,AUDI,A8,V6,335,86000,Petrol,5,False,0
+129,AUDI,S5 COUPE,V6,349,64000,Petrol,4,False,0
+130,AUDI,SQ5,V6,349,62000,Petrol,5,True,632925
+131,AUDI,S4 SEDAN,V6,349,59000,Petrol,5,False,0
+132,AUDI,S3 SEDAN,I4,306,52000,Petrol,5,False,0
+133,AUDI,Q7,V6,335,60000,Petrol,7,True,264644
+134,AUDI,Q5,I4,248,43000,Petrol,5,True,6559
+135,AUDI,A7,V6,335,68000,Petrol,5,False,0
+136,AUDI,A6,V6,335,58000,Petrol,5,True,857462
+137,AUDI,A5 COUPE,I4,248,45000,Petrol,4,False,0
+138,AUDI,A4,I4,248,39000,Petrol,5,True,632817
+139,AUDI,Q3,I4,248,35000,Petrol,5,False,0
+140,AUDI,E-TRON,ELECTRIC,402,75000,Electric,5,False,0
+141,AUDI,E-TRON SPORTBACK,ELECTRIC,402,78000,Electric,5,False,0
+142,AUDI,TT COUPE,I4,248,49000,Petrol,2,False,0
+143,BMW,I8 ROADSTER,ELECTRIC MOTOR,369,165000,Hybrid,2,False,0
+144,BMW,330i,I4,255,45000,Petrol,5,False,0
+145,BMW,M340i XDRIVE,I6,382,57000,Petrol,5,False,0
+146,BMW,430i COUPE,I4,255,48000,Petrol,4,True,405904
+147,BMW,M4 COMPETITION,I6,503,81000,Petrol,4,False,0
+148,BMW,530i,I4,248,57000,Petrol,5,False,0
+149,BMW,M550i XDRIVE,V8,523,78000,Petrol,5,True,877810
+150,BMW,118i,I3,136,32000,Petrol,5,True,254382
+151,BMW,128ti,I4,261,42000,Petrol,5,False,0
+152,BMW,M135i XDRIVE,I4,302,30000,Petrol,5,True,258592
+153,BMW,116D,I3,116,30000,Diesel,5,False,0
+154,BMW,120D XDRIVE,I4,190,38000,Diesel,5,True,872624
+155,BMW,116i,I3,109,28000,Petrol,5,True,79933
+156,BMW,118D,I4,150,34000,Diesel,5,False,0
+157,BMW,120i,I4,178,37000,Petrol,5,False,0
+158,BMW,125i,I4,224,42000,Petrol,5,True,172856
+159,BMW,114D,I3,95,27000,Diesel,5,True,780746
+160,BMW,114i,I4,102,26000,Petrol,5,True,649243
+161,BMW,125D,I4,224,44000,Diesel,5,False,0
+162,BMW,118i XDRIVE,I3,136,34000,Petrol,5,False,0
+163,BMW,116D EFFICIENTDYNAMICS,I3,116,30000,Diesel,5,False,0
+164,BMW,118i SPORTLINE,I3,136,35000,Petrol,5,True,810151
+165,BMW,118i M SPORT,I3,136,37000,Petrol,5,False,0
+166,BMW,120i M SPORT,I4,178,39000,Petrol,5,False,0
+167,BMW,116i EFFICIENTDYNAMICS,I4,109,29000,Petrol,5,True,987242
+168,BMW,116D ADVANTAGE,I3,116,31000,Diesel,5,False,0
+169,BMW,120D EFFICIENTDYNAMICS,I4,163,39000,Diesel,5,True,829756
+170,BMW,118i SHADOW LINE,I3,136,36000,Petrol,5,False,0
+171,BMW,118D SPORT LINE,I4,150,36000,Diesel,5,True,800686
+172,BMW,120i XDRIVE,I4,178,40000,Petrol,5,False,0
+173,BMW,114D SPORT LINE,I3,95,28000,Diesel,5,True,756785
+174,BMW,118i URBAN LINE,I3,136,35000,Petrol,5,True,92087
+175,VOLVO,XC90,I6,247,60000,Petrol/Diesel,7,False,0
+176,VOLVO,XC60,I6,247,55000,Petrol/Diesel,5,False,0
+177,VOLVO,S90,I6,295,60000,Petrol/Diesel,5,True,40095
+178,KIA,SPORTAGE LX,I4,187,27000,Petrol,5,True,977243
+179,KIA,SPORTAGE EX,I4,187,30000,Petrol,5,True,671855
+180,KIA,SPORTAGE GT-LINE,I4,187,32000,Petrol,5,True,147049
+181,KIA,SPORTAGE SX TURBO,I4,240,36000,Petrol,5,True,461352
+182,KIA,SPORTAGE NIGHTFALL EDITION,I4,187,33000,Petrol,5,True,198479
+183,HONDA,CIVIC TYPE R,I4,315,44000,Petrol,5,False,0
+184,KIA,SPORTAGE PHEV,I4 + ELECTRIC,261,41000,Plug-in Hybrid,5,True,203903
+185,KIA,SPORTAGE 2024(BASE MODEL),I4,187,26000,Petrol,5,True,586081
+186,KIA,SPORTAGE 2024(TOP TRIM),I4,240,38000,Petrol,5,True,159404
+187,KIA,SPORTAGE 2024(BASE AWD),I4,187,29000,Petrol/AWD,5,False,0
+188,KIA,SPORTAGE X-LINE,I4,187,32500,Petrol,5,True,785133
+189,KIA,SPORTAGE 2024(S TRIM),I4,187,28000,Petrol,5,False,0
+190,HONDA,ACCORD,I4,192,29400,Petrol,5,False,0
+191,KIA,SPORTAGE 2024(HYBRID AWD),I4 + ELECTRIC,227,37000,Hybrid,5,False,0
+192,KIA,SPORTAGE 2024(PLUG-IN HYBRID AWD),I4 + ELECTRIC,261,42000,Plug-in Hybrid,5,False,0
+193,KIA,SPORTAGE 2024(X-PRO),I4,187,36000,Petrol,5,True,95234
+194,KIA,SPORTAGE 2024(X-PRO PRESTIGE),I4,187,38000,Petrol,5,False,0
+195,KIA,SPORTAGE 2024(SX TURBO AWD),I4,240,40000,Petrol/AWD,5,False,0
+196,KIA,SPORTAGE 2024(BASE FWD),I4,187,26500,Petrol,5,False,0
+197,HONDA,CR-V,I4,190,30000,Petrol/Hybrid,5,True,120458
+198,HONDA,PILOT,V6,285,40000,Petrol,8,True,399234
+199,HONDA,CIVIC HATCHBACK,I4,180,26350,Petrol,5,True,738456
+200,TOYOTA,CAMRY,V6,301,27000,Petrol/Hybrid,5,False,0
+201,TOYOTA,COROLLA,I4,139,22500,Petrol/Hybrid,5,False,0
+202,TOYOTA,PRIUS,I4,121,26700,Hybrid,5,False,0
+203,TOYOTA,RAV4,I4,203,27100,Petrol/Hybrid,5,True,936052
+204,TOYOTA,HIGHLANDER,V6,295,38400,Petrol/Hybrid,7,False,0
+205,TOYOTA,4RUNNER,V6,270,37400,Petrol,5,False,0
+206,TOYOTA,TACOMA,I4,159,26400,Petrol,5,True,321117
+207,TOYOTA,TUNDRA,V8,381,39900,Petrol,5,False,0
+208,TOYOTA,AVALON,V6,301,41400,Petrol,5,True,411803
+209,TOYOTA,MIRAI,I4,151,52400,Hydrogen,5,True,937320
+210,TOYOTA,SIENNA,V6,245,44150,Petrol/Hybrid,7,True,916532
+211,TOYOTA,VENZA,I4,219,33400,Hybrid,5,True,106421
+212,TOYOTA,HIGHLANDER HYBRID,V6,240,40400,Hybrid,7,True,32739
+213,TOYOTA,LAND CRUISER PRADO,V6,282,49400,Petrol/Diesel,7,True,903645
+214,TOYOTA,TUNDRA HYBRID,V6,344,43400,Hybrid,5,False,0
+215,TOYOTA,YARIS,I4,106,18400,Petrol,5,False,0
+216,TOYOTA,C-HR,I4,144,24400,Petrol/Hybrid,5,True,588682
+217,TOYOTA,BZ4X,ELECTRIC,218,43400,Electric,5,True,387247
+218,TOYOTA,CROWN,HYBRID,236,38400,Hybrid,5,True,640942
+219,TOYOTA,MR2,I4,168,29000,Petrol,2,True,317676
+220,TOYOTA,CELICA,I4,140,25000,Petrol,5,True,10815
+221,HONDA,CITY,I4,119,15400,Petrol/Hybrid,5,True,144963
+222,HONDA,CIVIC,I4,158,20400,Petrol,5,False,0
+223,HYUNDAI,I10,"1.2L,0,160,12.2,0,True,120
+224,HYUNDAI,I20,"1.4L,0,180,10.5,0,True,250
+225,HYUNDAI,ELANTRA,"2.0L,0,200,9.5,0,True,250
+226,MAHINDRA,XUV500,"2.2L,0,180,10.5,0,True,400
+227,MAHINDRA,SCORPIO,"2.2L,0,160,11.2,0,True,280
+228,MAHINDRA,THAR,"2.0L,0,180,10.5,0,True,320
+229,MARUTI SUZUKI,SWIFT,"1.2L,0,160,12.2,0,True,113
+230,MARUTI SUZUKI,DZIRE,"1.2L,0,160,12.2,0,True,113
+231,MARUTI SUZUKI,BREZZA,"1.5L,0,180,11.5,0,True,200
+232,TOYOTA,PRIUS PRIME,"2.0L,0,180,6.7,0,True,220
+233,TOYOTA,GR COROLLA,"1.6L,1618,2,36995.0,0,True,0
+234,TOYOTA,LAND CRUISER 300,"3.3L,0,210,6.8,0,True,650
+235,TOYOTA,TUNDRA I-FORCE MAX,"3.5L,0,180,6.2,0,True,750
+236,TOYOTA,COROLLA HATCHBACK XSE,"2.0L,1987,8,25390.0,0,True,0
+237,TOYOTA,MIRAI,"HYDROGEN FUEL CELL,1,9,49500.0,0,True,0
+238,TOYOTA,HILUX GR SPORT,"2.8L,0,170,10.0,0,True,500
+239,TOYOTA,ALPHARD EXECUTIVE LOUNGE,"2.5L,0,1985,296.0,0,True,0
+240,TOYOTA,FORTUNER GR SPORT,"2.8L,0,175,10.5,0,True,500
+241,TOYOTA,INNOVA HYCROSS,2.0L HYBRID,184,40000,Hybrid,7,False,0
+242,TOYOTA,COASTER,"4.0L,4009,0,70000.0,0,True,0
+243,TOYOTA,URBAN CRUISER TAISOR,"1.5L,1490,11,25000.0,0,True,0
+244,TOYOTA,AYGO X,"1.0L,998,14,18000.0,0,True,0
+245,TOYOTA,HILUX REVO ROCCO,"2.8L,0,175,10.0,0,True,500
+246,TOYOTA,PROACE VERSO ELECTRIC,ELECTRIC MOTOR,136,55000,Electric,7,False,0
+247,TOYOTA,CENTURY SUV,"3.5L,0,200,6.0,0,True,500
+248,TOYOTA,COROLLA SEDAN HYBRID,"1.8L,1798,10,24000.0,0,True,0
+249,TOYOTA,BZ3,ELECTRIC MOTOR,241,35000,Electric,5,True,257839
+250,TOYOTA,GR YARIS,"1.6L,1618,5,45000.0,0,True,0
+251,HYUNDAI,SANTA FE,1.6L PETROL + PLUG IN HYBRID SYSTEM,253,50000,Petrol/Hybrid,7,False,0
+252,HYUNDAI,IONIQ 5,ELECTRIC MOTOR,225,41000,Electric,5,True,651846
+253,HYUNDAI,Santa Cruz,2.5L Turbocharged Inline-4,281,40799,Petrol,5,True,387337
+254,HYUNDAI,Kona,1.6L PETROL,147,20500,Petrol/EV,5,True,900557
+255,HYUNDAI,Elantra,2.0L Inline-4,147,19950,Petrol/Hybrid,5,False,0
+256,Nissan,Urvan,2.5L Turbo Diese,2488,28000,Diesel,15,False,0
+257,HYUNDAI,IONIQ 6,Electric Motor,320,41450,Electric,5,True,679596
+258,HYUNDAI,Tucson,2.5L Inline-4,187,30500,Petrol/Hybrid,5,False,0
+259,HYUNDAI,Palisade,3.8L V6,291,52000,Petrol,7,False,0
+260,HYUNDAI,Sonata,2.5L Inline-4,191,25000,Petrol/Hybrid,5,True,262927
+261,HYUNDAI,Accent,1.6L Inline-4,120,15000,Petrol,5,False,0
+262,HYUNDAI,Venue,1.6L Inline-4,121,18000,Petrol,5,True,236713
+263,HYUNDAI,KONA Electric,Electric Motor,200,40000,Electric,5,False,0
+264,HYUNDAI,Veloster,2.0L Inline-4,275,25000,Petrol,4,False,0
+265,HYUNDAI,NEXO,Electric Motor,161,38000,Hydrogen,5,False,0
+266,HYUNDAI,Ioniq,1.6L Inline-4,139,18000,Hybrid/Electric,5,False,0
+267,HYUNDAI,Genesis,3.8L V6,291,52000,Petrol,5,True,873088
+268,HYUNDAI,Azera,3.3L V6,278,55000,Petrol,5,True,367660
+269,HYUNDAI,Equus,3.3L V6,278,55000,Petrol,5,False,0
+270,HYUNDAI,Tiburon,2.0L Inline-4,160,19000,Petrol,4,False,0
+271,HYUNDAI,Elantra GT,1.6L Turbo GDI 4-cylinder,160,22000,Petrol,5,True,744570
+272,Volkswagen,Golf,1.5L Turbo I4 / Electric,215,23000,Petrol,5,True,844072
+273,Volkswagen,Passat,2.0L Turbo I4,215,25000,Petrol,5,True,35822
+274,Volkswagen,Tiguan,2.0L Turbo I4,190,28505,"Petrol,0,True,0
+275,Volkswagen,Jetta,1.5L Turbo I4,189,21995,Petrol,5,False,0
+276,Volkswagen,Polo,1.0L Turbo I3 / 1.6L Diesel,140,18000,Petrol,5,True,794507
+277,Volkswagen,Arteon,2.0L Turbo I4,215,46000,Petrol,5,False,0
+278,Volkswagen,ID.4,Electric,251,39735,Electric,5,False,0
+279,Volkswagen,Up!,Electric,82,15000,Petrol,4,False,0
+280,Volkswagen,Touareg,3.0L V6 Turbo Diesel / 4.0L V8,365,55000,"Petrol,0,True,0
+281,Volkswagen,Scirocco,2.0L Turbo I4,202,35000,Petrol,4,True,24345
+282,Volkswagen,Beetle,2.0L Turbo I4,157,20000,Petrol,4,True,134673
+283,Volkswagen,Amarok,3.0L V6 Turbo Diesel,210,40000,Diesel,5,False,0
+284,Volkswagen,T-Roc,2.0L Turbo I4,207,30000,Petrol,5,True,21501
+285,Volkswagen,Sharan,2.0L Turbo I4,185,33000,"Petrol,0,True,0
+286,Volkswagen,Caddy,1.5L Turbo I4,126,28000,"Petrol,0,True,0
+287,Nissan,NV1500,4.0L V6,261,33000,Petrol,12,False,0
+288,Volkswagen,Taigo,1.5L Turbo I4,122,24000,Petrol,5,False,0
+289,Volkswagen,California,2.0L Turbo I4,177,70000,Diesel,7,False,0
+290,Volkswagen,ID.3,Electric,204,35000,Electric,5,False,0
+291,Volkswagen,ID. Buzz,Electric,204,59995,Electric,7,False,0
+292,Volkswagen,Golf GTI,2.0L Turbo I4,245,31965,Petrol,5,False,0
+293,Volkswagen,Golf R,2.0L Turbo I4,315,44640,Petrol,5,True,318030
+294,Volkswagen,Passat Alltrack,2.0L Turbo Diesel I4,215,36000,Diesel,5,False,0
+295,Volkswagen,Polo GTI,2.0L Turbo I4,204,28000,Petrol,5,True,85530
+296,Volkswagen,Up! GTI,1.0L Turbo I3,115,20000,Petrol,4,False,0
+297,Volkswagen,T-Cross,1.0L Turbo I3 / 1.5L Turbo I4,122,25000,Petrol,5,True,419004
+298,Volkswagen,ID.5,Electric,236,45000,Electric,5,False,0
+299,Volkswagen,ID. Buzz Cargo,Electric,204,55000,Electric,3,True,372191
+300,Volkswagen,Touareg R,Plug-in Hybrid V6,462,70000,Hybrid,5,False,0
+301,Volkswagen,Multivan,Plug-in Hybrid / Diesel I4,184,50000,"Petrol,0,True,0
+302,Volkswagen,Polo BlueMotion,1.2L Diesel I3,85,22000,Diesel,5,True,752371
+303,Volkswagen,Golf Sportsvan,1.5L Turbo I4,140,30000,Petrol,5,True,703507
+304,Volkswagen,Golf Alltrack,2.0L Turbo Diesel I4,173,35000,Petrol,5,True,389699
+305,Volkswagen,Scirocco R,2.0L Turbo I4,280,40000,Petrol,4,False,0
+306,Volkswagen,Tiguan Allspace,2.0L Turbo I4,207,35000,Petrol,7,False,0
+307,Volkswagen,Arteon 4MOTION,2.0L Turbo I4,255,48000,Petrol,5,True,294395
+308,Volkswagen,ID.4 GTX,Electric AWD,299,50000,Electric,5,False,0
+309,Volkswagen,ID.3 Pro,Electric,204,35000,Electric,5,False,0
+310,Volkswagen,Golf Variant,1.5L Turbo I4 / 2.0L Diesel I4,140,32000,Petrol,5,True,856072
+311,Volkswagen,Crafter,2.0L Turbo Diesel I4,139,40000,Diesel,3,True,519669
+312,Volkswagen,Lupo,1.4L I3 Gas / 1.2L Diesel I3,67,15000,Petrol,4,True,184268
+313,Volkswagen,Corrado,2.9L VR6,190,25000,Petrol,4,False,0
+314,Volkswagen,Phaeton,3.0L V6 Diesel / 6.0L W12 Gas,345,85000,Petrol,5,False,0
+315,Volkswagen,Golf Cabriolet,1.2L I4 Turbo / 2.0L I4 Turbo,157,30000,Petrol,4,True,713572
+316,Volkswagen,Santana,1.5L I4 Gas,110,15000,Petrol,5,False,0
+317,Volkswagen,Polo Vivo,1.4L I4 Gas / 1.6L I4 Gas,95,14000,Petrol,5,False,0
+318,Volkswagen,Karmann Ghia,1.2L I4 Gas,47,25000,Petrol,2,False,0
+319,Volkswagen,Fox,1.2L I4 Gas / 1.4L I4 Gas,65,12000,Petrol,5,True,401538
+320,Volkswagen,Vento,1.6L I4 Gas / Diesel,107,18000,Petrol,5,True,215102
+321,Volkswagen,Golf Electric,Electric,136,33000,Electric,5,False,0
+322,Volkswagen,Bora,1.6L I4 Gas / 1.9L I4 Diesel,125,20000,Petrol,5,False,0
+323,Volkswagen,Teramont,2.0L I4 Turbo / 3.6L V6 Gas,255,32000,Petrol,7,True,693767
+324,Volkswagen,Taos,1.5L I4 Turbo,158,24000,Petrol,5,False,0
+325,Volkswagen,Up! Cabriolet,1.0L I3 Turbo,98,18000,Petrol,4,False,0
+326,Volkswagen,T-Roc Cabriolet,1.0L I3 Turbo / 1.5L I4 Turbo,132,35000,Petrol,4,True,236541
+327,Volkswagen,Passat CC,2.0L I4 Turbo,240,40000,Petrol,5,True,685709
+328,Volkswagen,Transporter,2.0L I4 Turbo Diesel,153,35000,Diesel,9,False,0
+329,Volkswagen,Amarok V6,3.0L V6 Turbo Diesel,231,45000,Diesel,5,True,395539
+330,Volkswagen,ID.2,Electric,170,25000,Electric,5,False,0
+331,Volkswagen,Polo TDI,1.4L I4 Diesel / 1.6L Diesel,90,20000,Diesel,5,False,0
+332,Volkswagen,Golf GTE,Plug-in Hybrid (1.4L I4 Turbo),204,40000,Hybrid,5,False,0
+333,Volkswagen,Touareg V8,4.0L V8 Turbo Diesel,421,70000,Petrol,5,True,562654
+334,Volkswagen,Beetle Dune,1.4L I4 Turbo,150,30000,Petrol,4,False,0
+335,Volkswagen,Passat B8,1.5L I4 Turbo / 2.0L Diesel,215,28000,Petrol,5,True,427101
+336,Volkswagen,ID.4 Pro S,Electric,201,45000,Electric,5,False,0
+337,Volkswagen,Golf Country,1.8L I4 Gas,98,25000,Petrol,5,False,0
+338,Volkswagen,Jetta GLI,2.0L I4 Turbo,228,31000,Petrol,5,True,252481
+339,Volkswagen,Arteon Shooting Brake,2.0L I4 Turbo,235,50000,Petrol,5,True,680132
+340,Volkswagen,T-Cross R-Line,1.0L I3 Turbo / 1.5L I4 Turbo,132,27000,Petrol,5,True,334994
+341,Volkswagen,Golf R32,3.2L VR6,240,40000,Petrol,5,True,8602
+342,Volkswagen,Passat B7,1.6L Diesel / 2.0L I4 Turbo,180,26000,Petrol,5,False,0
+343,Volkswagen,Scirocco 16V,1.8L I4 Gas,137,35000,Petrol,4,False,0
+344,Volkswagen,Polo BlueMotion,1.2L Diesel I3,85,20000,Diesel,5,False,0
+345,Volkswagen,Golf Variant GTD,2.0L Diesel I4,184,38000,Diesel,5,True,446018
+346,Volkswagen,Polo GTI R5,1.6L Turbocharged Rally Engine,272,45000,Petrol,5,True,95048
+347,Volkswagen,ID. Buzz Pro,Electric,204,60000,Electric,7,True,543758
+348,Volkswagen,Jetta Hybrid,1.4L I4 Turbo + Electric Motor,170,28000,Hybrid,5,False,0
+349,Volkswagen,Golf Variant Alltrack,2.0L Diesel I4,175,35000,Petrol,5,True,402480
+350,Volkswagen,Volkswagen XL1,Plug-in Hybrid (0.8L I2 Diesel),68,150000,Hybrid,2,True,569586
+351,Volkswagen,Golf TDI,2.0L Diesel I4,167,28000,Diesel,5,False,0
+352,Volkswagen,Passat Variant,1.5L I4 Turbo / 2.0L Diesel,195,30000,Petrol,5,True,122632
+353,Volkswagen,Polo GTI Clubsport,2.0L I4 Turbo,300,30000,Petrol,5,False,0
+354,Volkswagen,ID.3 GTX,Electric,299,45000,Electric,5,True,477776
+355,Volkswagen,Arteon R-Line,2.0L I4 Turbo,235,50000,Petrol,5,True,476265
+356,Volkswagen,Golf TGI,1.5L I4 CNG,130,30000,Petrol,5,True,97429
+357,Volkswagen,Scirocco GTS,2.0L I4 Turbo,220,35000,Petrol,4,True,337385
+358,Volkswagen,Caddy Maxi,2.0L Diesel I4,136,25000,Diesel,7,False,0
+359,Volkswagen,Volkswagen Lupo 3L,1.2L Diesel I3,61,20000,Diesel,4,False,0
+360,Volkswagen,Polo Beats,1.0L I3 Turbo,95,22000,Petrol,5,False,0
+361,Volkswagen,Passat Hybrid,1.4L I4 Turbo + Electric Motor,215,32000,Hybrid,5,False,0
+362,Volkswagen,Golf TCR,2.0L I4 Turbo,290,40000,Petrol,5,False,0
+363,Volkswagen,Tiguan R-Line,2.0L I4 Turbo,210,45000,Petrol,5,False,0
+364,Volkswagen,Sharan Business,2.0L Diesel I4,167,35000,Diesel,7,True,264854
+365,Volkswagen,ID. Buzz Cargo Pro,Electric,204,55000,Electric,2,False,0
+366,Volkswagen,Arteon 280 TSI,2.0L I4 Turbo,280,50000,Petrol,5,False,0
+367,Volkswagen,Jetta GLI 35th,2.0L I4 Turbo,228,31000,Petrol,5,False,0
+368,Volkswagen,Beetle Final Edition,2.0L I4 Turbo,174,25000,Petrol,4,True,521189
+369,Volkswagen,Golf Variant TDI,2.0L Diesel I4,167,30000,Diesel,5,True,72562
+370,Volkswagen,Golf 4MOTION,2.0L Diesel I4,167,40000,Petrol,5,True,446328
+371,Volkswagen,Jetta SportWagen,1.4L I4 Turbo / 2.0L Diesel I4,148,27000,Petrol,5,False,0
+372,Volkswagen,Polo GTI Plus,2.0L I4 Turbo,207,30000,Petrol,5,True,931055
+373,Volkswagen,Touareg V6,3.0L V6 Turbo Diesel / Gasoline,285,60000,Petrol,5,True,320419
+374,Volkswagen,Tiguan eHybrid,1.4L I4 Turbo + Electric Motor,245,42000,Hybrid,5,True,331110
+375,Volkswagen,Up! e-up!,Electric,83,23000,Electric,4,True,833610
+376,Volkswagen,Amarok V8,4.0L V8 Turbo Diesel,325,70000,Diesel,5,True,835732
+377,Volkswagen,Golf R Cabriolet,2.0L I4 Turbo,265,45000,Petrol,4,True,569126
+378,Volkswagen,Passat Alltrack TDI,2.0L Diesel I4,190,40000,Diesel,5,False,0
+379,Volkswagen,ID. Buzz Cargo EV,Electric,204,55000,Electric,2,True,9004
+380,Nissan,Versa,1.6L Inline-4,122,16700,Petrol,5,False,0
+381,Nissan,Micra,1.0L Turbocharged Inline-3,100,15500,Petrol,5,False,0
+382,Nissan,Patrol Platinum,5.6L V8,400,77000,Petrol,7,True,701000
+383,Nissan,Qashqai,1.3L Turbocharged Inline-4,156,26000,Petrol,5,False,0
+384,Nissan,Murano,3.5L V6,260,39000,Petrol,5,True,117953
+385,Nissan,Maxima Platinum,3.5L V6,300,45000,Petrol,5,False,0
+386,Nissan,Armada,5.6L V8,400,51000,Petrol,8,False,0
+387,Nissan,Kicks,1.6L Inline-4,122,20000,Petrol,5,True,621993
+388,Nissan,X-Trail,1.5L Turbocharged Inline-3,201,29000,Hybrid,5,False,0
+389,Nissan,Z (Fairlady Z),3.0L Twin-Turbo V6,400,40000,Petrol,2,False,0
+390,Nissan,Almera,1.0L Turbocharged Inline-3,100,14500,Petrol,5,False,0
+391,Nissan,Sylphy,1.8L Inline-4,137,18000,Petrol,5,True,822058
+392,Nissan,Note,1.2L Inline-3 Hybrid,109,16000,Hybrid,5,True,737151
+393,Nissan,Sunny,1.6L Inline-4,118,15000,Petrol,5,True,948435
+394,Nissan,Cube,1.8L Inline-4,122,14500,Petrol,5,False,0
+395,Nissan,Juke,1.0L Turbocharged Inline-3,117,25000,Petrol,5,False,0
+396,Nissan,Terrano,1.5L Inline-4 Diesel,110,15500,Diesel,5,True,388064
+397,Nissan,Magnite,1.0L Turbocharged Inline-3,100,12000,Petrol,5,True,216985
+398,Nissan,Xterra,4.0L V6,261,35000,Petrol,7,False,0
+399,Nissan,Patrol,5.6L V8,400,77000,Petrol,7,False,0
+400,Nissan,GT-R NISMO,3.8L Twin-Turbo V6,600,220000,Petrol,2,True,830189
+401,Nissan,370Z Roadster,3.7L V6,332,41820,Petrol,2,True,505147
+402,Nissan,Ariya,Dual Electric Motors,389,58950,Electric,5,False,0
+403,Nissan,Patrol Royale,5.6L V8,400,85000,Petrol,7,False,0
+404,Nissan,Infiniti QX80*,5.6L V8,400,70600,Petrol,7,False,0
+405,Nissan,Tiida,1.6L Inline-4,126,14500,Petrol,5,False,0
+406,Nissan,Pulsar,1.2L Turbocharged Inline-4,115,19000,Petrol,5,True,893673
+407,Nissan,Latio,1.5L Inline-4,102,13000,Petrol,5,True,406268
+408,Nissan,Bluebird Sylphy,2.0L Inline-4,133,18500,Petrol,5,False,0
+409,Nissan,March,1.2L Inline-3,79,12000,Petrol,5,True,762519
+410,Nissan,Rogue Sport,2.0L Inline-4,141,24960,Petrol,5,True,546161
+411,Nissan,X-Trail Hybrid,2.0L Inline-4 Hybrid,179,28500,Hybrid,5,False,0
+412,Nissan,Pathfinder Rock Creek,3.5L V6,284,42820,Petrol,7,False,0
+413,Nissan,Armada Platinum,5.6L V8,400,65300,Petrol,8,True,771096
+414,Nissan,Terrano XL,1.6L Inline-4,104,14000,Petrol,5,False,0
+415,Nissan,GT-R50 by Italdesign,3.8L Twin-Turbo V6,720,1100000,Petrol,2,True,772008
+416,Nissan,370Z NISMO,3.7L V6,350,45790,Petrol,2,False,0
+417,Nissan,Ariya E-4ORCE,Dual Electric Motors,389,60000,Electric,5,False,0
+418,Nissan,Patrol NISMO,5.6L V8,428,105000,Petrol,7,False,0
+419,Nissan,Infiniti Q60*,3.0L V6 Twin-Turbo,300,41750,Petrol,4,True,854544
+420,Nissan,Primera,2.0L Inline-4,140,20000,Petrol,5,True,216948
+421,Nissan,Skyline,3.0L V6 Twin-Turbo,400,50000,Petrol,5,False,0
+422,Nissan,Cedric,2.0L Inline-6,150,22000,Petrol,5,True,587350
+423,Nissan,Gloria,2.5L V6,210,30000,Petrol,5,True,267642
+424,Nissan,Stanza,1.8L Inline-4,120,18500,Petrol,5,False,0
+425,Nissan,Patrol Super Safari,4.8L Inline-6,280,55000,Petrol,7,True,98132
+426,Nissan,Pathfinder Hybrid,2.5L Inline-4 Hybrid,250,42500,Hybrid,7,False,0
+427,Nissan,X-Terra Pro-4X,2.5L Inline-4,190,40000,Petrol,7,False,0
+428,Nissan,Rogue Platinum,1.5L Turbo Inline-3,201,38000,Petrol,5,False,0
+429,Nissan,Qashqai Tekna,1.3L Turbo Hybrid Inline-4,158,36000,Hybrid,5,True,990570
+430,Nissan,GT-R V-Spec,3.8L Twin-Turbo V6,600,175000,Petrol,2,False,0
+431,Nissan,Skyline NISMO,3.0L Twin-Turbo V6,420,55000,Petrol,5,True,985934
+432,Nissan,Ariya Lounge Edition,Dual Electric Motors,389,63000,Electric,5,False,0
+433,Nissan,Patrol Titanium,5.6L V8,428,98000,Petrol,7,True,67707
+434,Nissan,Infiniti FX50*,5.0L V8,390,61750,Petrol,5,True,698923
+435,Nissan,Avenir,2.0L Inline-4,140,20000,Petrol,5,True,165427
+436,Nissan,Wingroad,1.8L Inline-4,125,18000,Petrol,5,False,0
+437,Nissan,Presea,1.8L Inline-4,115,17500,Petrol,5,True,428569
+438,Nissan,Leopard,3.0L V6,210,32000,Petrol,5,True,619836
+439,Nissan,Sunny NISMO Edition,1.6L Turbo Inline-4,190,24000,Petrol,5,False,0
+440,Nissan,Paladin,2.4L Inline-4,150,20000,Petrol,5,True,804523
+441,Nissan,Hardbody SUV,2.5L Inline-4,158,18500,Petrol,5,True,434990
+442,Nissan,Patrol Desert Edition,5.6L V8,428,95000,Petrol,7,False,0
+443,Nissan,Pathfinder Armada,5.6L V8,400,60000,Petrol,7,True,469746
+444,Nissan,Rogue Midnight Edition,1.5L Turbo Inline-3,201,39000,Petrol,5,False,0
+445,Nissan,GT-R Black Edition,3.8L Twin-Turbo V6,600,185000,Petrol,2,True,870075
+446,Nissan,Fairlady Z Heritage,3.0L Twin-Turbo V6,400,48000,Petrol,2,False,0
+447,Nissan,Skyline GT-R R34,2.6L Twin-Turbo Inline-6,276,70000,Petrol,4,True,694943
+448,Nissan,Ariya Premiere,Dual Electric Motors,389,67000,Electric,5,False,0
+449,Nissan,Infiniti QX55*,2.0L VC-Turbo Inline-4,268,50000,Petrol,5,False,0
+450,Nissan,NV350 Caravan,2.5L Inline-4 Diesel,129,28000,Diesel,8,True,813835
+451,Nissan,Navara,2.3L Inline-4 Diesel,190,32000,Diesel,5,False,0
+452,Nissan,Titan XD,5.6L V8,400,55000,Petrol,6,False,0
+453,Nissan,Evalia,1.5L Inline-4 Diesel,85,25000,Diesel,7,False,0
+454,Nissan,Cabstar,2.5L Inline-4 Diesel,130,27000,Diesel,3,False,0
+455,Nissan,Cherry,1.4L Inline-4,67,14000,Petrol,5,True,577758
+456,Nissan,Laurel,2.8L Inline-6 Diesel,94,22000,Diesel,5,True,650497
+457,Nissan,Silvia,2.0L Turbo Inline-4,247,45000,Petrol,4,True,521925
+458,Nissan,NX Coupe,2.0L Inline-4,140,22000,Petrol,4,False,0
+459,Nissan,AD Wagon,1.5L Inline-4,105,16000,Petrol,5,True,837817
+460,Nissan,Patrol Super Safari Y61,4.8L Inline-6,280,58000,Petrol,7,False,0
+461,Nissan,Pathfinder Rock Creek Edition,3.5L V6,284,44000,Petrol,7,False,0
+462,Nissan,Terrano II,2.7L Inline-4 Diesel,125,28000,Diesel,5,False,0
+463,Nissan,Murano CrossCabriolet,3.5L V6,260,47000,Petrol,4,False,0
+464,Nissan,X-Trail Tekna,1.5L Turbo Hybrid,204,43000,Hybrid,5,True,151989
+465,Nissan,GT-R LM NISMO,3.0L Twin-Turbo V6 Hybrid,500,600000,Hybrid,2,False,0
+466,Nissan,Skyline 400R,3.0L Twin-Turbo V6,400,70000,Petrol,5,True,859474
+467,Nissan,Infiniti G37*,3.7L V6,328,42000,Petrol,5,True,398917
+468,Nissan,Patrol Black Edition,5.6L V8,400,85000,Petrol,7,True,268812
+469,Nissan,Ariya Empower+,Dual Electric Motors,389,68000,Electric,5,True,562727
+470,Nissan,Datsun 510 (Classic),1.6L Inline-4,96,25000,Petrol,4,True,372355
+471,Nissan,200SX,2.0L Turbo Inline-4,200,30000,Petrol,4,True,796227
+472,Nissan,300ZX,3.0L Twin-Turbo V6,300,50000,Petrol,4,False,0
+473,Nissan,R390 GT1 Road Car,3.5L Twin-Turbo V8,550,1000000,Petrol,2,True,616130
+474,Nissan,Figaro,1.0L Turbo Inline-4,76,20000,Petrol,4,True,633876
+475,Nissan,Hardbody Truck,2.4L Inline-4,134,25000,Petrol,5,False,0
+476,Nissan,Atlas,3.0L Inline-4 Diesel,130,35000,Diesel,3,True,453962
+477,Nissan,Clipper,660cc Inline-3,48,10000,Petrol,4,True,476338
+478,Nissan,NV200,2.0L Inline-4,131,28000,Petrol,7,False,0
+479,Nissan,Violet,1.8L Inline-4,85,18000,Petrol,5,False,0
+480,Nissan,Bluebird Z,2.0L Inline-4,140,23000,Petrol,5,False,0
+481,Nissan,Stanza Wagon,2.4L Inline-4,138,22000,Petrol,7,True,782557
+482,Nissan,180SX,2.0L Turbo Inline-4,205,35000,Petrol,4,True,268407
+483,Nissan,Sunny California,1.6L Inline-4,110,18000,Petrol,5,True,256829
+484,Nissan,Patrol Warrior,5.6L V8,428,95000,Petrol,7,False,0
+485,Nissan,Pathfinder Armada Platinum,5.6L V8,400,70000,Petrol,7,False,0
+486,Nissan,Rogue Sport SL,2.0L Inline-4,141,32000,Petrol,5,False,0
+487,Nissan,X-Trail Platinum Edition,1.5L Turbo Hybrid,204,46000,Hybrid,5,False,0
+488,Nissan,Qashqai e-Power,1.5L Hybrid,187,40000,Hybrid,5,True,551785
+489,Nissan,GT-R Egoist,3.8L Twin-Turbo V6,565,220000,Petrol,2,True,449554
+490,Nissan,Infiniti M45*,4.5L V8,325,50000,Petrol,5,True,757033
+491,Nissan,Skyline 50th Anniversary,3.0L Twin-Turbo V6,400,75000,Petrol,5,False,0
+492,Nissan,Ariya Dual Motor AWD,Dual Electric Motors,389,70000,Electric,5,False,0
+493,Nissan,Patrol Legend Edition,5.6L V8,428,95000,Petrol,7,True,861137
+494,Nissan,Datsun 240Z (Classic),2.4L Inline-6,151,45000,Petrol,2,False,0
+495,Nissan,100NX,1.6L Inline-4,110,18000,Petrol,4,False,0
+496,Nissan,Cedric Special Edition,3.0L V6,250,60000,Petrol,5,True,996813
+497,Nissan,300ZX Turbo,3.0L Twin-Turbo V6,300,55000,Petrol,4,True,834544
+498,Nissan,Silvia S15 Spec-R,2.0L Turbo Inline-4,250,35000,Petrol,4,True,397594
+499,Nissan,NV400,2.3L Inline-4 Diesel,135,40000,Diesel,3,False,0
+500,Nissan,Titan Warrior,5.6L V8,400,55000,Petrol,5,False,0
+501,Nissan,Caravan Coach,2.5L Inline-4 Diesel,127,30000,Diesel,7,True,121545
+502,Nissan,Serena e-Power,1.2L Hybrid,134,35000,Hybrid,7,True,724882
+503,Nissan,Elgrand,3.5L V6,280,50000,Petrol,7,True,878874
+504,Nissan,Datsun 510,1.6L Inline-4,96,25000,Petrol,4,True,325684
+505,Nissan,Prairie,2.0L Inline-4,120,18000,Petrol,5,True,319909
+506,Nissan,Pulsar GTI-R,2.0L Turbo Inline-4,230,30000,Petrol,5,False,0
+507,Nissan,Almera Tino,1.8L Inline-4,114,15000,Petrol,5,True,866242
+508,Nissan,Lucino,1.6L Inline-4,115,12000,Petrol,5,True,662135
+509,Nissan,Rasheen,1.5L Inline-4,105,10000,Petrol,5,False,0
+510,Nissan,Mistral,2.7L Turbo Diesel,125,25000,Diesel,7,True,930893
+511,Nissan,Patrol Y60,4.2L Inline-6,155,45000,Diesel,7,False,0
+512,Nissan,X-Trail GT,2.0L Turbo Inline-4,280,38000,Petrol,5,False,0
+513,Nissan,Terrano Regulus,3.3L V6,170,28000,Petrol,5,False,0
+514,Nissan,President,4.5L V8,280,70000,Petrol,5,True,11847
+515,Nissan,Cima,4.1L V8,270,60000,Petrol,5,True,353666
+516,Nissan,Leopard J. Ferie,3.0L V6 Turbo,255,45000,Petrol,5,True,159377
+517,Nissan,Gloria Gran Turismo,3.0L V6 Turbo,255,50000,Petrol,5,False,0
+518,Nissan,Infiniti Q45*,4.5L V8,340,50000,Petrol,5,False,0
+519,Nissan,Datsun 240Z,2.4L Inline-6,151,45000,Petrol,2,True,604075
+520,Nissan,280ZX,2.8L Inline-6,145,35000,Petrol,2,False,0
+521,Nissan,Silvia S13,1.8L Turbo Inline-4,175,20000,Petrol,4,True,156085
+522,Nissan,200SX,2.0L Turbo Inline-4,200,25000,Petrol,4,False,0
+523,Nissan,NX Coupe,1.8L Inline-4,140,18000,Petrol,4,True,248275
+524,Nissan,NV2500,4.0L V6,261,36000,Petrol,2,True,24251
+525,Nissan,NV3500,5.6L V8,375,42000,Petrol,2,False,0
+526,Nissan,NT400 Cabstar,3.0L Inline-4 Diesel,150,35000,Diesel,3,False,0
+527,Porsche,Panamera,2.9L V6 Twin Turbo,330,88000,Petrol,4,False,0
+528,Porsche,Panamera 4,2.9L V6 Twin Turbo,330,92000,Petrol,4,True,164837
+529,Porsche,Panamera 4S,2.9L V6 Twin Turbo,440,105000,Petrol,4,False,0
+530,Porsche,Panamera Turbo S,4.0L V8 Twin Turbo,620,180000,Petrol,4,True,730777
+531,Porsche,Panamera GTS,4.0L V8 Twin Turbo,473,130000,Petrol,4,False,0
+532,Porsche,Panamera Platinum Edition,2.9L V6 Twin Turbo,330,102000,Petrol,4,True,201651
+533,Porsche,Panamera E-Hybrid,2.9L V6 + Electric Motor,455,115000,Hybrid (Petrol),4,True,930359
+534,Porsche,Panamera 4 E-Hybrid Sport Turismo,2.9L V6 + Electric Motor,455,120000,Hybrid (Petrol),4,True,477659
+535,Porsche,Panamera Turbo S E-Hybrid,4.0L V8 + Electric Motor,690,190000,Hybrid (Petrol),4,True,314053
+536,Porsche,Panamera 4 Executive,2.9L V6 Twin Turbo,330,95000,Petrol,4,False,0
+537,Porsche,Cayenne,3.0L V6 Turbo,335,80000,Petrol,5,True,259805
+538,Porsche,Cayenne Coupe,3.0L V6 Turbo,335,85000,Petrol,5,True,235451
+539,Porsche,Cayenne S,2.9L V6 Twin Turbo,434,95000,Petrol,5,False,0
+540,Porsche,Cayenne Turbo,4.0L V8 Twin Turbo,541,130000,Petrol,5,True,575714
+541,Porsche,Cayenne GTS,4.0L V8 Twin Turbo,453,110000,Petrol,5,True,290423
+542,Porsche,Cayenne Turbo S E-Hybrid,4.0L V8 + Electric Motor,670,170000,Hybrid (Petrol),5,False,0
+543,Porsche,Macan,2.0L I4 Turbo,261,60000,Petrol,5,False,0
+544,Porsche,Macan S,2.9L V6 Twin Turbo,375,75000,Petrol,5,True,508751
+545,Porsche,Macan GTS,2.9L V6 Twin Turbo,434,85000,Petrol,5,True,635658
+546,Porsche,Macan T,2.0L I4 Turbo,261,65000,Petrol,5,False,0
+547,Porsche,911 Carrera,3.0L Flat-6 Twin Turbo,379,110000,Petrol,4,True,567566
+548,Porsche,911 Carrera S,3.0L Twin-Turbo Flat-6,443,131300,Petrol,4,True,434395
+549,Porsche,911 Carrera 4,3.0L Twin-Turbo Flat-6,379,106500,Petrol,4,True,52938
+550,Porsche,911 Carrera 4S,3.0L Twin-Turbo Flat-6,443,113300,Petrol,4,False,0
+551,Porsche,911 Targa 4,3.0L Twin-Turbo Flat-6,379,121300,Petrol,4,False,0
+552,Porsche,911 Turbo,3.8L Twin-Turbo Flat-6,572,197200,Petrol,4,False,0
+553,Porsche,911 Turbo S,3.8L Twin-Turbo Flat-6,640,230400,Petrol,4,True,358779
+554,Porsche,911 GT3,4.0L Naturally Aspirated Flat-6,502,161100,Petrol,2,True,987770
+555,Porsche,911 GT3 RS,4.0L Naturally Aspirated Flat-6,518,241300,Petrol,2,True,353006
+556,Porsche,911 Dakar,3.0L Twin-Turbo Flat-6,473,222000,Petrol,2,False,0
+557,Porsche,Taycan,Dual Electric Motors,402,86700,Electric,4,True,118201
+558,Porsche,Taycan 4S,Dual Electric Motors,522,103800,Electric,4,False,0
+559,Porsche,Taycan Turbo,Dual Electric Motors,670,150900,Electric,4,False,0
+560,Porsche,Taycan Turbo S,Dual Electric Motors,750,185000,Electric,4,True,347508
+561,Porsche,Taycan GTS,Dual Electric Motors,590,132750,Electric,4,True,634727
+562,Porsche,Taycan Cross Turismo,Dual Electric Motors,469,97700,Electric,5,False,0
+563,Porsche,Taycan Sport Turismo,Dual Electric Motors,509,104000,Electric,5,True,109231
+564,Porsche,718 Cayman,2.0L Turbocharged Flat-4,300,63400,Petrol,2,False,0
+565,Porsche,718 Cayman S,2.5L Turbocharged Flat-4,350,75400,Petrol,2,True,565270
+566,Porsche,718 Cayman GT4,4.0L Naturally Aspirated Flat-6,414,100200,Petrol,2,True,571341
+567,Porsche,718 Cayman GT4 RS,4.0L Naturally Aspirated Flat-6,493,141700,Petrol,2,True,640396
+568,Porsche,718 Boxster,2.0L Turbo Flat-4,300,65500,Petrol,2,False,0
+569,Porsche,718 Boxster T,2.0L Turbo Flat-4,300,69600,Petrol,2,False,0
+570,Porsche,718 Boxster GTS,4.0L Naturally Aspirated Flat-6,394,90300,Petrol,2,False,0
+571,Porsche,718 Spyder,4.0L Naturally Aspirated Flat-6,414,98300,Petrol,2,False,0
+572,Porsche,Panamera Base,2.9L Twin-Turbo V6,325,92300,Petrol,4,True,881946
+573,Porsche,Panamera 4 E-Hybrid,2.9L Twin-Turbo V6 + Electric Motor,462,113300,Hybrid,4,False,0
+574,Porsche,Panamera 4 Sport Turismo,2.9L Twin-Turbo V6,325,101400,Petrol,4,False,0
+575,Porsche,Panamera Turbo S E-Hybrid Sport Turismo,4.0L Twin-Turbo V8 + Electric Motor,690,200200,Hybrid,4,False,0
+576,Porsche,Panamera 4S E-Hybrid Executive,2.9L Twin-Turbo V6 + Electric Motor,560,128900,Hybrid,4,True,778697
+577,Porsche,Panamera Platinum Edition,2.9L Twin-Turbo V6,325,98300,Petrol,4,False,0
+578,Porsche,Panamera GTS Sport Turismo,4.0L Twin-Turbo V8,473,136900,Petrol,4,False,0
+579,Porsche,Panamera Turbo Executive,4.0L Twin-Turbo V8,550,175200,Petrol,4,False,0
+580,Porsche,Panamera Turbo S Exclusive Series,4.0L Twin-Turbo V8,570,290000,Petrol,4,True,707914
+581,Porsche,Panamera 4S,2.9L Twin-Turbo V6,443,105000,Petrol,4,False,0
+582,Porsche,Macan Base,2.0L Turbo Inline-4,265,58000,Petrol,5,True,813789
+583,Porsche,Macan T,2.0L Turbo Inline-4,265,63000,Petrol,5,False,0
+584,Porsche,Macan S,2.9L Twin-Turbo V6,375,70400,Petrol,5,False,0
+585,Porsche,Macan GTS,2.9L Twin-Turbo V6,434,82900,Petrol,5,True,890179
+586,Porsche,Macan EV,Dual Electric Motors,603,85000,Electric,5,False,0
+587,Porsche,Cayenne Base,3.0L Turbocharged V6,335,72200,Petrol,5,False,0
+588,Porsche,Cayenne E-Hybrid,3.0L V6 + Electric Motor,455,91000,Hybrid,5,False,0
+589,Porsche,Cayenne S Coupe,2.9L Twin-Turbo V6,434,94300,Petrol,4,True,335079
+590,Porsche,Cayenne Turbo GT,4.0L Twin-Turbo V8,631,182150,Petrol,4,False,0
+591,Porsche,Cayenne Platinum Edition,3.0L Turbocharged V6,335,79000,Petrol,5,False,0
+592,Porsche,Cayenne Turbo S E-Hybrid Coupe,4.0L Twin-Turbo V8 + Electric Motor,670,167800,Hybrid,4,True,813738
+593,Porsche,Cayenne GTS Coupe,4.0L Twin-Turbo V8,453,111200,Petrol,4,False,0
+594,Porsche,Cayenne Diesel (Regional Markets),3.0L Turbo Diesel V6,262,69000,Diesel,5,True,544903
+595,Porsche,Cayenne S Hybrid,3.0L V6 + Electric Motor,380,85500,Hybrid,5,True,24193
+596,Porsche,Cayenne Coupe Turbo E-Hybrid,4.0L Twin-Turbo V8 + Electric Motor,728,182900,Hybrid,4,True,749209
+597,Porsche,Taycan Base,Dual Electric Motors,321,86700,Electric,4,False,0
+598,Cadillac,CT4,2.0L Turbo Inline-4 Gasoline,237,34395,Petrol,5,False,0
+599,Cadillac,CT4-V,2.7L Turbo Inline-4 Gasoline,325,46595,Petrol,5,False,0
+600,Cadillac,CT5,2.0L Turbo Inline-4 Gasoline,237,38195,Petrol,5,False,0
+601,Cadillac,CT5-V,3.0L Twin-Turbo V6 Gasoline,360,50995,Petrol,5,False,0
+602,Porsche,Taycan Cross Turismo 4,Dual Electric Motors,375,94800,Electric,4,True,745745
+603,Porsche,Taycan Cross Turismo GTS,Dual Electric Motors,590,139400,Electric,4,True,472833
+604,Porsche,Taycan Sport Turismo Base,Dual Electric Motors,375,90500,Electric,4,False,0
+605,Porsche,Taycan Sport Turismo GTS,Dual Electric Motors,590,136700,Electric,4,False,0
+606,Porsche,Taycan Turbo S Cross Turismo,Dual Electric Motors,750,190000,Electric,4,True,235137
+607,Porsche,911 Carrera Base,3.0L Twin-Turbo Flat-6,379,106100,Petrol,4,True,591940
+608,Porsche,911 Carrera S Cabriolet,3.0L Twin-Turbo Flat-6,443,129900,Petrol,4,True,351682
+609,Porsche,911 Carrera 4,3.0L Twin-Turbo Flat-6,379,113300,Petrol,4,True,45536
+610,Porsche,911 Carrera 4 GTS,3.0L Twin-Turbo Flat-6,473,137000,Petrol,4,True,879553
+611,Porsche,911 Targa 4 GTS,3.0L Twin-Turbo Flat-6,473,157300,Petrol,4,True,511117
+612,Porsche,911 Turbo Cabriolet,3.8L Twin-Turbo Flat-6,572,184100,Petrol,4,True,909242
+613,Porsche,911 Turbo S Coupe,3.8L Twin-Turbo Flat-6,640,207000,Petrol,4,False,0
+614,Porsche,911 GT3 Touring,4.0L Naturally Aspirated Flat-6,502,170000,Petrol,2,True,628387
+615,Porsche,911 GT3 RS Clubsport,4.0L Naturally Aspirated Flat-6,525,223800,Petrol,2,False,0
+616,Porsche,911 Dakar Limited Edition,3.0L Twin-Turbo Flat-6,473,222000,Petrol,4,False,0
+617,Porsche,911 Carrera GTS Lightweight,3.0L Twin-Turbo Flat-6,473,145300,Petrol,4,True,881910
+618,Porsche,911 Targa 4 Lightweight,3.0L Twin-Turbo Flat-6,379,135500,Petrol,4,False,0
+619,Porsche,911 Turbo Exclusive Series,3.8L Twin-Turbo Flat-6,607,258000,Petrol,4,True,780556
+620,Porsche,911 GT2 RS,3.8L Twin-Turbo Flat-6,700,293200,Petrol,2,True,539579
+621,Porsche,911 GT3 Cup,4.0L Naturally Aspirated Flat-6,510,245000,Petrol,1,False,0
+622,Porsche,911 GT4 RS,4.0L Naturally Aspirated Flat-6,500,222000,Petrol,2,True,853811
+623,Porsche,911 RSR (Motorsport Edition),4.2L Naturally Aspirated Flat-6,515,750000,Petrol,1,True,423646
+624,Porsche,911 Sport Turismo,3.0L Twin-Turbo Flat-6,379,116000,Petrol,4,False,0
+625,Porsche,911 Turbo Cabriolet Lightweight,3.8L Twin-Turbo Flat-6,572,191300,Petrol,4,True,998089
+626,Porsche,911 Dakar Sport,3.0L Twin-Turbo Flat-6,473,233000,Petrol,4,False,0
+627,Tata Motors,Tiago,1.2L Revotron 3-cylinder Petrol,86,8200,Petrol,5,False,0
+628,Tata Motors,Tiago EV,Permanent Magnet Synchronous,74,11000,Electric,5,True,869487
+629,Tata Motors,Altroz,1.2L Revotron Petrol / 1.5L Diesel,87,10400,Petrol/Diesel,5,False,0
+630,Tata Motors,Altroz DCA,1.2L Revotron 3-cylinder Petrol,86,11300,Petrol,5,False,0
+631,Tata Motors,Altroz iTurbo,1.2L Turbocharged Petrol,110,12000,Petrol,5,False,0
+632,Tata Motors,Altroz CNG,1.2L Revotron Bi-Fuel,86,11800,CNG/Petrol,5,False,0
+633,Tata Motors,Tiago NRG,1.2L Revotron 3-cylinder Petrol,86,9200,Petrol,5,True,323334
+634,Tata Motors,Nano GenX,624cc MPFI,37,4000,Petrol,4,True,855614
+635,Tata Motors,Indica eV2,1.4L CR4 Diesel,70,6200,Diesel,5,True,738518
+636,Tata Motors,Indica V2 Xeta,1.2L MPFI Petrol,65,5000,Petrol,5,False,0
+637,Tata Motors,Tigor,1.2L Revotron 3-cylinder Petrol,86,9400,Petrol,5,False,0
+638,Tata Motors,Tigor EV,Permanent Magnet Synchronous,74,14500,Electric,5,True,611260
+639,Tata Motors,Zest,1.3L Quadrajet Diesel / 1.2L Revotron Petrol,82,8700,Diesel/Petrol,5,False,0
+640,Tata Motors,Indigo eCS,1.4L CR4 Diesel,70,6500,Diesel,5,False,0
+641,Cadillac,Escalade,6.2L V8 Gasoline,420,79295,Petrol,7,True,112871
+642,Tata Motors,Indigo Marina,1.4L CR4 Diesel / 1.4L Petrol,77,8300,Diesel/Petrol,5,False,0
+643,Tata Motors,Manza,1.3L Quadrajet Diesel / 1.4L Petrol,82,9000,Diesel/Petrol,5,True,53618
+644,Tata Motors,Indigo LX,1.4L CR4 Diesel,70,7000,Diesel,5,False,0
+645,Tata Motors,Indigo GLX,1.4L MPFI Petrol,85,7200,Petrol,5,True,95954
+646,Cadillac,Escalade ESV,6.2L V8 Gasoline,420,82295,Petrol,7,True,600809
+647,Tata Motors,Nexon,1.2L Turbo Petrol / 1.5L Diesel,114,14000,Petrol/Diesel,5,True,105769
+648,Tata Motors,Nexon EV Max,Permanent Magnet Synchronous,143,25000,Electric,5,False,0
+649,Tata Motors,Harrier,2.0L Kryotec Turbocharged Diesel,168,23000,Diesel,5,True,866902
+650,Tata Motors,Safari,2.0L Kryotec Turbocharged Diesel,168,25500,Diesel,7,False,0
+651,Tata Motors,Punch,1.2L Revotron Petrol,86,10500,Petrol,5,True,361311
+652,Tata Motors,Hexa,2.2L Varicor Diesel,154,20000,Diesel,7,True,864904
+653,Tata Motors,Aria,2.2L Dicor Diesel,138,19000,Diesel,7,False,0
+654,Tata Motors,Sumo Gold,3.0L CR4 Diesel,85,15000,Diesel,7,False,0
+655,Tata Motors,Sumo Grande,2.2L Dicor Diesel,118,16500,Diesel,7,True,971084
+656,Tata Motors,Nexon EV Prime,Permanent Magnet Synchronous,129,22000,Electric,5,True,688921
+657,Tesla,Model S,Dual Electric Motors,670,88490,Electric,5,False,0
+658,Tesla,Model S Plaid,Tri Electric Motors,1020,108490,Electric,5,False,0
+659,Tesla,Model 3,Single Electric Motor (RWD),283,40240,Electric,5,False,0
+660,Tesla,Model 3 Performance,Dual Electric Motors (AWD),450,53240,Electric,5,True,719305
+661,Tesla,Model X,Dual Electric Motors (AWD),670,98490,Electric,7,False,0
+662,Tesla,Model X Plaid,Tri Electric Motors,1020,113490,Electric,6,True,71467
+663,Tesla,Model Y,Single Electric Motor (RWD),346,47490,Electric,5,True,403774
+664,Tesla,Model Y Long Range,Dual Electric Motors (AWD),384,50490,Electric,5,True,36113
+665,Tesla,Cybertruck,Tri Electric Motors,800,69900,Electric,6,True,693171
+666,Tesla,Roadster 2,Quad Electric Motors,1288,200000,Electric,4,True,338403
+667,Jeep,Wrangler,3.6L V6 Pentastar Gasoline,285,35195,Petrol,4,True,931677
+668,Jeep,Wrangler Rubicon,2.0L Turbo I4 Gasoline,270,42100,Petrol,4,True,786280
+669,Jeep,Grand Cherokee,3.6L V6 Pentastar Gasoline,293,41530,Petrol,5,False,0
+670,Jeep,Grand Cherokee L,3.6L V6 Pentastar Gasoline,293,43530,Petrol,7,True,160379
+671,Jeep,Cherokee,2.4L I4 Tigershark Gasoline,180,37695,Petrol,5,True,40912
+672,Jeep,Compass,2.0L Turbo Gasoline,200,31590,Petrol,5,False,0
+673,Jeep,Renegade,1.3L Turbo I4 Gasoline,177,28345,Petrol,5,True,362743
+674,Jeep,Gladiator,3.6L V6 Pentastar Gasoline,285,38775,Petrol,5,False,0
+675,Jeep,Wagoneer,5.7L V8 Gasoline with eTorque,392,63595,Petrol,8,True,144839
+676,Jeep,Grand Wagoneer,6.4L V8 Gasoline,471,91495,Petrol,8,True,577564
+677,Jeep,Grand Cherokee 4xe,2.0L Turbo PHEV,375,59865,Hybrid,5,True,203485
+678,Jeep,Wrangler 4xe,2.0L Turbo PHEV,375,50695,Hybrid,5,True,191369
+679,Jeep,Compass 4xe,1.3L Turbo PHEV,240,46500,Hybrid,5,False,0
+680,Jeep,Renegade 4xe,1.3L Turbo PHEV,240,44500,Hybrid,5,True,123936
+681,Mazda,Mazda2,1.5L 4-Cylinder,108,18500,Petrol,5,False,0
+682,Jeep,Wagoneer S (Electric),Dual Electric Motors,600,80000,Electric,5,True,152471
+683,Jeep,Gladiator Mojave Edition,3.6L V6 Pentastar Gasoline,285,51570,Petrol,5,True,608346
+684,Jeep,Grand Cherokee Summit Reserve,5.7L V8 Gasoline,357,66575,Petrol,5,False,0
+685,Jeep,Jeep Cherokee X Edition,3.2L V6 Pentastar Gasoline,271,41295,Petrol,5,False,0
+686,Jeep,Wrangler 392,6.4L V8 HEMI Gasoline,470,82495,Petrol,4,False,0
+687,Cadillac,XT4,2.0L Turbo Inline-4 Gasoline,235,37490,Petrol,5,False,0
+688,Cadillac,XT5,3.6L V6 Gasoline,310,44195,Petrol,5,True,905703
+689,Cadillac,XT6,3.6L V6 Gasoline,310,48595,Petrol,7,False,0
+690,Cadillac,Lyriq EV,Single Electric Motor,340,58590,Electric,5,False,0
+691,Cadillac,Escalade V,6.2L Supercharged V8 Gasoline,682,149990,Petrol,7,True,600155
+692,Cadillac,Escalade Platinum,6.2L V8 Gasoline,420,104595,Petrol,7,True,886623
+693,Cadillac,CT5-V Blackwing,6.2L Supercharged V8 Gasoline,668,92000,Petrol,5,False,0
+694,Cadillac,CT4-V Blackwing,3.6L Twin-Turbo V6 Gasoline,472,60495,Petrol,5,True,177995
+695,Cadillac,XT4 Sport,2.0L Turbo Inline-4 Gasoline,235,41390,Petrol,5,True,841228
+696,Cadillac,XT5 Sport,3.6L V6 Gasoline,310,51095,Petrol,5,False,0
+697,Cadillac,XT6 Sport,3.6L V6 Gasoline,310,57095,Petrol,7,True,735404
+698,Cadillac,Lyriq Launch Edition,Single Electric Motor,340,59990,Electric,5,True,693502
+699,Cadillac,Lyriq EV Premium,Dual Electric Motors,500,64990,Electric,5,False,0
+700,Cadillac,CT5 Premium Luxury,2.0L Turbo Inline-4 Gasoline,237,41290,Petrol,5,True,243925
+701,Chevrolet,Spark,1.4L Inline-4 Gasoline,98,14595,Petrol,5,False,0
+702,Chevrolet,Sonic,1.4L Turbo Inline-4 Gasoline,138,16720,Petrol,5,True,642087
+703,Chevrolet,Malibu,1.5L Turbo Inline-4 Gasoline,160,25000,Petrol,5,True,611495
+704,Chevrolet,Camaro,2.0L Turbo Inline-4 Gasoline,275,26400,Petrol,4,False,0
+705,Chevrolet,Corvette,6.2L V8 Gasoline,495,65895,Petrol,2,False,0
+706,Chevrolet,Traverse,3.6L V6 Gasoline,310,35915,Petrol,7,False,0
+707,Chevrolet,Equinox,1.5L Turbo Inline-4 Gasoline,170,26600,Petrol,5,True,916737
+708,Chevrolet,Blazer,3.6L V6 Gasoline,308,44000,Petrol,5,False,0
+709,Chevrolet,Tahoe,5.3L V8 Gasoline,355,56995,Petrol,7,False,0
+710,Chevrolet,Suburban,5.3L V8 Gasoline,355,59900,Petrol,8,True,125391
+711,Chevrolet,Colorado,2.7L Turbo Inline-4 Gasoline,310,30695,Petrol,5,True,919887
+712,Chevrolet,Silverado 1500,5.3L V8 Gasoline,355,42795,Petrol,6,True,830974
+713,Chevrolet,Silverado 2500HD,6.6L V8 Gasoline,401,41500,Petrol,6,False,0
+714,Chevrolet,Silverado 3500HD,6.6L V8 Diesel,445,45500,Diesel,6,False,0
+715,Chevrolet,Bolt EV,Single Electric Motor,200,27495,Electric,5,False,0
+716,Chevrolet,Bolt EUV,Single Electric Motor,200,28795,Electric,5,True,413252
+717,Chevrolet,Trailblazer,1.3L Turbo Inline-3 Gasoline,155,23100,Petrol,5,False,0
+718,Chevrolet,Malibu Premier,2.0L Turbo Inline-4 Gasoline,250,33500,Petrol,5,True,285117
+719,Chevrolet,Camaro ZL1,6.2L Supercharged V8 Gasoline,650,67300,Petrol,4,True,468715
+720,Chevrolet,Corvette Stingray,6.2L V8 Gasoline,495,65895,Petrol,2,False,0
+721,Chevrolet,Silverado 1500 High Country,5.3L V8 Gasoline,355,61595,Petrol,6,False,0
+722,Chevrolet,Silverado 1500 Trail Boss,5.3L V8 Gasoline,355,55895,Petrol,6,True,884281
+723,Chevrolet,Silverado 1500 RST,5.3L V8 Gasoline,355,50895,Petrol,6,True,832995
+724,Chevrolet,Colorado ZR2,2.8L Turbo Diesel I4,181,48295,Diesel,5,True,915724
+725,Chevrolet,Traverse Premier,3.6L V6 Gasoline,310,46600,Petrol,7,False,0
+726,Chevrolet,Equinox Premier,1.5L Turbo Inline-4 Gasoline,170,33400,Petrol,5,True,209027
+727,Chevrolet,Blazer RS,3.6L V6 Gasoline,308,48900,Petrol,5,True,664521
+728,Chevrolet,Bolt EV 2LT,Single Electric Motor,200,28795,Electric,5,True,418686
+729,Chevrolet,Camaro SS,6.2L V8 Gasoline,455,43500,Petrol,4,False,0
+730,Chevrolet,Corvette Grand Sport,6.2L V8 Gasoline,460,65900,Petrol,2,False,0
+731,Chevrolet,Traverse RS,3.6L V6 Gasoline,310,43700,Petrol,7,True,408561
+732,Chevrolet,Blazer Premier,3.6L V6 Gasoline,308,45000,Petrol,5,False,0
+733,Chevrolet,Malibu LT,1.5L Turbo Inline-4 Gasoline,160,25800,Petrol,5,True,584360
+734,Chevrolet,Spark Activ,1.4L Inline-4 Gasoline,98,17595,Petrol,5,False,0
+735,Chevrolet,Trax LT,1.2L Turbo Inline-3 Gasoline,137,24100,Petrol,5,False,0
+736,Chevrolet,Equinox LT,1.5L Turbo Inline-4 Gasoline,170,28400,Petrol,5,True,55738
+737,Chevrolet,Silverado 3500HD High Country,6.6L V8 Diesel,445,75700,Diesel,6,True,650229
+738,Chevrolet,Colorado WT,2.7L Turbo Inline-4 Gasoline,310,29200,Petrol,5,False,0
+739,Chevrolet,Suburban High Country,6.2L V8 Gasoline,420,82400,Petrol,8,False,0
+740,Chevrolet,Silverado Custom,4.3L V6 Gasoline,285,33900,Petrol,6,False,0
+741,Chevrolet,Spark LS,1.4L Inline-4 Gasoline,98,14395,Petrol,5,True,759098
+742,Chevrolet,Traverse LT,3.6L V6 Gasoline,310,37200,Petrol,7,False,0
+743,Chevrolet,Blazer LT,2.5L Inline-4 Gasoline,193,36100,Petrol,5,True,25234
+744,Chevrolet,Malibu Premier,2.0L Turbo Inline-4 Gasoline,250,34500,Petrol,5,True,865117
+745,Chevrolet,Equinox RS,1.5L Turbo Inline-4 Gasoline,170,31900,Petrol,5,False,0
+746,Chevrolet,Silverado 1500 Custom,4.3L V6 Gasoline,285,34900,Petrol,6,True,536211
+747,Chevrolet,Silverado 2500HD LTZ,6.6L V8 Diesel,445,56400,Diesel,6,False,0
+748,Chevrolet,Tahoe RST,5.3L V8 Gasoline,355,64100,Petrol,7,True,473606
+749,Chevrolet,Suburban LT,5.3L V8 Gasoline,355,64400,Petrol,8,False,0
+750,Chevrolet,Bolt EV Premier,Single Electric Motor,200,31700,Electric,5,False,0
+751,Chevrolet,Tahoe LS,5.3L V8 Gasoline,355,56995,Petrol,8,False,0
+752,Chevrolet,Tahoe LT,5.3L V8 Gasoline,355,62495,Petrol,8,True,61468
+753,Chevrolet,Tahoe Z71,5.3L V8 Gasoline,355,66700,Petrol,7,False,0
+754,Chevrolet,Tahoe Premier,6.2L V8 Gasoline,420,71600,Petrol,7,True,252820
+755,Chevrolet,Tahoe High Country,6.2L V8 Gasoline,420,76700,Petrol,7,False,0
+756,Chevrolet,Tahoe Midnight Edition,5.3L V8 Gasoline,355,65500,Petrol,8,True,208763
+757,Chevrolet,Tahoe Sport Edition,6.2L V8 Gasoline,420,70000,Petrol,7,False,0
+758,GMC,Terrain,1.5L Turbo 4-cylinder,175,29900,Petrol,5,False,0
+759,GMC,Acadia,2.0L Turbo 4-cylinder,228,36800,Petrol,7,True,110657
+760,GMC,Yukon,5.3L V8 Gasoline,355,57400,Petrol,8,False,0
+761,GMC,Yukon XL,6.2L V8 Gasoline,420,61100,Petrol,8,False,0
+762,GMC,Canyon,2.7L Turbo 4-cylinder,310,36900,Petrol,5,True,499920
+763,GMC,Sierra 1500,5.3L V8 Gasoline,355,37100,Petrol,6,True,33546
+764,GMC,Sierra 2500HD,6.6L V8 Diesel,401,43900,Diesel,6,False,0
+765,GMC,Sierra 3500HD,6.6L V8 Diesel,445,49000,Diesel,6,False,0
+766,GMC,Hummer EV Pickup,Dual-Motor Electric,625,108700,Electric,5,False,0
+767,GMC,Hummer EV SUV,Dual-Motor Electric,625,105600,Electric,5,True,955293
+768,GMC,Yukon Denali,6.2L V8 Gasoline,420,72800,Petrol,8,True,632021
+769,GMC,Sierra Denali,6.2L V8 Gasoline,420,66800,Petrol,6,True,305339
+770,GMC,Terrain AT4,1.5L Turbo 4-cylinder,175,36500,Petrol,5,True,280770
+771,GMC,Acadia AT4,3.6L V6 Gasoline,310,41400,Petrol,6,True,662639
+772,GMC,Sierra 1500 AT4,5.3L V8 Gasoline,355,53800,Petrol,6,True,328768
+773,GMC,Sierra 2500HD Denali,6.6L V8 Diesel,401,72200,Diesel,6,False,0
+774,GMC,Sierra Elevation,2.7L Turbo 4-cylinder,310,45000,Petrol,5,False,0
+775,GMC,Canyon AT4,2.7L Turbo 4-cylinder,310,43900,Petrol,5,False,0
+776,GMC,Canyon Denali,2.7L Turbo 4-cylinder,310,48000,Petrol,5,False,0
+777,GMC,Yukon XL Denali Ultimate,6.2L V8 Gasoline,420,93800,Petrol,8,True,243051
+778,GMC,Terrain Denali,1.5L Turbo 4-cylinder,175,38600,Petrol,5,True,407929
+779,GMC,Acadia Denali,3.6L V6 engine,310,54300,Petrol,7,True,919041
+780,GMC,Yukon AT4,5.3L V8 engine,355,71505,Petrol,8,False,0
+781,GMC,Yukon XL AT4,5.3L V8 engine,355,73305,Petrol,8,True,627114
+782,GMC,Sierra 1500 Elevation,2.7L Turbo engine,310,52000,Petrol,5,False,0
+783,GMC,Sierra 1500 SLT,5.3L V8 engine,355,56000,Petrol,5,True,126809
+784,GMC,Sierra 2500HD AT4,6.6L V8 engine,401,70000,Petrol,5,False,0
+785,GMC,Sierra 3500HD AT4,6.6L V8 engine,401,72000,Petrol,5,False,0
+786,GMC,Canyon Elevation,2.5L I4 engine,200,36300,Petrol,5,True,978685
+787,GMC,Canyon Denali Black Edition,3.6L V6 engine,308,44000,Petrol,5,True,689153
+788,GMC,Sierra 1500 Denali Ultimate,6.2L V8 engine,420,80000,Petrol,5,True,955404
+789,GMC,Yukon XL Denali Reserve,6.2L V8 engine,420,82000,Petrol,7,True,186407
+790,GMC,Terrain Elevation Edition,1.5L Turbocharged I4 engine,170,28700,Petrol,5,False,0
+791,GMC,Acadia Black Edition,3.6L V6 engine,310,45000,Petrol,7,False,0
+792,GMC,Hummer EV SUV Edition 1,"Electric motors with up to 11,200,3,96550.0,0,True,0
+793,GMC,Hummer EV Pickup Edition 1,"Electric motors with up to 11,200,3,96550.0,0,True,0
+794,GMC,Sierra Denali CarbonPro,6.2L V8 engine,420,65000,Petrol,5,True,317903
+795,GMC,Yukon Denali Performance,6.2L V8 engine,420,76805,Petrol,8,True,800449
+796,GMC,Sierra 2500HD Denali Black Edition,6.6L V8 engine,401,75000,Petrol,5,False,0
+797,GMC,Canyon AT4X,3.6L V6 engine,308,50000,Petrol,5,False,0
+798,GMC,Yukon XL SLT,5.3L V8 engine,355,65000,Petrol,8,False,0
+799,GMC,Sierra 1500 Pro,4.3L V6 engine,285,37700,Petrol,3,False,0
+800,GMC,Sierra 2500HD Pro,6.6L V8 engine,401,60000,Petrol,3,True,46103
+801,GMC,Sierra 3500HD Pro,6.6L V8 engine,401,62000,Petrol,3,False,0
+802,GMC,Terrain SLT,1.5L Turbocharged I4 engine,170,31000,Petrol,5,False,0
+803,GMC,Acadia SLE,3.6L V6 engine,310,40000,Petrol,7,True,799010
+804,GMC,Canyon SLT,2.5L I4 engine,200,38000,Petrol,5,True,128626
+805,GMC,Yukon XL Elevation,5.3L V8 engine,355,75000,Petrol,8,False,0
+806,GMC,Sierra 1500 AT4X,6.2L V8 engine,420,82000,Petrol,5,True,114859
+807,GMC,Hummer EV SUV Extreme Off-Road,"Electric motors with up to 11,200,3,110000.0,0,True,0
+808,GMC,Sierra EV Denali,Electric motors with advanced AWD,754,108700,Electric,5,True,580491
+809,GMC,Hummer EV Omega Edition,"Electric motors with up to 11,200,3,112700.0,0,True,0
+810,GMC,Canyon AT4X Edition 1,3.6L V6 engine,308,55000,Petrol,5,False,0
+811,GMC,Yukon Denali Ultimate Black,6.2L V8 engine,420,90000,Petrol,8,False,0
+812,GMC,Sierra HD Denali Reserve,6.6L V8 engine,401,85000,Petrol,5,True,413894
+813,GMC,Acadia Denali Ultimate,3.6L V6 engine,310,60000,Petrol,7,True,138031
+814,GMC,Terrain All-Terrain Edition,1.5L Turbocharged I4 engine,170,35000,Petrol,5,False,0
+815,GMC,Yukon Trailering Edition,5.3L V8 engine,355,78000,Petrol,8,False,0
+816,GMC,Hummer EV Adventure Series,"Electric motors with up to 11,200,3,105000.0,0,True,0
+817,Kia,Rio,1.6L 4-Cylinder,120,17000,Petrol,5,True,193554
+818,Kia,Rio 5-Door,1.6L 4-Cylinder,120,18000,Petrol,5,False,0
+819,Kia,Seltos Nightfall Edition,1.6L Turbocharged 4-Cylinder,175,28000,Petrol,5,False,0
+820,Peugeot,508 PSE (Peugeot Sport Engineered),Hybrid I4 + Electric Motor,360,55000,Hybrid,5,False,0
+821,Kia,Sorento X-Line,2.5L Turbocharged 4-Cylinder,277,42000,Petrol,7,True,623293
+822,Kia,Telluride SX,3.8L V6,291,50000,Petrol,7,False,0
+823,Kia,Forte LXS,2.0L 4-Cylinder,147,19000,Petrol,5,False,0
+824,Kia,K5 EX,1.6L Turbocharged 4-Cylinder,180,28500,Petrol,5,True,791982
+825,Kia,Niro Plug-In Hybrid,1.6L 4-Cylinder Hybrid,139,33000,Hybrid,5,False,0
+826,Kia,EV6 Wind,Electric Motor,225,50000,Electric,5,False,0
+827,Kia,Soul Turbo,1.6L Turbocharged 4-Cylinder,201,28000,Petrol,5,True,829540
+828,Kia,Seltos SX,1.6L Turbocharged 4-Cylinder,175,28500,Petrol,5,False,0
+829,Kia,Stinger Scorpion Edition,2.5L Turbocharged 4-Cylinder,300,55000,Petrol,5,True,634974
+830,Kia,Sorento Hybrid SX Prestige,1.6L Hybrid Turbocharged 4-Cylinder,227,47000,Hybrid,7,True,55562
+831,Kia,Carnival EX,3.5L V6,290,42500,Petrol,8,False,0
+832,Kia,Telluride Nightfall Edition,3.8L V6,291,51000,Petrol,7,True,368033
+833,Peugeot,508 Plug-In Hybrid,Hybrid I4 + Electric Motor,225,44000,Hybrid,5,False,0
+834,Kia,EV6 First Edition,Electric Motor,320,58000,Electric,5,True,957955
+835,Kia,Niro Touring,1.6L 4-Cylinder Hybrid,139,33000,Hybrid,5,False,0
+836,Kia,Forte GT-Line,1.6L Turbocharged 4-Cylinder,201,25000,Petrol,5,True,886074
+837,Kia,Seltos EX,2.0L 4-Cylinder,146,23500,Petrol,5,True,680604
+838,Peugeot,3008 Plug-In Hybrid,Hybrid I4 + Electric Motor,225,42000,Hybrid,5,False,0
+839,Kia,Sorento LX,2.5L 4-Cylinder,191,35500,Petrol,7,False,0
+840,Kia,Telluride EX,3.8L V6,291,44000,Petrol,7,True,58452
+841,Kia,Soul EX,2.0L 4-Cylinder,147,22000,Petrol,5,False,0
+842,Kia,Forte FE,2.0L 4-Cylinder,147,18500,Petrol,5,False,0
+843,Kia,K5 GT-Line,1.6L Turbocharged 4-Cylinder,180,29000,Petrol,5,False,0
+844,Kia,Carnival LXS,3.5L V6,290,39500,Petrol,8,False,0
+845,Kia,EV6 Light,Electric Motor,225,46000,Electric,5,True,5345
+846,Kia,Niro EX,1.6L 4-Cylinder Hybrid,139,30000,Hybrid,5,False,0
+847,Kia,Stinger GT,3.3L Turbocharged V6,365,51500,Petrol,5,False,0
+848,Kia,Sorento SX Prestige,2.5L Hybrid Turbocharged 4-Cylinder,227,48000,Hybrid,7,False,0
+849,Kia,Telluride SX Prestige,3.8L V6,291,52000,Petrol,7,False,0
+850,Peugeot,508 Hybrid4,Hybrid I4 + Electric Motor,300,47000,Hybrid,5,False,0
+851,Kia,EV6 GT Performance,Electric Motor,577,65000,Electric,5,True,974019
+852,Kia,Niro SX Touring,1.6L 4-Cylinder Hybrid,139,34500,Hybrid,5,False,0
+853,Kia,Carnival SX Prestige,3.5L V6,290,47000,Petrol,8,False,0
+854,Kia,Seltos SX Turbo,1.6L Turbocharged 4-Cylinder,175,32000,Petrol,5,False,0
+855,Kia,Forte EX Premium,2.0L 4-Cylinder,147,22500,Petrol,5,True,797962
+856,Kia,Soul EX Designer Edition,2.0L 4-Cylinder,147,23500,Petrol,5,False,0
+857,Kia,Rio S,1.6L 4-Cylinder,120,17500,Petrol,5,True,841963
+858,Kia,Rio 5-Door S,1.6L 4-Cylinder,120,18000,Petrol,5,True,787267
+859,Kia,Soul S,2.0L 4-Cylinder,147,20500,Petrol,5,True,484413
+860,Kia,Seltos LX,2.0L 4-Cylinder,146,23000,Petrol,5,False,0
+861,Peugeot,3008 Hybrid4,Hybrid I4+ Electric Motor,300,45000,Hybrid,5,True,500740
+862,Kia,Sorento Hybrid EX,1.6L Hybrid Turbocharged 4-Cylinder,227,47000,Hybrid,7,False,0
+863,Kia,Telluride LX,3.8L V6,291,41500,Petrol,7,True,583293
+864,Kia,Carnival MPV EX,3.5L V6,290,43500,Petrol,8,False,0
+865,Kia,EV6 AWD GT-Line,Electric Motor,320,60000,Electric,5,True,893854
+866,Kia,Forte GT Turbo,1.6L Turbocharged 4-Cylinder,201,25500,Petrol,5,True,297103
+867,Kia,Soul GT Designer Edition,2.0L 4-Cylinder,147,23000,Petrol,5,True,778344
+868,Kia,Seltos X-Line Turbo,1.6L Turbocharged 4-Cylinder,175,30000,Petrol,5,True,989229
+869,Peugeot,e-2008 GT,Electric Motor,136,40000,Electric,5,True,9236
+870,Kia,Telluride Limited Edition,3.8L V6,291,53000,Petrol,7,True,881961
+871,Kia,Stinger GT-Line,2.5L Turbocharged 4-Cylinder,300,50000,Petrol,5,False,0
+872,Kia,Carnival Special Edition,3.5L V6,290,45500,Petrol,8,False,0
+873,Kia,Niro SX Hybrid,1.6L Hybrid Turbocharged 4-Cylinder,139,36000,Hybrid,5,False,0
+874,Kia,EV6 First Edition AWD,Electric Motor,320,62000,Electric,5,True,678896
+875,Kia,Sorento X-Pro Hybrid,1.6L Hybrid Turbocharged 4-Cylinder,227,49000,Hybrid,7,False,0
+876,Kia,Forte Limited Edition,2.0L 4-Cylinder,147,22500,Petrol,5,False,0
+877,Bugatti,Chiron,8.0L Quad-Turbo W16,1500,3000000,Petrol,2,True,340184
+878,Bugatti,Chiron Pur Sport,8.0L Quad-Turbo W16,1500,3300000,Petrol,2,True,57768
+879,Bugatti,Chiron Super Sport,8.0L Quad-Turbo W16,1600,3500000,Petrol,2,True,118168
+880,Bugatti,Chiron Sport,8.0L Quad-Turbo W16,1500,3300000,Petrol,2,False,0
+881,Bugatti,Chiron Noire,8.0L Quad-Turbo W16,1500,3300000,Petrol,2,True,292702
+882,Bugatti,Divo,8.0L Quad-Turbo W16,1500,5800000,Petrol,2,True,288524
+883,Bugatti,Centodieci,8.0L Quad-Turbo W16,1600,9000000,Petrol,2,True,652648
+884,Bugatti,La Voiture Noire,8.0L Quad-Turbo W16,1500,18000000,Petrol,2,True,242600
+885,Bugatti,Bolide,8.0L Quad-Turbo W16,1850,4500000,Petrol,2,False,0
+886,Bugatti,Mistral,8.0L Quad-Turbo W16,1600,5000000,Petrol,2,False,0
+887,Volvo,Volvo FH,13.0L I6 Turbo Diesel,540,120000,Diesel,2,True,490693
+888,Volvo,Volvo FH16,16.1L I6 Turbo Diesel,750,160000,Diesel,2,False,0
+889,Volvo,Volvo FM,12.8L I6 Turbo Diesel,460,100000,Diesel,2,False,0
+890,Volvo,Volvo FMX,13.0L I6 Turbo Diesel,500,110000,Diesel,2,True,825941
+891,Volvo,Volvo VNL,12.8L I6 Turbo Diesel,500,125000,Diesel,2,False,0
+892,Volvo,Volvo VNR,12.8L I6 Turbo Diesel,400,95000,Diesel,2,False,0
+893,Volvo,Volvo VHD,12.8L I6 Turbo Diesel,500,120000,Diesel,2,False,0
+894,Volvo,Volvo FE,7.7L I6 Turbo Diesel,280,85000,Diesel,2,True,20520
+895,Volvo,Volvo FL,5.1L I4 Turbo Diesel,180,75000,Diesel,2,False,0
+896,Jaguar Land Rover,Jaguar F-Type,V6 / V8 Petrol,335,70000,Petrol,2,True,743696
+897,Jaguar Land Rover,Jaguar XE,I4 Petrol,250,45000,Petrol,5,True,252908
+898,Jaguar Land Rover,Jaguar XF,I4 Petrol,250,50000,Petrol,5,True,279866
+899,Jaguar Land Rover,Jaguar XJ,V6 Petrol,300,85000,Petrol,5,False,0
+900,Jaguar Land Rover,Jaguar E-PACE,I4 Petrol,200,50000,Petrol,5,True,914748
+901,Jaguar Land Rover,Jaguar I-PACE,Electric (Dual Motor),400,70000,Electric,5,True,516016
+902,Jaguar Land Rover,Jaguar F-PACE,I4 Petrol / V6 Petrol,295,60000,Petrol,5,True,967106
+903,Jaguar Land Rover,Jaguar X-TYPE,I4 Petrol,160,40000,Petrol,5,True,361597
+904,Jaguar Land Rover,Jaguar F-PACE R-Dynamic,I4 Petrol / V6 Petrol,340,65000,Petrol,5,False,0
+905,Jaguar Land Rover,Jaguar XE R-Dynamic,I4 Petrol,340,60000,Petrol,5,True,210761
+906,Jaguar Land Rover,Jaguar F-Type SVR,V8 Petrol,575,120000,Petrol,2,True,54402
+907,Jaguar Land Rover,Jaguar I-PACE Electric Performance,Electric (Dual Motor),400,85000,Electric,5,True,605048
+908,Jaguar Land Rover,Jaguar F-PACE SVR,V8 Petrol,550,85000,Petrol,5,False,0
+909,Jaguar Land Rover,Jaguar XE S,I4 Petrol,340,55000,Petrol,5,False,0
+910,Jaguar Land Rover,Jaguar XF R-Dynamic,I4 Petrol / V6 Petrol,340,65000,Petrol,5,True,636635
+911,Jaguar Land Rover,Jaguar XJ LWB (Long Wheelbase),V6 Petrol,300,90000,Petrol,5,False,0
+912,Jaguar Land Rover,Jaguar F-Type Heritage Edition,V8 Petrol,550,110000,Petrol,2,True,681013
+913,Jaguar Land Rover,Jaguar E-PACE S,I4 Petrol,200,50000,Petrol,5,True,522696
+914,Jaguar Land Rover,Jaguar I-PACE HSE,Electric (Dual Motor),400,90000,Electric,5,True,526002
+915,Jaguar Land Rover,Jaguar F-Type V8 R,V8 Petrol,550,100000,Petrol,2,False,0
+916,Jaguar Land Rover,Jaguar F-Type R-Dynamic,I4 Petrol / V6 Petrol,300,70000,Petrol,2,False,0
+917,Jaguar Land Rover,Jaguar XE P300 R-Dynamic,I4 Petrol,300,55000,Petrol,5,False,0
+918,Jaguar Land Rover,Jaguar XF Sportbrake,I4 Petrol / V6 Petrol,250,60000,Petrol,5,True,585064
+919,Jaguar Land Rover,Jaguar I-PACE EV400 HSE,Electric (Dual Motor),400,85000,Electric,5,True,889907
+920,Jaguar Land Rover,Jaguar F-PACE S 30t AWD,I4 Petrol,247,60000,Petrol,5,False,0
+921,Jaguar Land Rover,Jaguar E-PACE R-Dynamic,I4 Petrol,246,55000,Petrol,5,True,678868
+922,Jaguar Land Rover,Jaguar XJ50,V6 Petrol,300,80000,Petrol,5,False,0
+923,Jaguar Land Rover,Jaguar F-Type 75th Anniversary Edition,V8 Petrol,550,100000,Petrol,2,True,959966
+924,Jaguar Land Rover,Jaguar F-PACE S AWD,I4 Petrol / V6 Petrol,340,65000,Petrol,5,True,33296
+925,Jaguar Land Rover,Jaguar XE SE,I4 Petrol,250,50000,Petrol,5,False,0
+926,Jaguar Land Rover,Jaguar F-Type V6 S Convertible,V6 Petrol,380,80000,Petrol,2,False,0
+927,Jaguar Land Rover,Jaguar XE R-Sport AWD,I4 Petrol / V6 Petrol,300,55000,Petrol,5,True,266703
+928,Jaguar Land Rover,Jaguar XF Portfolio AWD,I4 Petrol / V6 Petrol,340,60000,Petrol,5,False,0
+929,Jaguar Land Rover,Jaguar F-Type Coupe R,V8 Petrol,550,100000,Petrol,2,False,0
+930,Jaguar Land Rover,Jaguar I-PACE First Edition,Electric (Dual Motor),400,85000,Electric,5,True,359141
+931,Jaguar Land Rover,Jaguar F-PACE Prestige AWD,I4 Petrol / V6 Petrol,340,65000,Petrol,5,False,0
+932,Jaguar Land Rover,Jaguar XJ Supercharged,V8 Petrol,510,90000,Petrol,5,False,0
+933,Jaguar Land Rover,Jaguar F-Type P450 AWD,V8 Petrol,450,90000,Petrol,2,True,497331
+934,Jaguar Land Rover,Jaguar F-PACE P400e Plug-in Hybrid,I4 Petrol + Electric Motor,398,75000,Plug-in Hybrid,5,False,0
+935,Jaguar Land Rover,Jaguar F-Type P300 Coupe,I4 Petrol,300,60000,Petrol,2,False,0
+936,Acura,NSX Type S,Twin-Turbo V6 Hybrid,600,157000,Hybrid,2,False,0
+937,Acura,TLX PMC Edition,V6,290,62000,Petrol,5,True,644266
+938,Acura,MDX Advance,V6,290,60000,Petrol,7,False,0
+939,Acura,RDX Technology,I4 Turbocharged,272,45000,Petrol,5,True,804932
+940,Acura,ILX Premium,I4,201,30000,Petrol,5,True,923817
+941,Acura,TLX A-Spec,V6,290,50000,Petrol,5,True,584927
+942,Acura,RDX SH-AWD,I4 Turbocharged,272,50000,Petrol,5,False,0
+943,Acura,MDX SH-AWD,V6,290,55000,Petrol,7,False,0
+944,Acura,RDX Platinum Elite,I4 Turbocharged,272,55000,Petrol,5,False,0
+945,Acura,TLX A-Spec Sedan,V6,290,50000,Petrol,5,False,0
+946,Acura,TLX 2.4L,Inline-4,206,35000,Petrol,5,False,0
+947,Acura,MDX Hybrid,V6 Hybrid,321,55000,Hybrid,7,True,859447
+948,Acura,RDX Hybrid,Inline-4 Hybrid,247,50000,Hybrid,5,False,0
+949,Acura,ILX Technology Package,Inline-4,201,30000,Petrol,5,False,0
+950,Acura,NSX GT3 (Track Version),Twin-Turbo V6 Hybrid,500,150000,Hybrid,2,True,242372
+951,Acura,RDX Turbo AWD,Inline-4 Turbocharged,272,45000,Petrol,5,True,999686
+952,Acura,TLX 3.5L V6,V6,290,50000,Petrol,5,False,0
+953,Acura,ILX Special Edition,Inline-4,201,30000,Petrol,5,True,262633
+954,Acura,MDX SH-AWD w/Technology Package,V6,290,55000,Petrol,7,False,0
+955,Acura,NSX 3.5L Hybrid Coupe,Twin-Turbo V6 Hybrid,537,157000,Hybrid,2,False,0
+956,Acura,MDX Elite,V6,290,58000,Petrol,7,False,0
+957,Acura,TLX V6 Advance,V6,290,46000,Petrol,5,True,428407
+958,Acura,NSX Carbon Edition,Twin-Turbo V6 Hybrid,537,157000,Hybrid,2,False,0
+959,Acura,RDX Turbo SH-AWD,Turbocharged I4,272,42000,Petrol,5,False,0
+960,Acura,ILX Technology Plus,Inline-4,201,28000,Petrol,5,False,0
+961,Acura,TLX Type S PMC Edition,Turbocharged V6,355,54000,Petrol,5,False,0
+962,Acura,MDX Sport Hybrid,V6 Hybrid,321,52000,Hybrid,7,True,842423
+963,Peugeot,208,Inline-4,82,22000,Petrol,5,True,724881
+964,Peugeot,2008,Inline-4,100,25000,Petrol,5,False,0
+965,Peugeot,301,Inline-4,115,23500,Petrol,5,False,0
+966,Peugeot,308,Inline-4,130,28000,Petrol,5,False,0
+967,Peugeot,3008,Inline-4,180,32000,Petrol,5,False,0
+968,Peugeot,5008,Inline-4,165,35000,Diesel,7,False,0
+969,Peugeot,508,Inline-4,180,35500,Petrol,5,False,0
+970,Peugeot,Partner,Diesel I4,75,22500,Diesel,5,True,890976
+971,Peugeot,Expert,Diesel I4,120,30000,Diesel,3,False,0
+972,Peugeot,Boxer,Diesel I4,140,32000,Diesel,3,False,0
+973,Peugeot,e-208,Electric Motor,136,35000,Electric,5,True,865233
+974,Peugeot,e-2008,Electric Motor,136,38000,Electric,5,False,0
+975,Peugeot,208 GTI,Inline-4,208,28000,Petrol,5,True,7032
+976,Peugeot,308 GTI,Inline-4,270,35000,Petrol,5,False,0
+977,Peugeot,508 PSE (Peugeot Sport Engineered),Hybrid I4,360,55000,Hybrid,5,True,706499
+978,Peugeot,308 Allure,Inline-4,130,25000,Petrol,5,False,0
+979,Peugeot,2008 Allure,Inline-4,130,27000,Petrol,5,False,0
+980,Peugeot,3008 Allure,Inline-4,180,30000,Petrol,5,False,0
+981,Peugeot,5008 Allure,Inline-4,180,33000,Petrol,7,True,715501
+982,Peugeot,508 Allure,Inline-4,180,35000,Petrol,5,True,902509
+983,Peugeot,3008 GT,Inline-4,200,35000,Petrol,5,True,258909
+984,Peugeot,508 GT,Inline-4,225,40000,Petrol,5,False,0
+985,Peugeot,3008 GT Hybrid,Hybrid I4,300,45000,Hybrid,5,True,939590
+986,Peugeot,5008 GT Hybrid,Hybrid I4,300,48000,Hybrid,7,True,224335
+987,Peugeot,208 Allure Premium,Inline-4,130,28000,Petrol,5,True,514924
+988,Peugeot,Partner Tepee,Inline-4,100,25000,Diesel,5,True,781277
+989,Peugeot,Expert L2H1,Inline-4,120,30000,Diesel,3,False,0
+990,Peugeot,Boxer L2H2,Inline-4,130,35000,Diesel,3,True,676281
+991,Peugeot,Partner Electric,Electric Motor,136,40000,Electric,5,False,0
+992,Peugeot,Expert Electric,Electric Motor,136,45000,Electric,5,False,0
+993,Peugeot,208 PSE (Peugeot Sport Engineered),Hybrid I4,225,45000,Hybrid,5,False,0
+994,Peugeot,308 PSE,Hybrid I4,360,55000,Hybrid,5,True,782277
+995,Peugeot,508 PSE,Hybrid I4,360,60000,Hybrid,5,False,0
+996,Peugeot,3008 PSE,Hybrid I4,300,50000,Hybrid,5,True,549427
+997,Peugeot,2008 Active,Inline-4,100,22000,Petrol,5,True,383447
+998,Peugeot,3008 Active,Inline-4,130,30000,Petrol,5,True,817827
+999,Peugeot,5008 Active,Inline-4,130,33000,Petrol,7,False,0
+1000,Peugeot,3008 Allure Premium,Inline-4,130,32000,Petrol,5,False,0
+1001,Peugeot,5008 Allure Premium,Inline-4,130,35000,Petrol,7,True,911960
+1002,Peugeot,3008 GT Line,Inline-4,180,35000,Petrol,5,True,913027
+1003,Peugeot,5008 GT Line,Inline-4,180,38000,Petrol,7,True,462245
+1004,Peugeot,2008 GT,Inline-4,130,25000,Petrol,5,True,573797
+1005,Peugeot,5008 GT,Inline-4,180,40000,Petrol,7,True,996231
+1006,Peugeot,508 SW (Station Wagon),Inline-4,180,35000,Petrol,5,False,0
+1007,Peugeot,508 Saloon,Inline-4,180,37000,Petrol,5,True,176841
+1008,Peugeot,308 Saloon,Inline-4,130,28000,Petrol,5,True,752920
+1009,Peugeot,301 Sedan,Inline-4,82,20000,Petrol,5,False,0
+1010,Peugeot,208 Sedan,Inline-4,100,22000,Petrol,5,True,415786
+1011,Ford,Fusion (Mondeo),1.5L EcoBoost / 2.0L Hybrid,205,32500,Petrol/Hybrid,5,True,95942
+1012,Ford,Taurus,3.5L V6 / 2.0L EcoBoost,282,37500,Petrol,5,False,0
+1013,Ford,Fiesta,1.0L EcoBoost / 1.5L,142,20000,Petrol,5,False,0
+1014,Ford,Focus,1.0L EcoBoost / 1.5L / 2.0L,210,25000,Petrol,5,False,0
+1015,Ford,KA+,1.2L Petrol,77,13500,Petrol,5,True,406988
+1016,Ford,EcoSport,1.0L Turbo Inline-3 / 2.0L,144,22500,Petrol,5,False,0
+1017,Ford,Escape (Kuga),1.5L EcoBoost / 2.5L Hybrid,190,31500,Petrol/Hybrid,5,False,0
+1018,Ford,Edge,2.0L EcoBoost / 2.7L V6,292,40000,Petrol,5,True,805387
+1019,Ford,Explorer,2.3L EcoBoost / 3.0L V6,350,45000,Petrol,7,True,42789
+1020,Ford,Expedition,3.5L EcoBoost / 5.4L V8,387,62500,Petrol,8,False,0
+1021,Ford,Bronco,2.3L EcoBoost / 2.7L V6,292,42500,Petrol,4,False,0
+1022,Ford,Bronco Sport,1.5L EcoBoost / 2.0L EcoBoost,215,32000,Petrol,5,False,0
+1023,Ford,F-150,3.3L V6 / 5.0L V8 / 3.5L EcoBoost,370,55000,Petrol/Diesel,5,True,833608
+1024,Ford,F-250 Super Duty,6.2L V8 / 7.3L V8 / 6.7L Turbo-Diesel,430,55000,Petrol/Diesel,5,True,897237
+1025,Ford,F-350 Super Duty,6.7L Turbo-Diesel / 7.3L V8,462,60000,Diesel,5,True,720712
+1026,Ford,Maverick,2.5L Hybrid / 2.0L EcoBoost,220,26000,Hybrid/Petrol,5,True,404396
+1027,Ford,Ranger,2.3L Turbo Inline-4 / 2.7L V6,297,35000,Petrol/Diesel,5,False,0
+1028,Ford,Mustang Mach-E,Electric Motor,385,52000,Electric,5,False,0
+1029,Ford,F-150 Lightning,Electric Motor,452,65000,Electric,5,False,0
+1030,Ford,Escape Hybrid,2.5L Inline-4 + Electric,200,33000,Hybrid,5,False,0
+1031,Ford,Explorer Hybrid,3.3L V6 + Electric,318,52500,Hybrid,7,False,0
+1032,Ford,Mustang,5.0L V8,450,55000,Petrol,4,False,0
+1033,Ford,GT,3.5L Twin-Turbo V6,660,500000,Petrol,2,True,252241
+1034,Ford,Focus ST,2.3L Turbo Inline-4,280,30000,Petrol,5,True,666920
+1035,Ford,Fiesta ST,1.5L Turbo Inline-3,200,23000,Petrol,5,True,647784
+1036,Ford,Bronco Raptor,3.0L Twin-Turbo V6,400,70000,Petrol,4,False,0
+1037,Ford,Ranger Raptor,2.7L Twin-Turbo V6,392,45000,Petrol,5,True,612591
+1038,Ford,F-150 Raptor,3.5L Twin-Turbo V6,450,70000,Petrol,5,False,0
+1039,Ford,Puma,Turbocharged Inline-3,123,28000,Petrol,5,True,953700
+1040,Ford,Territory,Turbocharged Inline-4,140,32000,Petrol,5,True,659892
+1041,Ford,Everest,Turbocharged Inline-4,210,52000,Diesel,7,False,0
+1042,Ford,Flex,Naturally Aspirated V6,287,31000,Petrol,7,True,367628
+1043,Ford,Transit,EcoBlue Turbo Diesel,170,43455,Diesel,0,False,0
+1044,Ford,Transit Connect,Inline-4 Gasoline Engine,162,29365,Petrol,0,True,304964
+1045,Ford,F-450 Super Duty,Turbocharged V8 Diesel,475,61625,Diesel,0,True,666689
+1046,Ford,F-550 Super Duty,Turbocharged V8 Diesel,475,64540,Diesel,0,True,187708
+1047,Ford,Mustang Shelby GT500,Supercharged V8,760,79420,Petrol,2,True,450584
+1048,Ford,Mustang Shelby GT350,Naturally Aspirated V8,526,59140,Petrol,2,True,732725
+1049,Ford,F-150 Platinum,Turbocharged V6,400,64695,Petrol,5,False,0
+1050,Ford,F-150 Limited,Turbocharged V6,450,84910,Petrol,5,False,0
+1051,Ford,Explorer Platinum,Turbocharged V6,400,56505,Petrol,7,True,67396
+1052,Ford,Expedition King Ranch,Turbocharged V6,440,79560,Petrol,0,True,866471
+1053,Ford,Transit Custom,EcoBlue Turbo Diesel,130,35000,Diesel,0,True,184452
+1054,Ford,E-Series Cutaway,V8 Gasoline Engine,350,36000,Petrol,2,False,0
+1055,Ford,Transit Chassis Cab,EcoBlue Turbo Diesel,170,37000,Diesel,2,True,863734
+1056,Ford,Transit Electric (E-Transit),Electric Motor,266,52000,Electric,0,True,878899
+1057,Ford,Explorer Plug-in Hybrid,V6 Hybrid + Electric Motor,457,53000,Hybrid,7,True,424726
+1058,Ford,Maverick Hybrid,I4 Hybrid,191,25000,Hybrid,5,True,664535
+1059,Ford,Mustang (2024),V8 Gasoline Engine,450,60000,Petrol,4,False,0
+1060,Ford,Ranger (2024),I4 Turbo Diesel,210,40000,Diesel,5,False,0
+1061,Ford,Escape Plug-in Hybrid (2024),I4 Hybrid,221,38000,Hybrid,5,False,0
+1062,Ford,Bronco (2024),V6 EcoBoost,310,45000,Petrol,5,False,0
+1063,Ford,Explorer (2024),V6 Turbocharged,400,55000,Petrol,7,True,958812
+1064,Mitsubishi,Mirage,1.2L MIVEC,78,17000,Petrol,5,True,263026
+1065,Mitsubishi,Mirage G4,1.2L MIVEC,78,18000,Petrol,5,False,0
+1066,Mitsubishi,Outlander,2.5L 4-Cylinder,181,31500,Petrol,7,False,0
+1067,Mitsubishi,Outlander PHEV,2.4L Hybrid,248,41000,Hybrid,5,False,0
+1068,Mitsubishi,Eclipse Cross,1.5L Turbo,152,26500,Petrol,5,True,225278
+1069,Mitsubishi,ASX (Outlander Sport),2.0L MIVEC,148,24500,Petrol,5,False,0
+1070,Mitsubishi,Pajero,3.2L Diesel Turbo,189,42500,Diesel,7,True,834505
+1071,Mitsubishi,Pajero Sport,2.4L Diesel Turbo,181,37500,Diesel,7,False,0
+1072,Mitsubishi,Triton (L200),2.4L Diesel Turbo,181,30000,Diesel,5,True,785152
+1073,Mitsubishi,Lancer Evolution X,2.0L Turbocharged,291,45000,Petrol,5,True,386895
+1074,Mitsubishi,i-MiEV (Electric),Electric Motor,66,24500,Electric,4,True,262829
+1075,Mitsubishi,Xpander,1.5L MIVEC,105,22500,Petrol,7,True,927320
+1076,Mitsubishi,Delica D:5,2.2L Diesel Turbo,145,37500,Diesel,7,False,0
+1077,Mitsubishi,Colt,1.1L / 1.5L MIVEC,112,17500,Petrol,5,False,0
+1078,Mitsubishi,Grandis,2.4L MIVEC,165,27500,Petrol,7,False,0
+1079,Mitsubishi,Outlander Black Edition,2.5L 4-Cylinder,181,33500,Petrol,7,False,0
+1080,Mitsubishi,Outlander SEL,2.5L 4-Cylinder,181,32500,Petrol,7,True,684031
+1081,Mitsubishi,Outlander SE,2.5L 4-Cylinder,181,30500,Petrol,7,False,0
+1082,Mitsubishi,Eclipse Cross Black Edition,1.5L Turbo,152,29000,Petrol,5,True,949484
+1083,Mitsubishi,ASX Exceed,2.0L MIVEC,148,27000,Petrol,5,True,130272
+1084,Mitsubishi,Triton Athlete,2.4L Diesel Turbo,181,31000,Diesel,5,True,420202
+1085,Mitsubishi,Pajero Final Edition,3.2L Diesel Turbo,189,47500,Diesel,7,True,675328
+1086,Mitsubishi,L200 Barbarian X,2.4L Diesel Turbo,181,32500,Diesel,5,True,174771
+1087,Mitsubishi,Space Star,1.2L MIVEC,78,16000,Petrol,5,True,455895
+1088,Mitsubishi,Lancer EX,1.6L MIVEC / 2.0L,132,22500,Petrol,5,False,0
+1089,Mitsubishi,Montero Sport,2.4L Diesel Turbo,181,37500,Diesel,7,False,0
+1090,Mitsubishi,Attrage,1.2L MIVEC,78,16000,Petrol,5,False,0
+1091,Mitsubishi,RVR SE,2.0L MIVEC,148,24000,Petrol,5,False,0
+1092,Mitsubishi,Delica Van,2.0L Diesel / 2.2L Diesel,145,32500,Diesel,7,True,883154
+1093,Mitsubishi,Canter (Truck),3.0L Diesel,150,40000,Diesel,2,False,0
+1094,Mitsubishi,Lancer GLX,1.6L MIVEC,115,18500,Petrol,5,True,998390
+1095,Mitsubishi,Pajero GLS,3.2L Diesel Turbo,189,47500,Diesel,7,True,235306
+1096,Mitsubishi,Xpander Cross,1.5L MIVEC,105,22500,Petrol,7,False,0
+1097,Mitsubishi,Eclipse Cross PHEV,2.4L PHEV,188,37500,Plug-in Hybrid,5,True,414866
+1098,Mitsubishi,Outlander ES,2.5L 4-Cylinder,181,29000,Petrol,7,True,235332
+1099,Mitsubishi,Montero GLX,2.4L Diesel Turbo,181,37500,Diesel,7,True,750976
+1100,Mitsubishi,Triton GLX-R,2.4L Diesel Turbo,181,31000,Diesel,5,False,0
+1101,Mitsubishi,ASX Dynamic,2.0L MIVEC,148,26500,Petrol,5,False,0
+1102,Mitsubishi,Mirage ES,1.2L MIVEC,78,16000,Petrol,5,True,205763
+1103,Mitsubishi,Outlander LE,2.5L 4-Cylinder,181,32500,Petrol,7,True,347410
+1104,Mitsubishi,Fuso Fighter (Truck),7.5L Diesel,240,80000,Diesel,2,True,797772
+1105,Mitsubishi,Fuso Canter Eco Hybrid,3.0L Diesel Hybrid,150,55000,Diesel Hybrid,2,True,679250
+1106,Mitsubishi,Space Runner,1.8L MIVEC,140,21500,Petrol,5,True,49329
+1107,Mitsubishi,Toppo BJ,0.7L 3-Cylinder,52,11000,Petrol,4,True,557001
+1108,Mitsubishi,Chariot,2.0L MIVEC,140,21500,Petrol,7,False,0
+1109,Mitsubishi,Lancer SE Limited,2.0L MIVEC,148,22500,Petrol,5,True,764386
+1110,Mitsubishi,Pajero SWB (Short Wheel Base),3.2L Diesel Turbo,189,47500,Diesel,5,True,734914
+1111,Mitsubishi,Delica Space Gear,2.4L Petrol,145,32500,Petrol,7,True,856871
+1112,Mitsubishi,i (Kei Car),0.7L 3-Cylinder,64,13500,Petrol,4,False,0
+1113,Mitsubishi,Dion,2.0L 4-Cylinder,135,16500,Petrol,7,True,250488
+1114,Mitsubishi,Airtrek,2.4L 4-Cylinder,160,22500,Petrol,5,False,0
+1115,Mitsubishi,eK Space,0.7L 3-Cylinder,52,11000,Petrol,4,False,0
+1116,Mitsubishi,eK X,0.7L 3-Cylinder,64,13500,Petrol,4,True,92478
+1117,Mitsubishi,Colt CZC Convertible,1.5L Turbocharged,147,27500,Petrol,4,False,0
+1118,Mitsubishi,Galant Fortis,2.0L MIVEC,154,20000,Petrol,5,True,622284
+1119,Mitsubishi,Endeavor,3.8L V6,225,31500,Petrol,5,True,485288
+1120,Mitsubishi,Grand Lancer,1.8L MIVEC,138,22500,Petrol,5,False,0
+1121,Mitsubishi,Sigma,3.0L V6,210,37500,Petrol,5,False,0
+1122,Mitsubishi,Town Box,0.7L 3-Cylinder,48,11000,Petrol,4,False,0
+1123,Mitsubishi,Minicab MiEV,Electric Motor,64,19000,Electric,2,False,0
+1124,Mazda,Mazda3,2.0L SkyActiv-G,155,24000,Petrol,5,False,0
+1125,Mazda,Mazda3 Hatchback,2.5L SkyActiv-G,186,26000,Petrol,5,True,704790
+1126,Mazda,Mazda6,2.5L Turbocharged,250,31000,Petrol,5,False,0
+1127,Mazda,CX-3,2.0L SkyActiv-G,146,23000,Petrol,5,False,0
+1128,Mazda,CX-30,2.5L SkyActiv-G,186,25500,Petrol,5,True,393413
+1129,Mazda,CX-5,2.5L SkyActiv-G,187,29000,Petrol,5,False,0
+1130,Mazda,CX-50,2.5L Turbocharged,256,32500,Petrol,5,True,318113
+1131,Mazda,CX-8,2.2L Diesel,187,39000,Diesel,7,False,0
+1132,Mazda,CX-9,2.5L Turbocharged,250,41500,Petrol,7,True,942689
+1133,Mazda,CX-90,3.3L Inline-6 Turbo,340,55000,Petrol,7,True,553527
+1134,Mazda,MX-5 Miata,2.0L SkyActiv-G,181,30000,Petrol,2,False,0
+1135,Mazda,MX-5 Miata RF,2.0L SkyActiv-G,181,36500,Petrol,2,True,389981
+1136,Mazda,MX-30 Electric,Electric Motor,143,35000,Electric,5,True,810296
+1137,Mazda,CX-4,2.0L SkyActiv-G,158,25000,Petrol,5,True,822137
+1138,Mazda,CX-7,2.3L Turbocharged,244,30500,Petrol,5,True,889625
+1139,Mazda,Tribute,3.0L V6,200,27000,Petrol,5,True,82859
+1140,Mazda,B-Series Pickup,2.5L Diesel,143,22500,Diesel,5,True,834489
+1141,Mazda,BT-50,3.2L Turbo Diesel,200,31000,Diesel,5,True,814129
+1142,Mazda,RX-7,1.3L Rotary Twin-Turbo,276,40000,Petrol,4,False,0
+1143,Mazda,RX-3,1.2L Rotary,110,17500,Petrol,4,True,562159
+1144,Mazda,RX-Vision Concept,Rotary SkyActiv-R,400,0,Petrol (Hybrid),2,False,0
+1145,Mazda,323F,1.6L Inline-4,105,16000,Petrol,5,False,0
+1146,Mazda,Familia Sedan,1.5L Inline-4,100,14000,Petrol,5,False,0
+1147,Mazda,Premacy,2.0L Inline-4,138,21000,Petrol,7,True,490126
+1148,Mazda,Demio,1.5L SkyActiv-G,108,15500,Petrol,5,False,0
+1149,Mazda,Millenia,2.3L Miller Cycle V6,210,27500,Petrol,5,False,0
+1150,Mazda,Eunos Cosmo,2.0L Twin-Rotor Turbo,280,45000,Petrol,4,True,292565
+1151,Mazda,Atenza,2.5L SkyActiv-G,192,25000,Petrol,5,True,315737
+1152,Mazda,Roadpacer AP,1.3L Rotary,130,22500,Petrol,5,False,0
+1153,Mazda,626,2.0L Inline-4,140,20000,Petrol,5,True,389719
+1154,Mazda,929,3.0L V6,205,27500,Petrol,5,True,314528
+1155,Mazda,Luce,1.8L Rotary,135,17500,Petrol,5,False,0
+1156,Mazda,Capella,1.6L Inline-4,110,16000,Petrol,5,True,861782
+1157,Mazda,Carol,660cc Inline-3,63,10500,Petrol,4,True,485783
+1158,Mazda,Autozam AZ-1,657cc Turbocharged Inline-3,63,15000,Petrol,2,False,0
+1159,Mazda,Spiano,660cc Inline-3,54,9000,Petrol,4,False,0
+1160,Mazda,Verisa,1.5L Inline-4,113,16000,Petrol,5,True,5203
+1161,Mazda,MX-6,2.5L V6,164,21000,Petrol,4,True,218004
+1162,Mazda,MPV,3.0L V6,200,27500,Petrol,7,True,22556
+1163,Mazda,Proceed Marvie,2.6L Inline-4,120,22500,Petrol,5,False,0
+1164,Mazda,Sentia,3.0L V6,200,25000,Petrol,5,False,0
+1165,Mazda,Cronos,2.5L V6,160,20000,Petrol,5,False,0
+1166,Mazda,Scrum,660cc Inline-3,63,10000,Petrol,4,True,799979
+1167,Mazda,Parkway,1.8L Inline-4,115,22500,Petrol,5,True,633956
+1168,Mazda,Titan (Truck),3.0L Inline-4,130,27500,Diesel,2,True,526106
+1169,Mazda,CX-60,2.5L Inline-4,187,42500,Petrol/Diesel,5,True,674281
+1170,Mazda,CX-80,3.0L Inline-6,250,47500,Petrol,7,False,0
+1171,Mazda,T1500,1.5L Inline-4,75,16500,Petrol,2,True,624096
+1172,Mazda,Bongo Van,2.0L Inline-4,100,20000,Petrol/Diesel,3,True,456267
+1173,Mazda,Bongo Friendee,2.5L Inline-4,115,22000,Petrol/Diesel,7,True,269449
+1174,Mazda,Revue,1.3L Inline-4,75,11000,Petrol,5,False,0
+1175,Mazda,Protegé,1.8L Inline-4,125,16500,Petrol,5,True,951086
+1176,Mazda,Xedos 6,2.5L V6,170,27500,Petrol,5,True,773136
+1177,Mazda,Xedos 9,3.0L V6,200,32500,Petrol,5,False,0
+1178,Mazda,121,1.3L Inline-4,70,13500,Petrol,5,True,127015
+1179,Mazda,1200,1.2L Inline-4,60,11000,Petrol,4,False,0
+1180,Mazda,1500,1.5L Inline-4,85,13500,Petrol,5,True,419612
+1181,Mazda,RX-2,1.3L Inline-2 (Wankel),130,22500,Petrol,4,False,0
+1182,Mazda,RX-5,1.6L Inline-2 (Wankel),135,27500,Petrol,4,False,0
+1183,Mazda,RX-7 Spirit R,1.3L Inline-2 (Wankel),280,37500,Petrol,2,True,755068
+1184,Mazda,Cosmo Sport (110S),1.0L Inline-2 (Wankel),110,32500,Petrol,2,True,743188
+1185,Mazda,Eunos 500,2.0L Inline-4,135,26500,Petrol,5,True,68499
+1186,Mazda,Eunos Roadster,1.6L Inline-4,116,16500,Petrol,2,True,656561
+1187,Mazda,Familia Astina,1.8L Inline-4,135,21000,Petrol,5,False,0
+1188,Mazda,Savanna RX-7,1.3L Inline-2 (Wankel),165,30000,Petrol,2,True,815135
+1189,Mazda,Capella Cargo,2.0L Inline-4,115,20000,Petrol,4,True,102316
+1190,Mazda,818,1.6L Inline-4,100,16000,Petrol,5,True,145660
+1191,Mazda,Sentia Hardtop Coupe,2.5L V6,160,32500,Petrol,4,False,0
+1192,Mazda,Biante,2.0L Inline-4,150,24000,Petrol,7,False,0
+1193,Mazda,Premacy Hydrogen RE Hybrid,1.3L Wankel + Electric,200,42500,Hybrid,5,True,879110
+1194,Mazda,Carol P360,0.36L Inline-2,26,9000,Petrol,4,True,124684
+1195,Mazda,T2000,2.0L Inline-4,110,19000,Petrol,2,True,901414
+1196,Mazda,AZ-Offroad,1.3L Inline-4,85,16500,Petrol,5,False,0
+1197,Mazda,Scrum Wagon,0.66L Inline-3,64,11000,Petrol,4,False,0
+1198,Mazda,Persona,1.5L Inline-4,92,14500,Petrol,5,True,57680
+1199,Mazda,Astina,1.8L Inline-4,140,22000,Petrol,5,False,0
+1200,Mazda,Etude,1.6L Inline-4,105,15000,Petrol,5,False,0
+1201,Mazda,Porter,1.5L Inline-4,95,13500,Petrol,2,False,0
+1202,Mazda,MX-3,1.6L Inline-4,130,20000,Petrol,4,False,0
+1203,Mazda,MX-5 Superlight Concept,1.8L Inline-4,143,32500,Petrol,2,True,994912
+1204,Mazda,Premacy Hydrogen RE,1.3L Wankel + Electric,200,42500,Hybrid,5,False,0
+1205,Mazda,Bongo Truck,2.0L Inline-4,120,16500,Petrol,2,False,0
+1206,Mazda,Rotary Pickup,1.3L Wankel Rotary Engine,130,20000,Petrol,2,False,0
+1207,Mazda,Luce Rotary Coupe,1.3L Wankel Rotary Engine,135,27500,Petrol,4,False,0
+1208,Mazda,Millenia S,2.5L V6,200,32500,Petrol,5,False,0
+1209,Mazda,787B (Race Car),2.6L Wankel Rotary Engine,700,6000000,Petrol,1,True,39905
+1210,Toyota,Crown Signia,2.5L Hybrid I4,240,45795,Hybrid (Gas + Electric),5,True,236503
+1211,Toyota,4Runner (6th Gen),2.4L Turbo I4 (i-FORCE MAX Hybrid),326,50000,Hybrid,7,False,0
+1212,Toyota,Corolla Cross,2.0L Gas / 2.0L Hybrid,182,27172,Gas / Hybrid,5,False,0
+1213,Toyota,C-HR+,1.8L / 2.0L Hybrid,169,33000,Hybrid,5,True,370263
+1214,Toyota,RAV4 (6th Gen),2.5L Hybrid / Plug-in Hybrid,260,36000,Hybrid / Plug-in,5,True,82000
+1215,test company,test model,v500,200,100000,gasoline,2,False,0
