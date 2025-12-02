@@ -241,8 +241,8 @@ public static class Commands
         Console.WriteLine();
         
         Console.WriteLine("add the car to the list");
-        Console.WriteLine("\tadd [company], [model], [engine], [horse power], [price], [fuel type], [seat], [car status], [mileage]" +
-                          "\tAdd car to the list by passing correct arguments (all the arguments must be separated with ','." +
+        Console.WriteLine("\tadd [company], [model], [engine], [horse power], [price], [fuel type], [seat], [car status], [mileage]." +
+                          " Add car to the list by passing correct arguments (all the arguments must be separated with ','." +
                           " Do not include '[' or ']' symbols - they are shown for easier demonstration purposes. For the [horse power]," +
                           " [price], [seat], and [mileage] arguments only pass numbers and they should not be negative. For the" +
                           " [car status] argument only pass 'new' or 'used' argument");
@@ -254,11 +254,89 @@ public static class Commands
                           "For example: edit [3] [model] ");
         Console.WriteLine();
         
+        Console.WriteLine("delete the existing car's information");
+        Console.WriteLine("\tdelete [id]\tPass only [id] argument to be able to delete all of the particular's car information");
+        Console.WriteLine();
         
+        Console.WriteLine("clear the console");
+        Console.WriteLine("\tclear\tType this command to clear the console");
+        Console.WriteLine();
+        
+        Console.WriteLine("exit the application");
+        Console.WriteLine("\texit\tType this command in order to quit the application");
+        Console.WriteLine();
+        
+        Console.WriteLine("saving the car list");
+        Console.WriteLine($"\tsave\tSave the current car list state into the initial file that you are working from - {Program.path}");
+        Console.WriteLine("\tsaveAs\tSave the car list state into the path and file format that you choose yourself.");
+        Console.WriteLine();
     }
 
     public static void Help(string command)
     {
-        Console.WriteLine($"'{command}' not working");
+        command = command.ToLower();
+        switch (command)
+        {
+            case "show":
+                Console.WriteLine("display all the cars or 1 particular car");
+                Console.WriteLine("\tshow all\tShows the list of all cars with detailed information");
+                Console.WriteLine("\tshow [id]\tShow the details about 1 car with the particular 'id'");
+                break;
+            
+            case "add":
+                Console.WriteLine("add the car to the list");
+                Console.WriteLine("\tadd [company], [model], [engine], [horse power], [price], [fuel type], [seat], [car status], [mileage]." +
+                                  " Add car to the list by passing correct arguments (all the arguments must be separated with ','." +
+                                  " Do not include '[' or ']' symbols - they are shown for easier demonstration purposes. For the [horse power]," +
+                                  " [price], [seat], and [mileage] arguments only pass numbers and they should not be negative. For the" +
+                                  " [car status] argument only pass 'new' or 'used' argument");
+                break;
+            
+            case "edit":
+                Console.WriteLine("edit the existing car's information");
+                Console.WriteLine("\tedit [id]\tPass only [id] argument to be able to edit all of the particular's car information");
+                Console.WriteLine("\tedit [id] [argument]\tHere in argument you can edit the particular argument of the particular's car." +
+                                  "For example: edit [3] [model] ");
+                break;
+            
+            case "delete":
+                Console.WriteLine("delete the existing car's information");
+                Console.WriteLine("\tdelete [id]\tPass only [id] argument to be able to delete all of the particular's car information");
+                break;
+            
+            case "clear":
+                Console.WriteLine("clear the console");
+                Console.WriteLine("\tclear\tType this command to clear the console");
+                break;
+            
+            case "exit":
+                Console.WriteLine("exit the application");
+                Console.WriteLine("\texit\tType this command in order to quit the application");
+                break;
+            
+            case "save":
+                Console.WriteLine("saving the car list");
+                Console.WriteLine($"\tsave\tSave the current car list state into the initial file that you are working from - {Program.path}");
+                break;
+            
+            case "saveas":
+                Console.WriteLine("saving the car list");
+                Console.WriteLine("\tsaveAs\tSave the car list state into the path and file format that you choose yourself");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Note:");
+                Console.ResetColor();
+                Console.WriteLine(@"The path to the file should be absolute. For example - C:\Desktop\cars.csv");
+                Console.WriteLine("Filenames should not end with empty spaces ' ' (Example - test .csv)");
+                Console.WriteLine("Path should contain less than 260 characters");
+                Console.WriteLine("Only '.csv' and '.txt' formats are allowed");
+                Console.WriteLine("Folders or file names can not be reserved names, here is the list of reserved names:\n" +
+                                  "\"CON\",\"PRN\",\"AUX\",\"NUL\",\"COM1\",\"COM2\",\"COM3\",\"COM4\",\"COM5\",\"COM6\",\"COM7\"," +
+                                  "\"COM8\",\"COM9\",\"LPT1\",\"LPT2\",\"LPT3\",\"LPT4\",\"LPT5\",\"LPT6\",\"LPT7\",\"LPT8\",\"LPT9\"");
+                
+                break;
+            default:
+                Console.WriteLine($"'--help {command}' incorrect argument '{command}'");
+                break;
+        }
     }
 }

@@ -2,20 +2,76 @@
 
 public static class FileName
 {
-    public static bool IsValidFileName(string fileName)
-    {
-        bool correctName = fileName.IndexOfAny(Path.GetInvalidFileNameChars()) < 0;
-        fileName = fileName.ToLower();
-        return correctName && ( fileName.EndsWith(".txt") || fileName.EndsWith(".csv") );
-    }
+    private static string[] reservedNames = {"CON","PRN","AUX","NUL","COM1","COM2","COM3","COM4",
+        "COM5","COM6","COM7","COM8","COM9","LPT1","LPT2","LPT3","LPT4","LPT5","LPT6","LPT7","LPT8","LPT9"};
     
-    public static bool IsReservedName(string fileName)
+    public static bool IsValidFilePath(string path)
     {
-        fileName = fileName.ToUpper();
-        string[] reservedNames = {"CON","PRN","AUX","NUL","COM1","COM2","COM3","COM4",
-            "COM5","COM6","COM7","COM8","COM9","LPT1","LPT2","LPT3","LPT4","LPT5","LPT6",
-            "LPT7","LPT8","LPT9"};
+        if (path.Length > 260)
+        {
+            Console.WriteLine($"'{path}'");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"ERROR! Name of the file can't be higher than 260 symbols");
+            Console.ResetColor();
+            return false;
+        }
+        try
+        {
+            string fullPath = Path.GetFullPath(path);
 
-        return reservedNames.Contains(fileName);
+            if (File.Exists(fullPath))
+            {
+                Console.WriteLine($"'{fullPath}'");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"ATTENTION! File already exists, do you want to rewrite it?");
+                Console.ResetColor();
+                Console.WriteLine("press 'Y' to confirm OR type anything to decline");
+
+                string userInput = Console.ReadLine() ?? "";
+                return Parser.ParseChoiceIsYes(userInput);
+            }
+            else
+            {
+                
+            }
+
+            string[] pathParts = fullPath.Split(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+
+            string fileName = Path.GetFileNameWithoutExtension(pathParts.Last());
+
+            if (fileName.EndsWith(' '))
+            {
+                Console.WriteLine($"'{path}'");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"ERROR! Name of the file can't end with empty space ' '");
+                Console.ResetColor();
+                return false;
+            }
+            foreach (var part in pathParts)
+            {
+                if (string.IsNullOrWhiteSpace(part)) continue;
+
+                string name = Path.GetFileNameWithoutExtension(part);
+
+                if (reservedNames.Contains(name, StringComparer.OrdinalIgnoreCase)
+                    || name.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"'{part}' ERROR! Invalid name, see '--help saveAs'");
+                    Console.ResetColor();
+                    return false;
+                }
+            }
+            if (pathParts.Last().EndsWith(".txt", StringComparison.OrdinalIgnoreCase)
+                || pathParts.Last().EndsWith(".csv", StringComparison.OrdinalIgnoreCase)) return true;
+
+            Console.WriteLine($"'{path}' incorrect path. See '--help saveAs'");
+            return false;
+        }
+        catch
+        {
+            Console.WriteLine($"'{path}' incorrect path. See '--help saveAs'");
+            return false;
+        }
     }
 }

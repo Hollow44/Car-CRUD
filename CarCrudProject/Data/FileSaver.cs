@@ -1,43 +1,72 @@
 ﻿using CarCrudProject.Utilities;
 using CarCrudProject.Models;
 using CarCrudProject.Repositories;
+using System.IO;
 
 namespace CarCrudProject.Data;
 
 public static class FileSaver
 {
-    
+    private static string currentPath = @"..\..\..\..\CarCrudProject/";
+    private static string defaultFileName = "output.csv";
     public static void SaveAs()
     {
         Console.WriteLine(@"enter the path and filename (for example: C:\Desktop\cars.csv)");
         Console.WriteLine("or press 'Enter', to save it in output.csv in current folder:");
-        Console.WriteLine(Program.path);
+        Console.WriteLine(Path.GetFullPath(currentPath));
 
         string userInput = Console.ReadLine() ?? "";
-        
-        
+
+        if (userInput == "")
+        {
+            string dir = Path.GetDirectoryName(Path.GetFullPath(currentPath + defaultFileName))!;
+            Directory.CreateDirectory(dir);
+            using (var writer = new StreamWriter(currentPath + defaultFileName, append: false))
+            {
+                writer.WriteLine("id,company,model,engine,horse power,price,fuel type,number of seats,status of the car,mileage");
+                foreach (var car in CarRepository.Cars)
+                {
+                    writer.WriteLine(car.GetInfo());
+                }
+            }
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("file saved successfully:");
+            Console.ResetColor();
+            Console.WriteLine($"'{currentPath + defaultFileName}'");
+        }
+        else 
+        {
+            if (FileName.IsValidFilePath(userInput))
+            {
+                string dir = Path.GetDirectoryName(userInput)!;
+                Directory.CreateDirectory(dir);
+                
+                using (var writer = new StreamWriter(userInput, append: false))
+                {
+                    writer.WriteLine("id,company,model,engine,horse power,price,fuel type,number of seats,status of the car,mileage");
+                    foreach (var car in CarRepository.Cars)
+                    {
+                        writer.WriteLine(car.GetInfo());
+                    }
+                }
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("file saved successfully:");
+                Console.ResetColor();
+                Console.WriteLine($"'{userInput}'");
+            }
+        }
     }
     
     public static void Save()
     {
-        string path = Program.path;
-        int numberOfCars = CarRepository.Cars.Count;
-        string[] file = new string[numberOfCars + 1];
-        file[0] = "company,model,engine,horse power,price,fuel type, number of seats, status of the car,mileage";
-        for (int i = 0, j = 1; i < numberOfCars; i++)
+        using (var writer = new StreamWriter(Program.path, append: false))
         {
-            if (CarRepository.Cars[i].Equals(null)) continue;
-            file[j] += $"{CarRepository.Cars[i].GetCompany()}," +
-                       $"{CarRepository.Cars[i].GetModel()}," +
-                       $"{CarRepository.Cars[i].GetEngine()}," +
-                       $"{CarRepository.Cars[i].GetHorsePower()}," +
-                       $"{CarRepository.Cars[i].GetPrice()}," +
-                       $"{CarRepository.Cars[i].GetFuelType()}," +
-                       $"{CarRepository.Cars[i].GetSeat()}," +
-                       $"{CarRepository.Cars[i].GetIsUsed()}," +
-                       $"{CarRepository.Cars[i].GetMileage()}\n";
+            writer.WriteLine("id,company,model,engine,horse power,price,fuel type,number of seats,status of the car,mileage");
+            foreach (var car in CarRepository.Cars)
+            {
+                writer.WriteLine(car.GetInfo());
+            }
         }
-        File.WriteAllLines(path, file);
 
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("saved successfully");
