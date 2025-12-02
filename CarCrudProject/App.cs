@@ -13,6 +13,7 @@ public class App
         while (true)
         {
             string userInput = Console.ReadLine() ?? "";
+            Logger.Write("USER INPUT",$"{userInput}");
             controller.ProcessInput(userInput);
         }
     }

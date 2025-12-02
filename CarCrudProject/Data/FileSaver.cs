@@ -2,20 +2,23 @@
 using CarCrudProject.Models;
 using CarCrudProject.Repositories;
 using System.IO;
+using CarCrudProject.Services;
 
 namespace CarCrudProject.Data;
 
 public static class FileSaver
 {
-    private static string currentPath = @"..\..\..\..\CarCrudProject/";
+    private static string currentPath = @"..\..\..\..\CarCrudProject\outputs/";
     private static string defaultFileName = "output.csv";
     public static void SaveAs()
     {
         Console.WriteLine(@"enter the path and filename (for example: C:\Desktop\cars.csv)");
         Console.WriteLine("or press 'Enter', to save it in output.csv in current folder:");
         Console.WriteLine(Path.GetFullPath(currentPath));
+        Logger.Write("SAVE AS", "waiting for user to choose saving method");
 
         string userInput = Console.ReadLine() ?? "";
+        Logger.Write("USER INPUT", $"{userInput}");
 
         if (userInput == "")
         {
@@ -33,6 +36,8 @@ public static class FileSaver
             Console.WriteLine("file saved successfully:");
             Console.ResetColor();
             Console.WriteLine($"'{currentPath + defaultFileName}'");
+            Logger.Write("SAVE AS",$"user chose default saving (entered empty string). File path - " +
+                                   $"'{currentPath + defaultFileName}'");
         }
         else 
         {
@@ -53,13 +58,15 @@ public static class FileSaver
                 Console.WriteLine("file saved successfully:");
                 Console.ResetColor();
                 Console.WriteLine($"'{userInput}'");
+                Logger.Write("SAVE AS",$"user chose manual saving. File path - " +
+                                       $"'{currentPath + defaultFileName}'");
             }
         }
     }
     
     public static void Save()
     {
-        using (var writer = new StreamWriter(Program.path, append: false))
+        using (var writer = new StreamWriter(Path.GetFullPath(Program.path), append: false))
         {
             writer.WriteLine("id,company,model,engine,horse power,price,fuel type,number of seats,status of the car,mileage");
             foreach (var car in CarRepository.Cars)
@@ -67,9 +74,9 @@ public static class FileSaver
                 writer.WriteLine(car.GetInfo());
             }
         }
-
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("saved successfully");
         Console.ResetColor();
+        Logger.Write("SAVE",$"file saved successfully. Path - {Path.GetFullPath(Program.path)}");
     }
 }

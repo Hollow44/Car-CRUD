@@ -1,0 +1,108 @@
+[02.12.2025 19:43:35] START: Application started
+[02.12.2025 19:43:35] LOAD: Dataset has been loaded (1215 cars)
+[02.12.2025 19:43:39] USER INPUT: 
+02.12.2025 19:46:54 [START]: Application started
+02.12.2025 19:46:54 [LOAD]: Dataset has been loaded (1215 cars)
+02.12.2025 19:46:56 [USER INPUT]: еуые
+02.12.2025 19:46:57 [USER INPUT]: test
+02.12.2025 19:46:59 [USER INPUT]: 
+[02.12.2025 19:54:21] START: Application started
+[02.12.2025 19:54:21] LOAD: Dataset has been loaded (1215 cars)
+[02.12.2025 19:54:24] USER INPUT: show -1
+[02.12.2025 19:55:46] START: Application started
+[02.12.2025 19:55:46] LOAD: Dataset has been loaded (1215 cars)
+[02.12.2025 19:55:49] USER INPUT: delete -1
+[02.12.2025 19:55:56] USER INPUT: 
+[02.12.2025 19:56:32] START: Application started
+[02.12.2025 19:56:32] LOAD: Dataset has been loaded (1215 cars)
+[02.12.2025 19:56:35] USER INPUT: delete sadfdsaf
+[02.12.2025 19:56:37] USER INPUT: 
+[02.12.2025 20:11:09] START: Application started
+[02.12.2025 20:11:09] LOAD: Dataset has been loaded (1215 cars)
+[02.12.2025 20:11:11] USER INPUT: edit -1
+[02.12.2025 20:15:04] START: Application started
+[02.12.2025 20:15:04] LOAD: Dataset has been loaded (1215 cars)
+[02.12.2025 20:15:06] USER INPUT: edit 3432432423
+[02.12.2025 20:15:06] ERROR: 'edit 2147483647' invalid id
+[02.12.2025 20:15:10] USER INPUT: 
+[02.12.2025 21:08:16] START: Application started
+[02.12.2025 21:08:16] LOAD: Dataset has been loaded (1215 cars)
+[02.12.2025 21:08:23] USER INPUT: add adfsadf
+[02.12.2025 21:08:23] ERROR: 'add adfsadf' invalid arguments
+[02.12.2025 21:08:25] USER INPUT: show all
+[02.12.2025 21:08:27] SHOW: displayed all the cars
+[02.12.2025 21:08:35] USER INPUT: edit 1215
+[02.12.2025 21:08:35] SHOW: displayed car with ID 1215
+[02.12.2025 21:09:04] USER INPUT: ford, mustang, v8, 500, 200000, gasoline, 2, used, 20000
+[02.12.2025 21:09:04] EDIT: before EDIT: ID 1215,test company test model,v500,200,100000,gasoline,2,False,0
+[02.12.2025 21:09:04] EDIT: after EDIT: ID 1215,ford mustang,v8,500,200000,gasoline,2,True,20000
+[02.12.2025 21:09:04] EDIT: car with id '1215' has been updated
+[02.12.2025 21:09:07] USER INPUT: show 1215
+[02.12.2025 21:09:07] SHOW: car with id 1215 was shown
+[02.12.2025 21:09:49] USER INPUT: add test, test model, sadfasdf, 22, 213121, diesel, 3, used, 132313
+[02.12.2025 21:09:49] ADD: new car with ID 1216 was added successfully (test test model)
+[02.12.2025 21:09:52] USER INPUT: show all
+[02.12.2025 21:09:53] SHOW: displayed all the cars
+[02.12.2025 21:09:59] USER INPUT: delete 1216
+[02.12.2025 21:09:59] DELETE: waiting for user's confirmation
+[02.12.2025 21:10:01] USER INPUT: y
+[02.12.2025 21:10:01] DELETE: car with ID 1216 was deleted (test test model)
+[02.12.2025 21:10:06] USER INPUT: edit sadf
+[02.12.2025 21:10:06] ERROR: 'edit sadf' is not correct command
+[02.12.2025 21:10:13] USER INPUT: add asdfadsf
+[02.12.2025 21:10:13] ERROR: 'add asdfadsf' invalid arguments
+[02.12.2025 21:10:17] USER INPUT: --help
+[02.12.2025 21:10:17] HELP: displayed '--help' menu
+[02.12.2025 21:10:20] USER INPUT: clear
+[02.12.2025 21:10:26] USER INPUT: edit 3424
+[02.12.2025 21:10:26] ERROR: 'edit 3424' invalid id
+[02.12.2025 21:10:29] USER INPUT: edit adsfadsfadsfs
+[02.12.2025 21:10:29] ERROR: 'edit adsfadsfadsfs' is not correct command
+[02.12.2025 21:10:31] USER INPUT: edit 14
+[02.12.2025 21:10:31] SHOW: displayed car with ID 14
+[02.12.2025 21:10:35] USER INPUT: dsafkjfads asdf slf f sakfsddfsa dsaf sad fdsaf
+[02.12.2025 21:10:35] ERROR: 'dsafkjfads asdf slf f sakfsddfsa dsaf sad fdsaf' incorrect arguments (EDIT)
+[02.12.2025 21:10:39] USER INPUT: clear
+[02.12.2025 21:10:39] USER INPUT: exit
+[02.12.2025 21:10:39] USER INPUT: waiting for user's confirmation to EXIT the app
+[02.12.2025 21:10:41] USER INPUT: y
+[02.12.2025 21:10:41] EXIT: app closed
+[02.12.2025 21:17:46] START: Application started
+[02.12.2025 21:17:46] LOAD: Dataset has been loaded (1215 cars)
+[02.12.2025 21:17:48] USER INPUT: show 2
+[02.12.2025 21:17:48] SHOW: 2,ROLLS ROYCE,PHANTOM,V12,563,460000,Petrol,5,False,0
+[02.12.2025 21:17:56] USER INPUT: exit
+[02.12.2025 21:17:56] EXIT: waiting for user's confirmation to EXIT the app
+[02.12.2025 21:17:57] USER INPUT: asdfsafds
+[02.12.2025 21:17:59] USER INPUT: exit 
+[02.12.2025 21:17:59] EXIT: waiting for user's confirmation to EXIT the app
+[02.12.2025 21:18:00] USER INPUT: y
+[02.12.2025 21:18:00] EXIT: app closed
+[02.12.2025 21:18:59] START: Application started
+[02.12.2025 21:18:59] LOAD: Dataset has been loaded (1215 cars)
+[02.12.2025 21:19:06] USER INPUT: edit 3
+[02.12.2025 21:19:06] EDIT: 3,Ford,KA+,1.2L Petrol,77,13500,Petrol,5,True,654334
+[02.12.2025 21:19:37] USER INPUT: ford, ka, v22132, 0, -2,gasoline,-1231, used, -123213
+[02.12.2025 21:19:37] ERROR: 'ford, ka, v22132, 0, -2,gasoline,-1231, used, -123213' wrong parameters for editing cars data
+[02.12.2025 21:19:41] USER INPUT: clear
+[02.12.2025 21:19:41] CLEAR: console got cleared
+[02.12.2025 21:19:42] USER INPUT: exit
+[02.12.2025 21:19:42] EXIT: waiting for user's confirmation to EXIT the app
+[02.12.2025 21:19:42] USER INPUT: y
+[02.12.2025 21:19:42] EXIT: app closed
+[02.12.2025 21:20:37] START: Application started
+[02.12.2025 21:20:37] LOAD: Dataset has been loaded (1215 cars)
+[02.12.2025 21:20:41] USER INPUT: show all
+[02.12.2025 21:20:42] SHOW: displayed all the cars
+[02.12.2025 21:20:44] USER INPUT: delete 1215
+[02.12.2025 21:20:44] DELETE: waiting for user's confirmation
+[02.12.2025 21:20:45] USER INPUT: y
+[02.12.2025 21:20:45] DELETE: car with ID 1215 was deleted (test company test model)
+[02.12.2025 21:20:49] USER INPUT: clear
+[02.12.2025 21:20:49] CLEAR: console got cleared
+[02.12.2025 21:20:50] USER INPUT: save
+[02.12.2025 21:20:50] SAVE: file saved successfully. Path - D:\prog-cs\CarCrud\CarCrudProject\Data\cars_dataset_modified_final.csv
+[02.12.2025 21:20:52] USER INPUT: exit
+[02.12.2025 21:20:52] EXIT: waiting for user's confirmation to EXIT the app
+[02.12.2025 21:20:53] USER INPUT: y
+[02.12.2025 21:20:53] EXIT: app closed
