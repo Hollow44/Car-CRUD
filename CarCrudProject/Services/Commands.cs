@@ -1,6 +1,7 @@
 ﻿using CarCrudProject.Repositories;
 using CarCrudProject.Utilities;
 using CarCrudProject.Models;
+using System.Numerics;
 
 namespace CarCrudProject.Services;
 
@@ -12,10 +13,11 @@ public static class Commands
         show where price > 0
         edit id model Mercedez benz, horsepower 8
      */
-  
+
     public static void Show(string argument)
     {
         string userInput = argument.ToLower();
+
         int carCount = 0;
         if (userInput == "all")
         {
@@ -34,6 +36,7 @@ public static class Commands
             {
                 Console.WriteLine($"'show {id}' invalid id"); 
                 Logger.LogError($"'show {id}' invalid id");
+                return;
             }
             
             var car = CarRepository.Cars.FirstOrDefault(car => car.GetId() == id);
@@ -41,13 +44,420 @@ public static class Commands
             if (car == null)
             {
                 Console.WriteLine($"'show {id}' car with this id already been deleted");
-                Logger.Write("INFO",$"'show {id}' car with this id already been deleted");
+                Logger.Write("INFO", $"'show {id}' car with this id already been deleted");
+                return;
             }
-            else car.ShowInfo();
-            Logger.Write("SHOW", car!.GetInfo());
+            else
+            {
+                car.ShowInfo();
+                Logger.Write("SHOW", car!.GetInfo());
+                return;
+            }
         }
+
         else
         {
+            
+            try
+            {
+                string filter = userInput;
+                string[] filterCommands = filter.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+
+                // WHERE price < 100_000
+
+                if (filterCommands.Length != 4)
+                {
+                    Console.WriteLine($"'show {argument}' is not correct command. See '--help show'");
+                    Logger.LogError($"'show {argument}' is not correct command");
+                    return;
+                }
+                else
+                {
+                    string where = filterCommands[0].Trim();
+                    string column = filterCommands[1].ToLower().Trim();
+                    string sign = filterCommands[2].Trim();
+                    string comparator = filterCommands[3].Trim();
+
+                    if (where.Equals("where", StringComparison.OrdinalIgnoreCase)
+                        && CarRepository.Columns.Contains(column, StringComparer.OrdinalIgnoreCase)
+                        && CarRepository.operators.Contains(sign))
+                    {
+                        if (column == "id" || column == "horsepower" || column == "price"
+                            || column == "seat" || column == "mileage")
+                        {
+                            if (Parser.IsValidNumberToParse(comparator))
+                            {
+                                int comparatorNumber = Parser.ParseNumber(comparator);
+
+                                if (column != "mileage" && comparatorNumber < 1
+                                    || column == "mileage" && comparatorNumber < 0)
+                                {
+                                    Console.WriteLine($"'show {argument}' incorrect numeric arguments. See '--help show'");
+                                    Logger.LogError($"'show {argument}' incorrect numeric arguments");
+                                    return;
+                                }
+                                foreach (var car in CarRepository.Cars)
+                                {
+                                    switch (column)
+                                    {
+                                        case "id":
+                                            switch (sign)
+                                            {
+                                                case "<":
+                                                    if (car.GetId() < comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}");
+                                                    }
+                                                    break;
+
+                                                case "<=":
+                                                    if (car.GetId() <= comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}");
+                                                    }
+                                                    break;
+
+                                                case ">":
+                                                    if (car.GetId() > comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}");
+                                                    }
+                                                    break;
+
+                                                case ">=":
+                                                    if (car.GetId() >= comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}");
+                                                    }
+                                                    break;
+
+                                                case "=":
+                                                    if (car.GetId() == comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}");
+                                                    }
+                                                    break;
+
+                                                case "!=":
+                                                    if (car.GetId() != comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}");
+                                                    }
+                                                    break;
+
+                                                default:
+                                                    Console.WriteLine($"'show {argument}' there is no car that matches this filter");
+                                                    Logger.LogError($"'show {argument}' there is no car that matches this filter");
+                                                    break;
+                                            }
+                                            break;
+
+                                        case "horsepower":
+                                            switch (sign)
+                                            {
+                                                case "<":
+                                                    if (car.GetHorsePower() < comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetHorsePower()} HP");
+                                                    }
+                                                    break;
+
+                                                case "<=":
+                                                    if (car.GetHorsePower() <= comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetHorsePower()} HP");
+                                                    }
+                                                    break;
+
+                                                case ">":
+                                                    if (car.GetHorsePower() > comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetHorsePower()} HP");
+                                                    }
+                                                    break;
+
+                                                case ">=":
+                                                    if (car.GetHorsePower() >= comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetHorsePower()} HP");
+                                                    }
+                                                    break;
+
+                                                case "=":
+                                                    if (car.GetHorsePower() == comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetHorsePower()} HP");
+                                                    }
+                                                    break;
+
+                                                case "!=":
+                                                    if (car.GetHorsePower() != comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetHorsePower()} HP");
+                                                    }
+                                                    break;
+
+                                                default:
+                                                    Console.WriteLine($"'show {argument}' there is no car that matches this filter");
+                                                    Logger.LogError($"'show {argument}' there is no car that matches this filter");
+                                                    break;
+                                            }
+                                            break;
+
+                                        case "price":
+                                            switch (sign)
+                                            {
+                                                case "<":
+                                                    if (car.GetPrice() < comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetPrice()}$");
+                                                    }
+                                                    break;
+
+                                                case "<=":
+                                                    if (car.GetPrice() <= comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetPrice()}$");
+                                                    }
+                                                    break;
+
+                                                case ">":
+                                                    if (car.GetPrice() > comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetPrice()}$");
+                                                    }
+                                                    break;
+
+                                                case ">=":
+                                                    if (car.GetPrice() >= comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetPrice()}$");
+                                                    }
+                                                    break;
+
+                                                case "=":
+                                                    if (car.GetPrice() == comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetPrice()}$");
+                                                    }
+                                                    break;
+
+                                                case "!=":
+                                                    if (car.GetPrice() != comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetPrice()}$");
+                                                    }
+                                                    break;
+
+                                                default:
+                                                    Console.WriteLine($"'show {argument}' there is no car that matches this filter");
+                                                    Logger.LogError($"'show {argument}' there is no car that matches this filter");
+                                                    break;
+                                            }
+                                            break;
+
+                                        case "seat":
+                                            switch (sign)
+                                            {
+                                                case "<":
+                                                    if (car.GetSeat() < comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetSeat()} seats");
+                                                    }
+                                                    break;
+
+                                                case "<=":
+                                                    if (car.GetSeat() <= comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetSeat()} seats");
+                                                    }
+                                                    break;
+
+                                                case ">":
+                                                    if (car.GetSeat() > comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetSeat()} seats");
+                                                    }
+                                                    break;
+
+                                                case ">=":
+                                                    if (car.GetSeat() >= comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetSeat()} seats");
+                                                    }
+                                                    break;
+
+                                                case "=":
+                                                    if (car.GetSeat() == comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetSeat()} seats");
+                                                    }
+                                                    break;
+
+                                                case "!=":
+                                                    if (car.GetSeat() != comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetSeat()} seats");
+                                                    }
+                                                    break;
+
+                                                default:
+                                                    Console.WriteLine($"'show {argument}' there is no car that matches this filter");
+                                                    Logger.LogError($"'show {argument}' there is no car that matches this filter");
+                                                    break;
+                                            }
+                                            break;
+
+                                        case "mileage":
+                                            switch (sign)
+                                            {
+                                                case "<":
+                                                    if (car.GetMileage() < comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetMileage()} KM");
+                                                    }
+                                                    break;
+
+                                                case "<=":
+                                                    if (car.GetMileage() <= comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetMileage()} KM");
+                                                    }
+                                                    break;
+
+                                                case ">":
+                                                    if (car.GetMileage() > comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetMileage()} KM");
+                                                    }
+                                                    break;
+
+                                                case ">=":
+                                                    if (car.GetMileage() >= comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetMileage()} KM");
+                                                    }
+                                                    break;
+
+                                                case "=":
+                                                    if (car.GetMileage() == comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetMileage()} KM");
+                                                    }
+                                                    break;
+
+                                                case "!=":
+                                                    if (car.GetMileage() != comparatorNumber)
+                                                    {
+                                                        carCount++;
+                                                        Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetMileage()} KM");
+                                                    }
+                                                    break;
+
+                                                default:
+                                                    Console.WriteLine($"'show {argument}' there is no car that matches this filter");
+                                                    Logger.LogError($"'show {argument}' there is no car that matches this filter");
+                                                    break;
+                                            }
+                                            break;
+
+                                        default:
+                                            break;
+                                    }
+                                }
+                                Logger.Write("SHOW", $"{carCount} cars got shown");
+                                return;
+                            }
+                        }
+                        else if (column == "status")
+                        {
+                            if (sign != "=" && sign != "!=")
+                            {
+                                Console.WriteLine($"'show {argument}' incorrect operator. See '--help show'");
+                                Logger.LogError($"'show {argument}' incorrect operator for 'status' column");
+                                return;
+                            }
+                            if (Parser.IsValidCarStatus(comparator))
+                            {
+                                bool carIsUsed = comparator == "used";
+
+                                if (carIsUsed)
+                                {
+                                    foreach (var car in CarRepository.Cars)
+                                    {   
+                                        if (car.GetIsUsed())
+                                        {
+                                            carCount++;
+                                            Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}. STATUS: used, mileage: {car.GetMileage()} KM");
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    foreach (var car in CarRepository.Cars)
+                                    {
+                                        if (!car.GetIsUsed())
+                                        {
+                                            carCount++;
+                                            Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}. STATUS: brand new");
+                                        }
+                                    }
+                                }
+
+                                    Logger.Write("SHOW", $"'show {argument}' {carCount} cars got shown");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"'show {argument}' incorrect comporator. See '--help show'");
+                                Logger.LogError($"'show {argument}' incorrect comporator for 'stat");
+                                return;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine($"'show {argument}' incorrect command. See '--help show'");
+                        Logger.LogError($"'show {argument}' incorrect command");
+                    }
+                }
+            }
+            catch
+            {
+                Console.WriteLine($"'show {argument}' is not correct command. See '--help show'");
+                Logger.LogError($"'show {argument}' is not correct command");
+
+                return;
+            }
+
             Console.WriteLine($"'show {argument}' is not correct command. See '--help show'");
             Logger.LogError($"'show {argument}' is not correct command");
         }
@@ -228,7 +638,7 @@ public static class Commands
 
         if (Parser.ParseChoiceIsYes(userInput))
         {
-            Logger.Write("EXIT", "app closed");
+            Logger.Write("EXIT", "app closed\n");
             Environment.Exit(0);
         }
     }
@@ -338,7 +748,8 @@ public static class Commands
                 Logger.Write("HELP", $"displayed '--help {command}' menu");
                 Console.WriteLine("display all the cars or 1 particular car");
                 Console.WriteLine("\tshow all\tShows the list of all cars with detailed information");
-                Console.WriteLine("\tshow [id]\tShow the details about 1 car with the particular 'id'");
+                Console.WriteLine("\tshow [id]\tShow the details about 1 car with the particular 'id'. ID can't " +
+                    "be lowe than 1 or higher than last car's ID");
                 break;
             
             case "add":

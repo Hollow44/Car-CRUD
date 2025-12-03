@@ -29,3 +29,246 @@
 [03.12.2025 11:11:24] EXIT: waiting for user's confirmation to EXIT the app
 [03.12.2025 11:11:26] USER INPUT: y
 [03.12.2025 11:11:26] EXIT: app closed
+[03.12.2025 11:30:10] START: Application started
+[03.12.2025 11:30:10] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 11:30:16] USER INPUT: show WHERE price < 10000
+[03.12.2025 11:30:16] ERROR: 'show WHERE price < 10000' is not correct command
+[03.12.2025 11:30:55] START: Application started
+[03.12.2025 11:30:55] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 11:31:01] USER INPUT: show where price < 0
+[03.12.2025 11:31:01] ERROR: 'show where price < 0' is not correct command
+[03.12.2025 13:56:58] START: Application started
+[03.12.2025 13:56:58] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 13:57:02] USER INPUT: show all
+[03.12.2025 13:57:02] SHOW: displayed 1214 cars
+[03.12.2025 13:57:06] USER INPUT: clear
+[03.12.2025 13:57:06] CLEAR: console got cleared
+[03.12.2025 13:57:08] USER INPUT: show 1214
+[03.12.2025 13:57:08] SHOW: Toyota,RAV4 (6th Gen),2.5L Hybrid / Plug-in Hybrid,260,36000,Hybrid / Plug-in,5,True,82000
+[03.12.2025 13:57:19] USER INPUT: delete  1214
+[03.12.2025 13:57:19] DELETE: waiting for user's confirmation
+[03.12.2025 13:57:28] USER INPUT: y
+[03.12.2025 13:57:28] DELETE: car with ID 1214 was deleted (Toyota RAV4 (6th Gen))
+[03.12.2025 13:57:31] USER INPUT: clear
+[03.12.2025 13:57:31] CLEAR: console got cleared
+[03.12.2025 13:57:32] USER INPUT: show 1214
+[03.12.2025 13:57:32] INFO: 'show 1214' car with this id already been deleted
+[03.12.2025 13:58:34] START: Application started
+[03.12.2025 13:58:34] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 13:59:03] START: Application started
+[03.12.2025 13:59:03] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 13:59:06] USER INPUT: show 12
+[03.12.2025 13:59:06] SHOW: FERRARI,PORTOFINO,V8,592,210000,Petrol,0,False,0
+[03.12.2025 13:59:12] USER INPUT: show all
+[03.12.2025 13:59:12] SHOW: displayed 1214 cars
+[03.12.2025 13:59:15] USER INPUT: clear
+[03.12.2025 13:59:15] CLEAR: console got cleared
+[03.12.2025 13:59:17] USER INPUT: show 1214
+[03.12.2025 13:59:17] SHOW: Toyota,RAV4 (6th Gen),2.5L Hybrid / Plug-in Hybrid,260,36000,Hybrid / Plug-in,5,True,82000
+[03.12.2025 13:59:20] USER INPUT: delete 1214
+[03.12.2025 13:59:20] DELETE: waiting for user's confirmation
+[03.12.2025 13:59:21] USER INPUT: y
+[03.12.2025 13:59:21] DELETE: car with ID 1214 was deleted (Toyota RAV4 (6th Gen))
+[03.12.2025 13:59:23] USER INPUT: clear
+[03.12.2025 13:59:23] CLEAR: console got cleared
+[03.12.2025 13:59:24] USER INPUT: show all
+[03.12.2025 13:59:25] SHOW: displayed 1213 cars
+[03.12.2025 13:59:30] USER INPUT: clear
+[03.12.2025 13:59:30] CLEAR: console got cleared
+[03.12.2025 13:59:32] USER INPUT: show 1214
+[03.12.2025 13:59:32] INFO: 'show 1214' car with this id already been deleted
+[03.12.2025 13:59:39] USER INPUT: exit
+[03.12.2025 13:59:39] EXIT: waiting for user's confirmation to EXIT the app
+[03.12.2025 13:59:41] USER INPUT: n
+[03.12.2025 13:59:43] USER INPUT: clear
+[03.12.2025 13:59:43] CLEAR: console got cleared
+[03.12.2025 13:59:44] USER INPUT: saveas
+[03.12.2025 13:59:44] SAVE AS: waiting for user to choose saving method
+[03.12.2025 13:59:53] USER INPUT: 
+[03.12.2025 13:59:53] SAVE AS: user chose default saving (entered empty string). File path - '..\..\..\..\CarCrudProject\outputs/output.csv'
+[03.12.2025 14:02:02] START: Application started
+[03.12.2025 14:02:02] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 14:02:22] START: Application started
+[03.12.2025 14:02:22] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 14:02:24] USER INPUT: saveas
+[03.12.2025 14:02:24] SAVE AS: waiting for user to choose saving method
+[03.12.2025 14:02:26] USER INPUT: 
+[03.12.2025 14:02:26] SAVE AS: user chose default saving (entered empty string). File path - 'C:\Users\TimZhu\source\repos\CarCrudProject\CarCrudProject\outputs'
+[03.12.2025 14:02:30] USER INPUT: saveas
+[03.12.2025 14:02:30] SAVE AS: waiting for user to choose saving method
+[03.12.2025 14:02:52] USER INPUT: C:\test folder\test.csv
+[03.12.2025 14:02:52] SAVE AS: user chose manual saving. File path - 'C:\test folder\test.csv'
+[03.12.2025 14:02:55] USER INPUT: clear
+[03.12.2025 14:02:55] CLEAR: console got cleared
+[03.12.2025 14:02:57] USER INPUT: exit
+[03.12.2025 14:02:57] EXIT: waiting for user's confirmation to EXIT the app
+[03.12.2025 14:02:57] USER INPUT: y
+[03.12.2025 14:02:57] EXIT: app closed
+[03.12.2025 14:03:39] START: Application started
+[03.12.2025 14:03:39] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 14:03:44] USER INPUT: saveas
+[03.12.2025 14:03:44] SAVE AS: waiting for user to choose saving method
+[03.12.2025 14:03:47] USER INPUT: c:
+[03.12.2025 14:03:47] ERROR: 'c:' incorrect path
+[03.12.2025 14:03:50] USER INPUT: saveas
+[03.12.2025 14:03:50] SAVE AS: waiting for user to choose saving method
+[03.12.2025 14:04:01] USER INPUT: C:\test folder\test.csv
+[03.12.2025 14:04:01] USER INPUT: waiting for user to confirm rewriting the file while saving
+[03.12.2025 14:04:04] USER INPUT:  
+[03.12.2025 14:04:05] USER INPUT: 
+[03.12.2025 14:04:05] USER INPUT: 
+[03.12.2025 14:04:06] USER INPUT: clear
+[03.12.2025 14:04:06] CLEAR: console got cleared
+[03.12.2025 14:40:14] START: Application started
+[03.12.2025 14:40:14] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 14:40:16] USER INPUT: show 12341321312
+[03.12.2025 14:40:16] ERROR: 'show 12341321312' is not correct command
+[03.12.2025 14:40:20] USER INPUT: show sadfasdfas
+[03.12.2025 14:40:20] ERROR: 'show sadfasdfas' is not correct command
+[03.12.2025 14:40:22] USER INPUT: show 12
+[03.12.2025 14:40:22] ERROR: 'show 12' is not correct command
+[03.12.2025 14:40:49] START: Application started
+[03.12.2025 14:40:49] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 14:40:52] USER INPUT: show 12312312
+[03.12.2025 14:40:52] ERROR: 'show 12312312' invalid id
+[03.12.2025 14:40:54] USER INPUT: show -1
+[03.12.2025 14:40:54] ERROR: 'show -1' invalid id
+[03.12.2025 14:40:56] USER INPUT: show 3
+[03.12.2025 14:40:56] SHOW: Ford,KA+,1.2L Petrol,77,13500,Petrol,5,True,654334
+[03.12.2025 14:40:57] USER INPUT: clear
+[03.12.2025 14:40:57] CLEAR: console got cleared
+[03.12.2025 14:40:59] USER INPUT: show afjdslfadsfkdf
+[03.12.2025 14:40:59] ERROR: 'show afjdslfadsfkdf' is not correct command
+[03.12.2025 14:41:02] USER INPUT: --help show
+[03.12.2025 14:41:02] HELP: displayed '--help show' menu
+[03.12.2025 14:42:31] START: Application started
+[03.12.2025 14:42:32] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 14:42:34] USER INPUT: --help show
+[03.12.2025 14:42:34] HELP: displayed '--help show' menu
+[03.12.2025 14:42:39] USER INPUT: clear
+[03.12.2025 14:42:40] CLEAR: console got cleared
+[03.12.2025 14:42:41] USER INPUT: exit
+[03.12.2025 14:42:41] EXIT: waiting for user's confirmation to EXIT the app
+[03.12.2025 14:42:42] USER INPUT: y
+[03.12.2025 14:42:42] EXIT: app closed
+[03.12.2025 15:27:08] START: Application started
+[03.12.2025 15:27:08] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 15:27:16] USER INPUT: show where price < 100000
+[03.12.2025 15:27:16] ERROR: 'show where price < 100000' is not correct command
+[03.12.2025 15:27:28] USER INPUT: clear
+[03.12.2025 15:27:28] CLEAR: console got cleared
+[03.12.2025 15:27:37] USER INPUT: show where price < 10000
+[03.12.2025 15:27:37] ERROR: 'show where price < 10000' is not correct command
+[03.12.2025 15:27:49] USER INPUT: show 223
+[03.12.2025 15:27:49] SHOW: HYUNDAI,I10,"1.2L,0,160,12.2,0,True,120
+[03.12.2025 15:28:07] USER INPUT: clear
+[03.12.2025 15:28:07] CLEAR: console got cleared
+[03.12.2025 15:29:08] START: Application started
+[03.12.2025 15:29:08] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 15:29:11] USER INPUT: show all
+[03.12.2025 15:29:11] SHOW: displayed 1214 cars
+[03.12.2025 15:29:51] USER INPUT: show where seat < 2
+[03.12.2025 15:29:51] ERROR: 'show where seat < 2' is not correct command
+[03.12.2025 15:32:45] START: Application started
+[03.12.2025 15:32:46] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 15:32:47] USER INPUT: testse
+[03.12.2025 15:32:47] ERROR: 'testse' is not correct command
+[03.12.2025 15:32:47] USER INPUT: test
+[03.12.2025 15:32:47] ERROR: 'test' is not correct command
+[03.12.2025 15:32:47] USER INPUT: set
+[03.12.2025 15:32:47] ERROR: 'set' is not correct command
+[03.12.2025 15:32:48] USER INPUT: s
+[03.12.2025 15:32:48] ERROR: 's' is not correct command
+[03.12.2025 15:32:50] USER INPUT: show 2
+[03.12.2025 15:32:50] SHOW: ROLLS ROYCE,PHANTOM,V12,563,460000,Petrol,5,False,0
+[03.12.2025 15:32:51] USER INPUT: clear
+[03.12.2025 15:32:51] CLEAR: console got cleared
+[03.12.2025 15:32:53] USER INPUT: exit
+[03.12.2025 15:32:53] EXIT: waiting for user's confirmation to EXIT the app
+[03.12.2025 15:32:53] USER INPUT: y
+[03.12.2025 15:32:53] EXIT: app closed
+
+[03.12.2025 15:32:57] START: Application started
+[03.12.2025 15:32:57] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 15:33:00] USER INPUT: teeeeeeeeeeest
+[03.12.2025 15:33:00] ERROR: 'teeeeeeeeeeest' is not correct command
+[03.12.2025 15:33:02] USER INPUT: exit
+[03.12.2025 15:33:02] EXIT: waiting for user's confirmation to EXIT the app
+[03.12.2025 15:33:03] USER INPUT: y
+[03.12.2025 15:33:03] EXIT: app closed
+
+[03.12.2025 16:58:18] START: Application started
+[03.12.2025 16:58:18] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 16:58:22] USER INPUT: show where id < 2
+[03.12.2025 16:58:22] ERROR: 'show where id < 2' is not correct command
+[03.12.2025 16:59:38] START: Application started
+[03.12.2025 16:59:38] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 16:59:42] USER INPUT: show where id > 1000\
+[03.12.2025 16:59:44] USER INPUT: show where id > 1000
+[03.12.2025 17:03:07] START: Application started
+[03.12.2025 17:03:07] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 17:03:11] USER INPUT: show where id < 3
+[03.12.2025 17:03:11] SHOW: 'show where id < 3' 2 got shown
+[03.12.2025 17:09:16] START: Application started
+[03.12.2025 17:09:16] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 17:09:25] USER INPUT: show where price < 100000
+[03.12.2025 17:09:26] SHOW: 1013 cars got shown
+[03.12.2025 17:09:46] USER INPUT: clear
+[03.12.2025 17:09:46] CLEAR: console got cleared
+[03.12.2025 17:09:52] USER INPUT: show where price < 20 000
+[03.12.2025 17:09:52] ERROR: 'show where price < 20 000' is not correct command
+[03.12.2025 17:09:56] USER INPUT: show where price < 20000
+[03.12.2025 17:09:56] SHOW: 153 cars got shown
+[03.12.2025 17:10:08] USER INPUT: show 807
+[03.12.2025 17:10:08] SHOW: GMC,Hummer EV SUV Extreme Off-Road,"Electric motors with up to 11,200,3,110000.0,0,True,0
+[03.12.2025 17:10:26] USER INPUT: show where seat = 0
+[03.12.2025 17:10:26] ERROR: 'show where seat = 0' incorrect numeric arguments
+[03.12.2025 17:10:35] USER INPUT: show where seat < 1
+[03.12.2025 17:10:35] SHOW: 47 cars got shown
+[03.12.2025 17:11:50] USER INPUT: show where status = new
+[03.12.2025 17:11:50] SHOW: 'show where status = new' 1214 got shown
+[03.12.2025 17:11:50] ERROR: 'show where status = new' is not correct command
+[03.12.2025 17:12:36] START: Application started
+[03.12.2025 17:12:36] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 17:12:41] USER INPUT: show where status < new
+[03.12.2025 17:12:41] ERROR: 'show where status < new' incorrect operator for 'status' column
+[03.12.2025 17:12:41] SHOW: 'show where status < new' 1214 got shown
+[03.12.2025 17:12:41] ERROR: 'show where status < new' is not correct command
+[03.12.2025 17:13:48] START: Application started
+[03.12.2025 17:13:48] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 17:13:52] USER INPUT: show where status < 0
+[03.12.2025 17:13:52] ERROR: 'show where status < 0' incorrect operator for 'status' column
+[03.12.2025 17:14:39] START: Application started
+[03.12.2025 17:14:39] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 17:14:44] USER INPUT: show where cat status = asdf
+[03.12.2025 17:14:44] ERROR: 'show where cat status = asdf' is not correct command
+[03.12.2025 17:17:01] START: Application started
+[03.12.2025 17:17:01] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 17:17:06] USER INPUT: show where status = new
+[03.12.2025 17:17:06] SHOW: 'show where status = new' 1214 got shown
+[03.12.2025 17:17:06] ERROR: 'show where status = new' is not correct command
+[03.12.2025 17:20:30] START: Application started
+[03.12.2025 17:20:30] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 17:20:34] USER INPUT: show where status = new
+[03.12.2025 17:20:34] SHOW: 'show where status = new' 572 got shown
+[03.12.2025 17:20:34] ERROR: 'show where status = new' is not correct command
+[03.12.2025 17:20:56] USER INPUT: show where status = used
+[03.12.2025 17:20:56] SHOW: 'show where status = used' 642 got shown
+[03.12.2025 17:20:56] ERROR: 'show where status = used' is not correct command
+[03.12.2025 17:21:10] USER INPUT: clear
+[03.12.2025 17:21:10] CLEAR: console got cleared
+[03.12.2025 17:21:12] USER INPUT: exit
+[03.12.2025 17:21:12] EXIT: waiting for user's confirmation to EXIT the app
+[03.12.2025 17:21:13] USER INPUT: y
+[03.12.2025 17:21:13] EXIT: app closed
+
+[03.12.2025 17:21:55] START: Application started
+[03.12.2025 17:21:55] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 17:22:01] USER INPUT: show where model < 12
+[03.12.2025 17:22:01] ERROR: 'show where model < 12' is not correct command
+[03.12.2025 17:22:08] USER INPUT: show where price < adsfa
+[03.12.2025 17:22:08] ERROR: 'show where price < adsfa' is not correct command
+[03.12.2025 17:22:15] USER INPUT: show where company = ferrari
+[03.12.2025 17:22:15] ERROR: 'show where company = ferrari' is not correct command
+[03.12.2025 17:22:32] USER INPUT: show where company = FERRARI
+[03.12.2025 17:22:32] ERROR: 'show where company = FERRARI' is not correct command

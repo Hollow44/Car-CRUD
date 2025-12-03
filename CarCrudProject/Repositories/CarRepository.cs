@@ -12,6 +12,11 @@ public static class CarRepository
 {
     public static List<Car> Cars = new List<Car>();
     private static int _nextId = 1;
+    public static readonly string[] Columns =
+        {
+            "id", "company", "model", "engine", "horsepower", "price", "fueltype", "seat", "status", "mileage"
+        };
+    public static readonly string[] operators = { "<", "<=", ">", ">=", "=", "!=" };
 
     public static void Add(Car car)
     {

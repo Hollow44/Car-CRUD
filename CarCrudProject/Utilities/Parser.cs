@@ -62,7 +62,6 @@ public static class Parser
         if (firstSpaceIndex == -1) return new[] { userInput }; // если команда в одно слово - save || clear etc.
 
         
-        // разделяю команду и аргументы
         string command = userInput.Substring(0, firstSpaceIndex);
         string arguments = userInput.Substring(firstSpaceIndex + 1).Trim();
 
@@ -78,7 +77,7 @@ public static class Parser
             return new[] { command }.Concat(argumentsSplit).ToArray();
         }
 
-        // это для команд у которых только 1 аргумент (delete ID || edit ID etc.)
+        
         // if (arguments.Contains(' '))
         // {
         //     Console.WriteLine($"'{command}' is not a correct command. See '--help'");
