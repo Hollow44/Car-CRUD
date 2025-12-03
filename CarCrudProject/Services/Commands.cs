@@ -10,7 +10,6 @@ public static class Commands
     private static readonly CarFactory factory = new();
 
     /* TODO:
-        show where price > 0
         edit id model Mercedez benz, horsepower 8
      */
 
@@ -442,6 +441,129 @@ public static class Commands
                                 return;
                             }
                         }
+                        else // column = company || model || engine || fueltype
+                        {
+                            if (sign != "=" && sign != "!=")
+                            {
+                                Console.WriteLine($"'show {argument}' incorrect operator. See '--help show'");
+                                Logger.LogError($"'show {argument}' incorrect operator for 'status' column");
+                                return;
+                            }
+                            foreach (var car in CarRepository.Cars)
+                            {
+                                switch (column)
+                                {
+                                    case "company":
+                                        switch (sign)
+                                        {
+                                            case "=":
+                                                if (car.GetCompany().Equals(comparator, StringComparison.OrdinalIgnoreCase))
+                                                {
+                                                    carCount++;
+                                                    Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}");
+                                                }
+                                                break;
+
+                                            case "!=":
+                                                if (!car.GetCompany().Equals(comparator, StringComparison.OrdinalIgnoreCase))
+                                                {
+                                                    carCount++;
+                                                    Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}");
+                                                }
+                                                break;
+
+                                            default:
+                                                Console.WriteLine($"'show {argument}' there is no car that matches this filter");
+                                                Logger.LogError($"'show {argument}' there is no car that matches this filter");
+                                                break;
+                                        }
+                                        break;
+
+                                    case "model":
+                                        switch (sign)
+                                        {
+                                            case "=":
+                                                if (car.GetModel().Equals(comparator, StringComparison.OrdinalIgnoreCase))
+                                                {
+                                                    carCount++;
+                                                    Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}");
+                                                }
+                                                break;
+
+                                            case "!=":
+                                                if (!car.GetModel().Equals(comparator, StringComparison.OrdinalIgnoreCase))
+                                                {
+                                                    carCount++;
+                                                    Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}");
+                                                }
+                                                break;
+
+                                            default:
+                                                Console.WriteLine($"'show {argument}' there is no car that matches this filter");
+                                                Logger.LogError($"'show {argument}' there is no car that matches this filter");
+                                                break;
+                                        }
+                                        break;
+
+                                    case "engine":
+                                        switch (sign)
+                                        {
+                                            case "=":
+                                                if (car.GetEngine().Equals(comparator, StringComparison.OrdinalIgnoreCase))
+                                                {
+                                                    carCount++;
+                                                    Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetEngine()} engine");
+                                                }
+                                                break;
+
+                                            case "!=":
+                                                if (!car.GetEngine().Equals(comparator, StringComparison.OrdinalIgnoreCase))
+                                                {
+                                                    carCount++;
+                                                    Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetEngine()} engine");
+                                                }
+                                                break;
+
+                                            default:
+                                                Console.WriteLine($"'show {argument}' there is no car that matches this filter");
+                                                Logger.LogError($"'show {argument}' there is no car that matches this filter");
+                                                break;
+                                        }
+                                        break;
+
+                                    case "fueltype":
+                                        switch (sign)
+                                        {
+                                            case "=":
+                                                if (car.GetFuelType().Equals(comparator, StringComparison.OrdinalIgnoreCase))
+                                                {
+                                                    carCount++;
+                                                    Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetFuelType()} fuel type");
+                                                }
+                                                break;
+
+                                            case "!=":
+                                                if (!car.GetFuelType().Equals(comparator, StringComparison.OrdinalIgnoreCase))
+                                                {
+                                                    carCount++;
+                                                    Console.WriteLine($"[{car.GetId()}] {car.GetCompany()} {car.GetModel()}, {car.GetFuelType()} fuel type");
+                                                }
+                                                break;
+
+                                            default:
+                                                Console.WriteLine($"'show {argument}' there is no car that matches this filter");
+                                                Logger.LogError($"'show {argument}' there is no car that matches this filter");
+                                                break;
+                                        }
+                                        break;
+
+                                    default:
+                                        break;
+                                }
+                            }
+                            Logger.Write("SHOW", $"{carCount} cars got shown");
+                            return;
+                        }
                     }
                     else
                     {
@@ -457,9 +579,6 @@ public static class Commands
 
                 return;
             }
-
-            Console.WriteLine($"'show {argument}' is not correct command. See '--help show'");
-            Logger.LogError($"'show {argument}' is not correct command");
         }
     }
 
@@ -702,9 +821,12 @@ public static class Commands
     public static void Help()
     {
         Logger.Write("HELP", "displayed '--help' menu");
-        Console.WriteLine("display all the cars or 1 particular car");
+        Console.WriteLine("display all the cars || 1 particular car OR make a little filter");
         Console.WriteLine("\tshow all\tShows the list of all cars with detailed information");
         Console.WriteLine("\tshow [id]\tShow the details about 1 car with the particular 'id'");
+        Console.WriteLine("\tshow WHERE [column] [operator] [comparator]\tShow a little filter. For example: 'show WHERE " +
+                          "price < 100000' displays list of the cars with prices below 100 000$. For full list " +
+                          "of comands see '--help show'");
         Console.WriteLine();
         
         Console.WriteLine("add the car to the list");
@@ -750,6 +872,33 @@ public static class Commands
                 Console.WriteLine("\tshow all\tShows the list of all cars with detailed information");
                 Console.WriteLine("\tshow [id]\tShow the details about 1 car with the particular 'id'. ID can't " +
                     "be lowe than 1 or higher than last car's ID");
+                Console.WriteLine("\tshow WHERE [column] [operator] [comparator]\tShow a little filter. For example: 'show WHERE " +
+                          "price < 100000' displays list of the cars with prices below 100 000$.");
+                Console.WriteLine("List of commands for a little filter:");
+                Console.WriteLine(" _____________________________________________________________________");
+                Console.WriteLine("|        |  Command  |    Column    |     Operator     |  Comparator  |");
+                Console.WriteLine(" ---------------------------------------------------------------------");
+                Console.WriteLine("|  show  |   WHERE   |      id      |  <,<=,>,>=,=,!=  |      int     |");
+                Console.WriteLine(" ---------------------------------------------------------------------");
+                Console.WriteLine("|  show  |   WHERE   |   company    |       =,!=       |    string    |");
+                Console.WriteLine(" ---------------------------------------------------------------------");
+                Console.WriteLine("|  show  |   WHERE   |     model    |       =,!=       |    string    |");
+                Console.WriteLine(" ---------------------------------------------------------------------");
+                Console.WriteLine("|  show  |   WHERE   |    engine    |       =,!=       |    string    |");
+                Console.WriteLine(" ---------------------------------------------------------------------");
+                Console.WriteLine("|  show  |   WHERE   |  horsepower  |  <,<=,>,>=,=,!=  |      int     |");
+                Console.WriteLine(" ---------------------------------------------------------------------");
+                Console.WriteLine("|  show  |   WHERE   |     price    |  <,<=,>,>=,=,!=  |      int     |");
+                Console.WriteLine(" ---------------------------------------------------------------------");
+                Console.WriteLine("|  show  |   WHERE   |   fueltype   |       =,!=       |    string    |");
+                Console.WriteLine(" ---------------------------------------------------------------------");
+                Console.WriteLine("|  show  |   WHERE   |     seat     |  <,<=,>,>=,=,!=  |      int     |");
+                Console.WriteLine(" ---------------------------------------------------------------------");
+                Console.WriteLine("|  show  |   WHERE   |    status    |       =,!=       |    string    |");
+                Console.WriteLine(" ---------------------------------------------------------------------");
+                Console.WriteLine("|  show  |   WHERE   |    mileage   |  <,<=,>,>=,=,!=  |      int     |");
+                Console.WriteLine(" ---------------------------------------------------------------------");
+
                 break;
             
             case "add":

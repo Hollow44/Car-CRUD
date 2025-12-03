@@ -1,0 +1,74 @@
+[04.12.2025 01:24:55] START: Application started
+[04.12.2025 01:24:55] LOAD: Dataset has been loaded (1214 cars)
+[04.12.2025 01:25:00] USER INPUT: --help show
+[04.12.2025 01:25:00] HELP: displayed '--help show' menu
+[04.12.2025 01:25:54] START: Application started
+[04.12.2025 01:25:54] LOAD: Dataset has been loaded (1214 cars)
+[04.12.2025 01:25:56] USER INPUT: show asdfasf
+[04.12.2025 01:25:56] ERROR: 'show asdfasf' is not correct command
+[04.12.2025 01:25:59] USER INPUT: --help show
+[04.12.2025 01:25:59] HELP: displayed '--help show' menu
+[04.12.2025 01:26:21] USER INPUT: show where company = ferrari
+[04.12.2025 01:26:21] SHOW: 0 cars got shown
+[04.12.2025 01:27:15] START: Application started
+[04.12.2025 01:27:15] LOAD: Dataset has been loaded (1214 cars)
+[04.12.2025 01:27:22] USER INPUT: show WHERE company = FERRARI
+[04.12.2025 01:27:22] SHOW: 0 cars got shown
+[04.12.2025 01:30:25] START: Application started
+[04.12.2025 01:30:25] LOAD: Dataset has been loaded (1214 cars)
+[04.12.2025 01:30:32] USER INPUT: show where company = ferrari
+[04.12.2025 01:30:32] SHOW: 9 cars got shown
+[04.12.2025 01:30:46] USER INPUT: show where company asdfas
+[04.12.2025 01:30:46] ERROR: 'show where company asdfas' is not correct command
+[04.12.2025 01:35:02] START: Application started
+[04.12.2025 01:35:02] LOAD: Dataset has been loaded (1214 cars)
+[04.12.2025 01:35:04] USER INPUT: show where wfasd fasfa sf
+[04.12.2025 01:35:04] ERROR: 'show where wfasd fasfa sf' incorrect command
+[04.12.2025 01:35:09] USER INPUT: --help show
+[04.12.2025 01:35:09] HELP: displayed '--help show' menu
+[04.12.2025 01:35:40] USER INPUT: show where model = ghost
+[04.12.2025 01:35:40] SHOW: 1 cars got shown
+[04.12.2025 01:35:49] USER INPUT: show where company = toyota
+[04.12.2025 01:35:49] SHOW: 50 cars got shown
+[04.12.2025 01:36:01] USER INPUT: show where price > 100000
+[04.12.2025 01:36:01] SHOW: 197 cars got shown
+[04.12.2025 01:36:11] USER INPUT: clear
+[04.12.2025 01:36:11] CLEAR: console got cleared
+[04.12.2025 01:36:17] USER INPUT: show where price > 150000
+[04.12.2025 01:36:17] SHOW: 134 cars got shown
+[04.12.2025 01:36:25] USER INPUT: clear
+[04.12.2025 01:36:25] CLEAR: console got cleared
+[04.12.2025 01:36:29] USER INPUT: show where cars > 200000
+[04.12.2025 01:36:29] ERROR: 'show where cars > 200000' incorrect command
+[04.12.2025 01:36:36] USER INPUT: show where price > 200000
+[04.12.2025 01:36:36] SHOW: 105 cars got shown
+[04.12.2025 01:36:45] USER INPUT: clear
+[04.12.2025 01:36:45] CLEAR: console got cleared
+[04.12.2025 01:36:50] USER INPUT: show where price > 500000
+[04.12.2025 01:36:50] SHOW: 30 cars got shown
+[04.12.2025 01:37:01] USER INPUT: clear
+[04.12.2025 01:37:01] CLEAR: console got cleared
+[04.12.2025 01:37:02] USER INPUT: exit
+[04.12.2025 01:37:02] EXIT: waiting for user's confirmation to EXIT the app
+[04.12.2025 01:37:03] USER INPUT: y
+[04.12.2025 01:37:03] EXIT: app closed
+
+[04.12.2025 01:37:28] START: Application started
+[04.12.2025 01:37:28] LOAD: Dataset has been loaded (1214 cars)
+[04.12.2025 01:37:33] USER INPUT: show where price 0
+[04.12.2025 01:37:33] ERROR: 'show where price 0' is not correct command
+[04.12.2025 01:37:45] USER INPUT: show where     price < 100000
+[04.12.2025 01:37:45] SHOW: 1013 cars got shown
+[04.12.2025 01:37:51] USER INPUT: show where price < -10000
+[04.12.2025 01:37:51] ERROR: 'show where price < -10000' incorrect numeric arguments
+[04.12.2025 01:37:53] USER INPUT: clear
+[04.12.2025 01:37:53] CLEAR: console got cleared
+[04.12.2025 01:37:58] USER INPUT: show where status = new
+[04.12.2025 01:37:58] SHOW: 'show where status = new' 572 cars got shown
+[04.12.2025 01:38:08] USER INPUT: clear
+[04.12.2025 01:38:08] CLEAR: console got cleared
+[04.12.2025 01:38:13] USER INPUT: exit
+[04.12.2025 01:38:13] EXIT: waiting for user's confirmation to EXIT the app
+[04.12.2025 01:38:13] USER INPUT: y
+[04.12.2025 01:38:13] EXIT: app closed
+
