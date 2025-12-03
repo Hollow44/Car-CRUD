@@ -26,7 +26,7 @@ public static class FileSaver
             Directory.CreateDirectory(dir);
             using (var writer = new StreamWriter(currentPath + defaultFileName, append: false))
             {
-                writer.WriteLine("id,company,model,engine,horse power,price,fuel type,number of seats,status of the car,mileage");
+                writer.WriteLine("company,model,engine,horse power,price,fuel type,number of seats,status of the car,mileage");
                 foreach (var car in CarRepository.Cars)
                 {
                     writer.WriteLine(car.GetInfo());
@@ -48,7 +48,7 @@ public static class FileSaver
                 
                 using (var writer = new StreamWriter(userInput, append: false))
                 {
-                    writer.WriteLine("id,company,model,engine,horse power,price,fuel type,number of seats,status of the car,mileage");
+                    writer.WriteLine("company,model,engine,horse power,price,fuel type,number of seats,status of the car,mileage");
                     foreach (var car in CarRepository.Cars)
                     {
                         writer.WriteLine(car.GetInfo());
@@ -68,7 +68,7 @@ public static class FileSaver
     {
         using (var writer = new StreamWriter(Path.GetFullPath(Program.path), append: false))
         {
-            writer.WriteLine("id,company,model,engine,horse power,price,fuel type,number of seats,status of the car,mileage");
+            writer.WriteLine("company,model,engine,horse power,price,fuel type,number of seats,status of the car,mileage");
             foreach (var car in CarRepository.Cars)
             {
                 writer.WriteLine(car.GetInfo());

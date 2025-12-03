@@ -1,0 +1,31 @@
+[03.12.2025 11:07:32] START: Application started
+[03.12.2025 11:07:32] LOAD: Dataset has been loaded (0 cars)
+[03.12.2025 11:07:36] USER INPUT: show all
+[03.12.2025 11:07:36] SHOW: displayed all the cars
+[03.12.2025 11:10:01] START: Application started
+[03.12.2025 11:10:01] LOAD: Dataset has been loaded (1214 cars)
+[03.12.2025 11:10:03] USER INPUT: show all
+[03.12.2025 11:10:03] SHOW: displayed 1214 cars
+[03.12.2025 11:10:09] USER INPUT: edit 1adfasd
+[03.12.2025 11:10:09] ERROR: 'edit 1adfasd' is not correct command
+[03.12.2025 11:10:12] USER INPUT: --help
+[03.12.2025 11:10:12] HELP: displayed '--help' menu
+[03.12.2025 11:10:27] USER INPUT: add
+[03.12.2025 11:11:02] USER INPUT: add test company, test model, v50, 200, 1000000, gasoline, 2, used, 100
+[03.12.2025 11:11:02] ADD: new car with ID 1215 was added successfully (test company test model)
+[03.12.2025 11:11:04] USER INPUT: show 1215
+[03.12.2025 11:11:04] SHOW: test company,test model,v50,200,1000000,gasoline,2,False,100
+[03.12.2025 11:11:07] USER INPUT: show all
+[03.12.2025 11:11:08] SHOW: displayed 1215 cars
+[03.12.2025 11:11:16] USER INPUT: delete 1214
+[03.12.2025 11:11:16] DELETE: waiting for user's confirmation
+[03.12.2025 11:11:19] USER INPUT: y
+[03.12.2025 11:11:19] DELETE: car with ID 1214 was deleted (Toyota RAV4 (6th Gen))
+[03.12.2025 11:11:20] USER INPUT: show all
+[03.12.2025 11:11:20] SHOW: displayed 1214 cars
+[03.12.2025 11:11:22] USER INPUT: clear
+[03.12.2025 11:11:22] CLEAR: console got cleared
+[03.12.2025 11:11:24] USER INPUT: exit
+[03.12.2025 11:11:24] EXIT: waiting for user's confirmation to EXIT the app
+[03.12.2025 11:11:26] USER INPUT: y
+[03.12.2025 11:11:26] EXIT: app closed

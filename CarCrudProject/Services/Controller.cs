@@ -36,19 +36,23 @@ public class Controller
                 
                 case "delete":
                     Console.WriteLine($"'{command}' you can't use this command without passing the 'id' parameter. See '--help {command}'");
+                    Logger.LogError($"'{command}' can't use this command without passing the 'id' parameter");
                     break;
                 
                 case "show":
                     Console.WriteLine($"'{command}' you can't use this command without passing the 'id' or 'all' parameter. See '--help {command}'");
+                    Logger.LogError($"'{command}' can't use this command without passing the 'id' parameter");
                     break;
                 
                 case "add":
                     Console.WriteLine($"'{command}' you can't use this command without passing the 'company', 'model', " +
                                       $"'engine', 'horsepower', 'price', 'fuel type', 'number of seats', 'car status' and 'mileage'  parameters. See '--help {command}'");
+                    Logger.LogError($"'{command}' can't use this command without passing the parameters");
                     break;
                 
                 case "edit":
                     Console.WriteLine($"'{command}' you can't use this command without passing the 'id' parameter. See '--help {command}'");
+                    Logger.LogError($"'{command}' can't use this command without passing the 'id' parameter");
                     break;
                 
                 case "saveas":
@@ -60,6 +64,7 @@ public class Controller
 
                 default:
                     Console.WriteLine($"'{str}' is not a correct command. See '--help'");
+                    Logger.LogError($"'{command}' is not correct command");
                     break;
             }
         }

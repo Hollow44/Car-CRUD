@@ -16,13 +16,15 @@ public static class Commands
     public static void Show(string argument)
     {
         string userInput = argument.ToLower();
+        int carCount = 0;
         if (userInput == "all")
         {
             foreach (var car in CarRepository.Cars)
             {
                 car.ShowInfo();
+                carCount++;
             }
-            Logger.Write("SHOW","displayed all the cars");
+            Logger.Write("SHOW",$"displayed {carCount} cars");
         }
         else if (Parser.IsValidNumberToParse(argument))
         {

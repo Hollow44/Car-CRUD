@@ -144,7 +144,7 @@ namespace CarCrudProject.Models
 
         public string GetInfo()
         {
-            return $"{this.GetId()},{this.GetCompany()},{this.GetModel()},{this.GetEngine()},{this.GetHorsePower()}," +
+            return $"{this.GetCompany()},{this.GetModel()},{this.GetEngine()},{this.GetHorsePower()}," +
                    $"{this.GetPrice()},{this.GetFuelType()},{this.GetSeat()},{this.GetIsUsed()},{this.GetMileage()}";
         }
     }
