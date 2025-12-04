@@ -72,3 +72,26 @@
 [04.12.2025 01:38:13] USER INPUT: y
 [04.12.2025 01:38:13] EXIT: app closed
 
+[04.12.2025 09:01:21] START: Application started
+[04.12.2025 09:01:21] LOAD: Dataset has been loaded (1214 cars)
+[04.12.2025 09:01:26] USER INPUT: show all
+[04.12.2025 09:01:26] SHOW: displayed 1214 cars
+[04.12.2025 09:01:34] USER INPUT: show where price > 1000000
+[04.12.2025 09:01:34] SHOW: 20 cars got shown
+[04.12.2025 09:01:47] USER INPUT: clear
+[04.12.2025 09:01:47] CLEAR: console got cleared
+[04.12.2025 09:01:50] USER INPUT: exit
+[04.12.2025 09:01:50] EXIT: waiting for user's confirmation to EXIT the app
+[04.12.2025 09:01:51] USER INPUT: y
+[04.12.2025 09:01:51] EXIT: app closed
+
+[04.12.2025 09:12:41] START: Application started
+[04.12.2025 09:12:41] LOAD: Dataset has been loaded (1214 cars)
+[04.12.2025 09:12:43] USER INPUT: show all
+[04.12.2025 09:12:43] SHOW: displayed 1214 cars
+[04.12.2025 09:12:48] USER INPUT: edit 131231
+[04.12.2025 09:12:48] ERROR: 'edit 131231' invalid id
+[04.12.2025 09:12:52] USER INPUT: edit 1
+[04.12.2025 09:12:52] EDIT: FERRARI,SF90 STRADALE,V8,963,1100000,plug in hyrbrid,2,True,686279
+[04.12.2025 09:13:12] USER INPUT: company mercedez benz, price 100000
+[04.12.2025 09:13:12] ERROR: 'edit 1' invalid arguments

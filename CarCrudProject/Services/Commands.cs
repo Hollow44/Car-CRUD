@@ -875,7 +875,7 @@ public static class Commands
                 Console.WriteLine("\tshow WHERE [column] [operator] [comparator]\tShow a little filter. For example: 'show WHERE " +
                           "price < 100000' displays list of the cars with prices below 100 000$.");
                 Console.WriteLine("List of commands for a little filter:");
-                Console.WriteLine(" _____________________________________________________________________");
+                Console.WriteLine(" ---------------------------------------------------------------------");
                 Console.WriteLine("|        |  Command  |    Column    |     Operator     |  Comparator  |");
                 Console.WriteLine(" ---------------------------------------------------------------------");
                 Console.WriteLine("|  show  |   WHERE   |      id      |  <,<=,>,>=,=,!=  |      int     |");
