@@ -17,6 +17,7 @@ namespace CarCrudProject.Models
         private int Seat;
         private bool IsUsed;
         private int Mileage;
+        private bool IsSold;
 
         public int GetId()
         {
@@ -99,6 +100,16 @@ namespace CarCrudProject.Models
         public void SetMileage(int mileage)
         {
             this.Mileage = mileage;
+        }
+
+        public bool GetIsSold()
+        {
+            return IsSold;
+        }
+
+        public void SetIsSold(bool isSold)
+        {
+            this.IsSold = isSold;
         }
 
 

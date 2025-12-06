@@ -81,7 +81,6 @@ public class Controller
                     Commands.Add(addArguments);
                     break;
                 
-                // TODO: добавить возможность фильтрации, например - show cars where price < 100_000 and status is new
                 case "show":
                     Commands.Show(argument);
                     break;

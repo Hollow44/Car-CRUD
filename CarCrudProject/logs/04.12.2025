@@ -95,3 +95,38 @@
 [04.12.2025 09:12:52] EDIT: FERRARI,SF90 STRADALE,V8,963,1100000,plug in hyrbrid,2,True,686279
 [04.12.2025 09:13:12] USER INPUT: company mercedez benz, price 100000
 [04.12.2025 09:13:12] ERROR: 'edit 1' invalid arguments
+[04.12.2025 10:45:57] START: Application started
+[04.12.2025 10:45:57] LOAD: Dataset has been loaded (1214 cars)
+[04.12.2025 10:46:02] USER INPUT: fggfjsgfsgfjg ghfdsjk gfd
+[04.12.2025 10:46:05] USER INPUT: --help
+[04.12.2025 10:46:05] HELP: displayed '--help' menu
+[04.12.2025 10:46:13] USER INPUT: show all
+[04.12.2025 10:46:13] SHOW: displayed 1214 cars
+[04.12.2025 10:46:21] USER INPUT: clear
+[04.12.2025 10:46:21] CLEAR: console got cleared
+[04.12.2025 10:46:25] USER INPUT: --help
+[04.12.2025 10:46:25] HELP: displayed '--help' menu
+[04.12.2025 10:47:23] USER INPUT: show all
+[04.12.2025 10:47:24] SHOW: displayed 1214 cars
+[04.12.2025 10:48:13] USER INPUT: edit 1214 
+[04.12.2025 10:48:13] EDIT: Toyota,RAV4 (6th Gen),2.5L Hybrid / Plug-in Hybrid,260,36000,Hybrid / Plug-in,5,True,82000
+[04.12.2025 10:49:34] USER INPUT: show where price > 10000000
+[04.12.2025 10:49:34] ERROR: 'show where price > 10000000' incorrect arguments (EDIT)
+[04.12.2025 10:49:42] USER INPUT: show where price > 100000
+[04.12.2025 10:49:42] SHOW: 197 cars got shown
+[04.12.2025 10:49:49] USER INPUT: saveas 
+[04.12.2025 10:49:49] SAVE AS: waiting for user to choose saving method
+[04.12.2025 10:49:59] USER INPUT: C:\test\testshow.csv
+[04.12.2025 10:49:59] SAVE AS: user chose manual saving. File path - 'C:\test\testshow.csv'
+[04.12.2025 10:50:28] USER INPUT: saveas
+[04.12.2025 10:50:28] SAVE AS: waiting for user to choose saving method
+[04.12.2025 10:50:31] USER INPUT: C:\test\testshow.csv
+[04.12.2025 10:50:31] USER INPUT: waiting for user to confirm rewriting the file while saving
+[04.12.2025 10:50:37] USER INPUT: asdfasf
+[04.12.2025 10:50:39] USER INPUT: clear
+[04.12.2025 10:50:39] CLEAR: console got cleared
+[04.12.2025 10:50:40] USER INPUT: exit
+[04.12.2025 10:50:40] EXIT: waiting for user's confirmation to EXIT the app
+[04.12.2025 10:50:42] USER INPUT: y
+[04.12.2025 10:50:42] EXIT: app closed
+
