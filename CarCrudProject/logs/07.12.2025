@@ -1,0 +1,295 @@
+[07.12.2025 0:29:52] START: Application started
+[07.12.2025 0:29:52] LOAD: Dataset has been loaded (1214 cars) (429 cars sold)
+[07.12.2025 0:29:56] USER INPUT: stats
+[07.12.2025 0:32:08] START: Application started
+[07.12.2025 0:32:08] LOAD: Dataset has been loaded (1214 cars) (420 cars sold)
+[07.12.2025 0:32:09] USER INPUT: stats
+[07.12.2025 0:32:45] USER INPUT: 
+[07.12.2025 13:01:42] START: Application started
+[07.12.2025 13:01:42] LOAD: Dataset has been loaded (1214 cars) (402 cars sold)
+[07.12.2025 13:01:46] USER INPUT: stats
+[07.12.2025 13:04:09] USER INPUT: 
+[07.12.2025 13:06:57] START: Application started
+[07.12.2025 13:06:57] LOAD: Dataset has been loaded (1214 cars) (356 cars sold)
+[07.12.2025 13:06:59] USER INPUT: stats
+[07.12.2025 13:09:14] USER INPUT: 
+[07.12.2025 14:02:31] START: Application started
+[07.12.2025 14:02:31] LOAD: Dataset has been loaded (1214 cars) (399 cars sold)
+[07.12.2025 14:02:33] USER INPUT: stats
+[07.12.2025 14:02:33] ERROR: 'stats' can't use this command without passing any parameter
+[07.12.2025 14:02:36] USER INPUT: stats jun
+[07.12.2025 14:02:36] ERROR: 'stats jun' incorrect argument
+[07.12.2025 14:02:38] USER INPUT: stats june
+[07.12.2025 14:02:51] USER INPUT: stats january
+[07.12.2025 14:02:56] USER INPUT: 
+[07.12.2025 14:03:49] START: Application started
+[07.12.2025 14:03:49] LOAD: Dataset has been loaded (1214 cars) (423 cars sold)
+[07.12.2025 14:03:52] USER INPUT: stats march
+[07.12.2025 14:03:56] USER INPUT: stats june
+[07.12.2025 14:04:02] USER INPUT: stats january
+[07.12.2025 14:04:07] USER INPUT: stats february
+[07.12.2025 14:04:24] USER INPUT: stats december
+[07.12.2025 14:04:28] USER INPUT: clear
+[07.12.2025 14:04:28] CLEAR: console got cleared
+[07.12.2025 14:04:29] USER INPUT: exit
+[07.12.2025 14:04:29] EXIT: waiting for user's confirmation to EXIT the app
+[07.12.2025 14:04:30] USER INPUT: y
+[07.12.2025 14:04:30] EXIT: app closed
+
+[07.12.2025 14:05:58] 
+START: Application started
+[07.12.2025 14:05:58] LOAD: Dataset has been loaded (1214 cars) (408 cars sold)
+[07.12.2025 14:06:00] USER INPUT: asdfsadf
+[07.12.2025 14:06:00] ERROR: 'asdfsadf' is not correct command
+[07.12.2025 14:06:00] USER INPUT: dsaf
+[07.12.2025 14:06:00] ERROR: 'dsaf' is not correct command
+[07.12.2025 14:06:00] USER INPUT: dsaf
+[07.12.2025 14:06:00] ERROR: 'dsaf' is not correct command
+[07.12.2025 14:06:00] USER INPUT: dsafsdf
+[07.12.2025 14:06:00] ERROR: 'dsafsdf' is not correct command
+[07.12.2025 14:06:00] USER INPUT: fsa
+[07.12.2025 14:06:00] ERROR: 'fsa' is not correct command
+[07.12.2025 14:06:03] USER INPUT: 
+[07.12.2025 14:06:06] 
+START: Application started
+[07.12.2025 14:06:06] LOAD: Dataset has been loaded (1214 cars) (405 cars sold)
+[07.12.2025 14:21:07] START: Application started
+[07.12.2025 14:21:08] LOAD: Dataset has been loaded (1214 cars) (410 cars sold)
+[07.12.2025 14:21:10] USER INPUT: stats january
+[07.12.2025 14:21:16] USER INPUT: 
+[07.12.2025 14:21:26] START: Application started
+[07.12.2025 14:21:26] LOAD: Dataset has been loaded (1214 cars) (402 cars sold)
+[07.12.2025 14:21:28] USER INPUT: stats january
+[07.12.2025 14:21:35] USER INPUT: stats february
+[07.12.2025 15:03:11] START: Application started
+[07.12.2025 15:03:11] LOAD: Dataset has been loaded (1214 cars) (407 cars sold)
+[07.12.2025 15:03:14] USER INPUT: stats june
+[07.12.2025 15:03:43] USER INPUT: stats july
+[07.12.2025 15:03:57] USER INPUT: stats august
+[07.12.2025 15:04:01] USER INPUT: stats september
+[07.12.2025 15:04:07] USER INPUT: stats october
+[07.12.2025 15:18:23] START: Application started
+[07.12.2025 15:18:23] LOAD: Dataset has been loaded (1214 cars) (439 cars sold)
+[07.12.2025 15:18:25] USER INPUT: stats june
+[07.12.2025 15:18:32] USER INPUT: stats january
+[07.12.2025 15:18:37] USER INPUT: stats february
+[07.12.2025 15:18:58] USER INPUT: stats march
+[07.12.2025 15:19:04] USER INPUT: 
+[07.12.2025 15:23:04] START: Application started
+[07.12.2025 15:23:04] LOAD: Dataset has been loaded (1214 cars) (380 cars sold)
+[07.12.2025 15:23:06] USER INPUT: stats january
+[07.12.2025 15:23:10] USER INPUT: stats february
+[07.12.2025 15:23:23] USER INPUT: stats march
+[07.12.2025 15:23:33] USER INPUT: stats june
+[07.12.2025 15:23:37] USER INPUT: stats july
+[07.12.2025 15:24:04] USER INPUT: stats augus
+[07.12.2025 15:24:04] ERROR: 'stats augus' incorrect argument
+[07.12.2025 15:24:06] USER INPUT: stats august
+[07.12.2025 15:24:11] USER INPUT: stats september
+[07.12.2025 15:24:15] USER INPUT: stats october
+[07.12.2025 15:30:42] START: Application started
+[07.12.2025 15:30:42] LOAD: Dataset has been loaded (1214 cars) (379 cars sold)
+[07.12.2025 15:30:49] USER INPUT: stats january
+[07.12.2025 15:31:00] USER INPUT: stats february
+[07.12.2025 15:31:04] USER INPUT: stats march
+[07.12.2025 15:31:09] USER INPUT: stats april
+[07.12.2025 15:31:11] USER INPUT: stats may
+[07.12.2025 15:31:13] USER INPUT: stats june
+[07.12.2025 15:31:15] USER INPUT: stats july
+[07.12.2025 15:31:17] USER INPUT: stats august
+[07.12.2025 15:43:59] USER INPUT: 
+[07.12.2025 16:18:55] START: Application started
+[07.12.2025 16:18:55] LOAD: Dataset has been loaded (1214 cars) (398 cars sold)
+[07.12.2025 16:18:58] USER INPUT: stats january
+[07.12.2025 16:19:11] USER INPUT: 
+[07.12.2025 16:19:27] START: Application started
+[07.12.2025 16:19:27] LOAD: Dataset has been loaded (1214 cars) (424 cars sold)
+[07.12.2025 16:19:30] USER INPUT: stats january
+[07.12.2025 16:19:48] USER INPUT: stats february
+[07.12.2025 16:20:11] USER INPUT: stats march
+[07.12.2025 16:21:14] START: Application started
+[07.12.2025 16:21:14] LOAD: Dataset has been loaded (1214 cars) (403 cars sold)
+[07.12.2025 16:21:17] USER INPUT: stats january
+[07.12.2025 16:21:27] START: Application started
+[07.12.2025 16:21:27] LOAD: Dataset has been loaded (1214 cars) (396 cars sold)
+[07.12.2025 16:21:30] USER INPUT: stats march
+[07.12.2025 16:21:34] USER INPUT: stats june
+[07.12.2025 16:21:40] USER INPUT: stats july
+[07.12.2025 16:21:46] USER INPUT: stats august
+[07.12.2025 17:33:07] START: Application started
+[07.12.2025 17:33:07] LOAD: Dataset has been loaded (1214 cars) (408 cars sold)
+[07.12.2025 17:33:11] USER INPUT: stats june
+[07.12.2025 17:33:55] USER INPUT: stats march
+[07.12.2025 17:34:33] USER INPUT: stats january
+[07.12.2025 17:35:19] USER INPUT: stats february
+[07.12.2025 17:35:27] USER INPUT: stats april
+[07.12.2025 17:35:46] USER INPUT: 
+[07.12.2025 17:57:04] START: Application started
+[07.12.2025 17:57:04] LOAD: Dataset has been loaded (1214 cars) (401 cars sold)
+[07.12.2025 17:57:06] USER INPUT: stats january
+[07.12.2025 17:57:16] USER INPUT: stats february
+[07.12.2025 17:57:20] USER INPUT: stats march
+[07.12.2025 17:57:23] USER INPUT: stats april
+[07.12.2025 17:57:27] USER INPUT: stats may
+[07.12.2025 17:58:14] START: Application started
+[07.12.2025 17:58:14] LOAD: Dataset has been loaded (1214 cars) (412 cars sold)
+[07.12.2025 17:58:18] USER INPUT: stats january
+[07.12.2025 17:58:39] USER INPUT: stats february
+[07.12.2025 17:58:44] USER INPUT: stats march
+[07.12.2025 17:58:49] USER INPUT: stats april
+[07.12.2025 17:58:52] USER INPUT: stats may
+[07.12.2025 17:58:56] USER INPUT: stats june
+[07.12.2025 17:58:59] USER INPUT: stats july
+[07.12.2025 17:59:03] USER INPUT: stats august
+[07.12.2025 17:59:06] USER INPUT: stats september
+[07.12.2025 17:59:17] USER INPUT: stats october
+[07.12.2025 17:59:21] USER INPUT: stats december
+[07.12.2025 18:05:03] USER INPUT: 
+[07.12.2025 18:26:18] START: Application started
+[07.12.2025 18:26:18] LOAD: Dataset has been loaded (1214 cars) (415 cars sold)
+[07.12.2025 18:26:21] USER INPUT: stats june
+[07.12.2025 18:26:25] USER INPUT: stats july
+[07.12.2025 18:51:06] START: Application started
+[07.12.2025 18:51:06] LOAD: Dataset has been loaded (1214 cars) (386 cars sold)
+[07.12.2025 18:51:08] USER INPUT: stats january
+[07.12.2025 18:51:15] USER INPUT: stats february
+[07.12.2025 18:51:23] USER INPUT: stats march
+[07.12.2025 18:51:26] USER INPUT: stats april
+[07.12.2025 18:51:30] USER INPUT: stats may
+[07.12.2025 18:51:33] USER INPUT: stats june
+[07.12.2025 18:53:04] START: Application started
+[07.12.2025 18:53:05] LOAD: Dataset has been loaded (1214 cars) (443 cars sold)
+[07.12.2025 18:53:08] USER INPUT: stats january
+[07.12.2025 18:53:14] USER INPUT: stats february
+[07.12.2025 19:03:52] START: Application started
+[07.12.2025 19:03:52] LOAD: Dataset has been loaded (1214 cars) (399 cars sold)
+[07.12.2025 19:04:02] START: Application started
+[07.12.2025 19:04:02] LOAD: Dataset has been loaded (1214 cars) (398 cars sold)
+[07.12.2025 19:04:10] USER INPUT: stats january
+[07.12.2025 19:04:15] USER INPUT: stats february
+[07.12.2025 19:04:19] USER INPUT: stats march
+[07.12.2025 19:04:27] USER INPUT: stats april
+[07.12.2025 19:04:31] USER INPUT: stats may
+[07.12.2025 19:04:34] USER INPUT: stats june
+[07.12.2025 19:04:37] USER INPUT: stats july
+[07.12.2025 19:04:41] USER INPUT: stats august
+[07.12.2025 19:04:44] USER INPUT: stats september
+[07.12.2025 19:04:49] USER INPUT: stats august
+[07.12.2025 19:05:00] USER INPUT: stats october
+[07.12.2025 19:05:10] USER INPUT: stats november
+[07.12.2025 19:05:15] USER INPUT: stats december
+[07.12.2025 19:07:17] START: Application started
+[07.12.2025 19:07:17] LOAD: Dataset has been loaded (1214 cars) (421 cars sold)
+[07.12.2025 19:07:20] USER INPUT: stats january
+[07.12.2025 19:07:23] USER INPUT: stats february
+[07.12.2025 19:07:26] USER INPUT: stats march
+[07.12.2025 19:07:40] USER INPUT: stats april
+[07.12.2025 19:07:45] USER INPUT: stats may
+[07.12.2025 19:07:48] USER INPUT: stats june
+[07.12.2025 19:07:48] STATS: No cars were sold in june
+[07.12.2025 19:07:51] USER INPUT: stats july
+[07.12.2025 19:07:54] USER INPUT: stats august
+[07.12.2025 19:07:57] USER INPUT: stats september
+[07.12.2025 19:08:00] USER INPUT: stats october
+[07.12.2025 19:08:06] USER INPUT: stats november
+[07.12.2025 19:08:09] USER INPUT: stats december
+[07.12.2025 19:15:37] START: Application started
+[07.12.2025 19:15:37] LOAD: Dataset has been loaded (1214 cars) (380 cars sold)
+[07.12.2025 19:15:39] USER INPUT: stats january
+[07.12.2025 19:16:01] USER INPUT: stats february
+[07.12.2025 19:16:04] USER INPUT: stats march
+[07.12.2025 19:16:07] USER INPUT: stats april
+[07.12.2025 19:16:10] USER INPUT: stats may
+[07.12.2025 19:16:10] STATS: No cars were sold in may
+[07.12.2025 19:16:13] USER INPUT: stats june
+[07.12.2025 19:16:15] USER INPUT: stats july
+[07.12.2025 19:16:17] USER INPUT: stats august
+[07.12.2025 19:16:30] USER INPUT: stats september
+[07.12.2025 19:16:34] USER INPUT: stats october
+[07.12.2025 19:16:34] STATS: No cars were sold in october
+[07.12.2025 19:16:37] USER INPUT: stats november
+[07.12.2025 19:16:46] USER INPUT: stats december
+[07.12.2025 19:16:51] USER INPUT: clear
+[07.12.2025 19:16:51] CLEAR: console got cleared
+[07.12.2025 19:16:52] USER INPUT: exit
+[07.12.2025 19:16:52] EXIT: waiting for user's confirmation to EXIT the app
+[07.12.2025 19:16:52] USER INPUT: y
+[07.12.2025 19:16:52] EXIT: app closed
+
+[07.12.2025 19:21:15] START: Application started
+[07.12.2025 19:21:15] LOAD: Dataset has been loaded (1214 cars) (409 cars sold)
+[07.12.2025 19:21:18] USER INPUT: stats january
+[07.12.2025 19:22:43] START: Application started
+[07.12.2025 19:22:44] LOAD: Dataset has been loaded (1214 cars) (385 cars sold)
+[07.12.2025 19:22:46] USER INPUT: stats january
+[07.12.2025 19:22:50] USER INPUT: stats february
+[07.12.2025 19:22:55] USER INPUT: stats march
+[07.12.2025 19:23:10] USER INPUT: 
+[07.12.2025 19:28:02] START: Application started
+[07.12.2025 19:28:02] LOAD: Dataset has been loaded (1214 cars) (419 cars sold)
+[07.12.2025 19:28:04] USER INPUT: stats january
+[07.12.2025 19:28:10] USER INPUT: stats february
+[07.12.2025 19:28:17] USER INPUT: stats march
+[07.12.2025 19:28:27] USER INPUT: stats april
+[07.12.2025 19:28:35] USER INPUT: stats may
+[07.12.2025 19:28:43] USER INPUT: stats june
+[07.12.2025 19:28:46] USER INPUT: clear
+[07.12.2025 19:28:46] CLEAR: console got cleared
+[07.12.2025 19:28:47] USER INPUT: exit
+[07.12.2025 19:28:47] EXIT: waiting for user's confirmation to EXIT the app
+[07.12.2025 19:28:47] USER INPUT: y
+[07.12.2025 19:28:47] EXIT: app closed
+
+[07.12.2025 19:30:41] START: Application started
+[07.12.2025 19:30:41] LOAD: Dataset has been loaded (1214 cars) (388 cars sold)
+[07.12.2025 19:30:43] USER INPUT: stats january
+[07.12.2025 19:30:58] USER INPUT: stats february
+[07.12.2025 19:31:02] USER INPUT: stats march
+[07.12.2025 19:31:02] STATS: No cars were sold in march
+[07.12.2025 19:31:07] USER INPUT: stats april
+[07.12.2025 20:01:00] START: Application started
+[07.12.2025 20:01:00] LOAD: Dataset has been loaded (1214 cars) (421 cars sold)
+[07.12.2025 20:01:04] USER INPUT: stats january
+[07.12.2025 20:02:08] START: Application started
+[07.12.2025 20:02:08] LOAD: Dataset has been loaded (1214 cars) (390 cars sold)
+[07.12.2025 20:02:10] USER INPUT: stats january
+[07.12.2025 20:02:35] USER INPUT: 
+[07.12.2025 21:39:08] START: Application started
+[07.12.2025 21:39:08] LOAD: Dataset has been loaded (1214 cars) (403 cars sold)
+[07.12.2025 21:39:11] USER INPUT: stats january
+[07.12.2025 21:43:16] START: Application started
+[07.12.2025 21:43:16] LOAD: Dataset has been loaded (1214 cars) (426 cars sold)
+[07.12.2025 21:43:20] USER INPUT: stats june
+[07.12.2025 21:43:29] USER INPUT: stats july
+[07.12.2025 21:43:33] USER INPUT: stats august
+[07.12.2025 21:43:42] USER INPUT: stats september
+[07.12.2025 21:43:44] USER INPUT: 
+[07.12.2025 21:43:47] START: Application started
+[07.12.2025 21:43:47] LOAD: Dataset has been loaded (1214 cars) (412 cars sold)
+[07.12.2025 21:43:49] USER INPUT: stats june
+[07.12.2025 21:44:16] START: Application started
+[07.12.2025 21:44:16] LOAD: Dataset has been loaded (1214 cars) (372 cars sold)
+[07.12.2025 21:44:18] USER INPUT: stats june
+[07.12.2025 21:44:20] USER INPUT: 
+[07.12.2025 21:57:38] START: Application started
+[07.12.2025 21:57:38] LOAD: Dataset has been loaded (1214 cars) (414 cars sold)
+[07.12.2025 21:58:17] USER INPUT: stats july
+[07.12.2025 21:58:45] USER INPUT: clear
+[07.12.2025 21:58:45] CLEAR: console got cleared
+[07.12.2025 21:58:49] USER INPUT: show all
+[07.12.2025 21:58:49] SHOW: displayed 800 cars
+[07.12.2025 22:18:50] START: Application started
+[07.12.2025 22:18:51] LOAD: Dataset has been loaded (1214 cars) (396 cars sold)
+[07.12.2025 22:18:54] USER INPUT: stats asdfdfsa
+[07.12.2025 22:18:54] ERROR: 'stats asdfdfsa' incorrect argument
+[07.12.2025 22:18:57] USER INPUT: stats jan
+[07.12.2025 22:18:57] ERROR: 'stats jan' incorrect argument
+[07.12.2025 22:18:59] USER INPUT: stats january
+[07.12.2025 22:18:59] STATS: No cars were sold in january
+[07.12.2025 22:19:02] USER INPUT: stats june
+[07.12.2025 22:25:29] USER INPUT: 
+[07.12.2025 22:26:01] START: Application started
+[07.12.2025 22:26:01] LOAD: Dataset has been loaded (1214 cars) (418 cars sold)
+[07.12.2025 22:26:08] USER INPUT: stats june
+[07.12.2025 22:26:16] USER INPUT: stats may
+[07.12.2025 22:26:18] USER INPUT: stats july

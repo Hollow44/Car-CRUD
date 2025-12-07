@@ -2,3 +2,103 @@
 [06.12.2025 16:34:29] LOAD: Dataset has been loaded (1214 cars)
 [06.12.2025 16:34:32] USER INPUT: show all
 [06.12.2025 16:34:33] SHOW: displayed 1214 cars
+[06.12.2025 17:29:06] START: Application started
+[06.12.2025 17:29:06] LOAD: Dataset has been loaded (1214 cars) (398 cars sold)
+[06.12.2025 17:29:32] USER INPUT: 
+[06.12.2025 17:29:36] START: Application started
+[06.12.2025 17:29:36] LOAD: Dataset has been loaded (1214 cars) (408 cars sold)
+[06.12.2025 18:08:16] START: Application started
+[06.12.2025 18:08:16] LOAD: Dataset has been loaded (1214 cars) (408 cars sold)
+[06.12.2025 18:08:20] USER INPUT: show all
+[06.12.2025 18:08:21] SHOW: displayed 806 cars
+[06.12.2025 18:08:28] USER INPUT: show 1210
+[06.12.2025 18:08:28] SHOW: Toyota,Crown Signia,2.5L Hybrid I4,240,45795,Hybrid (Gas + Electric),5,True,236503
+[06.12.2025 18:08:40] USER INPUT: delete 1210
+[06.12.2025 18:08:48] USER INPUT: sell 213213013210
+[06.12.2025 18:08:48] ERROR: 'sell 2147483647' invalid id
+[06.12.2025 18:08:48] ERROR: 'there is no car with id '2147483647'
+[06.12.2025 18:14:39] USER INPUT: 
+[06.12.2025 18:43:00] START: Application started
+[06.12.2025 18:43:00] LOAD: Dataset has been loaded (1214 cars) (418 cars sold)
+[06.12.2025 18:43:05] USER INPUT: show where company = toyota
+[06.12.2025 18:43:05] SHOW: 34 cars got shown
+[06.12.2025 18:43:23] USER INPUT: show where company = lexus
+[06.12.2025 18:43:23] SHOW: 0 cars got shown
+[06.12.2025 18:43:29] USER INPUT: show where company = asfdkasjfs
+[06.12.2025 18:43:29] SHOW: 0 cars got shown
+[06.12.2025 18:43:39] USER INPUT: show where company = ford
+[06.12.2025 18:43:39] SHOW: 39 cars got shown
+[06.12.2025 18:43:48] USER INPUT: show all
+[06.12.2025 18:43:49] SHOW: displayed 796 cars
+[06.12.2025 18:44:08] USER INPUT: show where company = mazda
+[06.12.2025 18:44:08] SHOW: 48 cars got shown
+[06.12.2025 18:44:16] USER INPUT: exit
+[06.12.2025 18:44:16] EXIT: waiting for user's confirmation to EXIT the app
+[06.12.2025 18:44:17] USER INPUT: y
+[06.12.2025 18:44:17] EXIT: app closed
+
+[06.12.2025 18:47:04] START: Application started
+[06.12.2025 18:47:04] LOAD: Dataset has been loaded (1214 cars) (433 cars sold)
+[06.12.2025 18:47:23] START: Application started
+[06.12.2025 18:47:23] LOAD: Dataset has been loaded (1214 cars) (389 cars sold)
+[06.12.2025 18:47:47] START: Application started
+[06.12.2025 18:47:47] LOAD: Dataset has been loaded (1214 cars) (399 cars sold)
+[06.12.2025 18:49:10] START: Application started
+[06.12.2025 18:49:10] LOAD: Dataset has been loaded (1214 cars) (396 cars sold)
+[06.12.2025 18:49:12] USER INPUT: stats
+[06.12.2025 18:52:33] START: Application started
+[06.12.2025 18:52:33] LOAD: Dataset has been loaded (1214 cars) (404 cars sold)
+[06.12.2025 18:52:35] USER INPUT: stats
+[06.12.2025 18:59:16] START: Application started
+[06.12.2025 18:59:17] LOAD: Dataset has been loaded (1214 cars) (377 cars sold)
+[06.12.2025 18:59:19] USER INPUT: stats
+[06.12.2025 21:28:33] START: Application started
+[06.12.2025 21:28:33] LOAD: Dataset has been loaded (1214 cars) (417 cars sold)
+[06.12.2025 21:28:36] USER INPUT: stats
+[06.12.2025 21:38:56] START: Application started
+[06.12.2025 21:38:56] LOAD: Dataset has been loaded (1214 cars) (397 cars sold)
+[06.12.2025 21:38:57] USER INPUT: stats
+[06.12.2025 21:41:47] USER INPUT: 
+[06.12.2025 21:48:01] START: Application started
+[06.12.2025 21:48:01] LOAD: Dataset has been loaded (1214 cars) (411 cars sold)
+[06.12.2025 21:48:03] USER INPUT: stats
+[06.12.2025 21:52:43] USER INPUT: 
+[06.12.2025 21:53:08] START: Application started
+[06.12.2025 21:53:08] LOAD: Dataset has been loaded (1214 cars) (391 cars sold)
+[06.12.2025 21:53:12] USER INPUT: show stats
+[06.12.2025 21:53:12] ERROR: 'show stats' is not correct command
+[06.12.2025 21:53:14] USER INPUT: stats
+[06.12.2025 21:56:33] START: Application started
+[06.12.2025 21:56:33] LOAD: Dataset has been loaded (1214 cars) (397 cars sold)
+[06.12.2025 21:56:36] USER INPUT: stats
+[06.12.2025 21:57:28] USER INPUT: 
+[06.12.2025 21:57:45] START: Application started
+[06.12.2025 21:57:45] LOAD: Dataset has been loaded (1214 cars) (412 cars sold)
+[06.12.2025 21:57:47] USER INPUT: stats
+[06.12.2025 21:57:49] USER INPUT: 
+[06.12.2025 21:58:40] START: Application started
+[06.12.2025 21:58:40] LOAD: Dataset has been loaded (1214 cars) (394 cars sold)
+[06.12.2025 21:58:41] USER INPUT: stats
+[06.12.2025 21:58:55] USER INPUT: 
+[06.12.2025 21:59:29] START: Application started
+[06.12.2025 21:59:29] LOAD: Dataset has been loaded (1214 cars) (400 cars sold)
+[06.12.2025 21:59:31] USER INPUT: stats
+[06.12.2025 21:59:50] USER INPUT: 
+[06.12.2025 21:59:52] START: Application started
+[06.12.2025 21:59:52] LOAD: Dataset has been loaded (1214 cars) (382 cars sold)
+[06.12.2025 21:59:54] USER INPUT: stats
+[06.12.2025 22:00:05] START: Application started
+[06.12.2025 22:00:05] LOAD: Dataset has been loaded (1214 cars) (431 cars sold)
+[06.12.2025 22:00:07] USER INPUT: stats
+[06.12.2025 22:05:56] USER INPUT: 
+[06.12.2025 22:06:00] START: Application started
+[06.12.2025 22:06:00] LOAD: Dataset has been loaded (1214 cars) (416 cars sold)
+[06.12.2025 22:06:04] USER INPUT: stats
+[06.12.2025 22:11:10] START: Application started
+[06.12.2025 22:11:10] LOAD: Dataset has been loaded (1214 cars) (419 cars sold)
+[06.12.2025 22:11:12] USER INPUT: stats
+[06.12.2025 22:11:37] USER INPUT: 
+[06.12.2025 22:13:59] START: Application started
+[06.12.2025 22:13:59] LOAD: Dataset has been loaded (1214 cars) (407 cars sold)
+[06.12.2025 22:14:01] USER INPUT: stats
+[06.12.2025 22:14:12] USER INPUT: 

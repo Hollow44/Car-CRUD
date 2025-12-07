@@ -1,4 +1,5 @@
-﻿using CarCrudProject.Repositories;
+﻿using System.Globalization;
+using CarCrudProject.Repositories;
 using CarCrudProject.Utilities;
 using CarCrudProject.Models;
 using System.Numerics;
@@ -22,6 +23,7 @@ public static class Commands
         {
             foreach (var car in CarRepository.Cars)
             {
+                if (car.GetIsSold()) continue;
                 car.ShowInfo();
                 carCount++;
             }
@@ -97,6 +99,7 @@ public static class Commands
                                 }
                                 foreach (var car in CarRepository.Cars)
                                 {
+                                    if (car.GetIsSold()) continue;
                                     switch (column)
                                     {
                                         case "id":
@@ -412,7 +415,8 @@ public static class Commands
                                 if (carIsUsed)
                                 {
                                     foreach (var car in CarRepository.Cars)
-                                    {   
+                                    {
+                                        if (car.GetIsSold()) continue;
                                         if (car.GetIsUsed())
                                         {
                                             carCount++;
@@ -424,6 +428,7 @@ public static class Commands
                                 {
                                     foreach (var car in CarRepository.Cars)
                                     {
+                                        if (car.GetIsSold()) continue;
                                         if (!car.GetIsUsed())
                                         {
                                             carCount++;
@@ -432,7 +437,7 @@ public static class Commands
                                     }
                                 }
 
-                                    Logger.Write("SHOW", $"'show {argument}' {carCount} cars got shown");
+                                Logger.Write("SHOW", $"'show {argument}' {carCount} cars got shown");
                             }
                             else
                             {
@@ -451,6 +456,7 @@ public static class Commands
                             }
                             foreach (var car in CarRepository.Cars)
                             {
+                                if (car.GetIsSold()) continue;
                                 switch (column)
                                 {
                                     case "company":
@@ -609,7 +615,11 @@ public static class Commands
             return;
         }
         
-        Console.WriteLine($"ID: {car.GetId()}");
+        if (car.GetIsSold()) car.ShowInfo();
+        
+        else
+        {
+            Console.WriteLine($"ID: {car.GetId()}");
         car.ShowInfoForEdit();
         Logger.Write("EDIT", $"{car.GetInfo()}");
 
@@ -698,6 +708,7 @@ public static class Commands
             Console.WriteLine($"'{userInput}' incorrect arguments. See '--help edit'");
             Logger.LogError($"'{userInput}' incorrect arguments (EDIT)");
         }
+        }
     }
 
     public static void Delete(string argument)
@@ -724,24 +735,29 @@ public static class Commands
             return;
         }
         
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine($"you are about to delete this car:");
-        Console.ResetColor();
-        car.ShowInfoForDelete();
-        Console.WriteLine("are you sure you want to delete this car?");
-        Console.WriteLine("press 'Y' to confirm OR type anything to decline");
-        Logger.Write("DELETE", "waiting for user's confirmation");
+        if (car.GetIsSold()) car.ShowInfo();
 
-        string userInput = Console.ReadLine() ?? "";
-        Logger.Write("USER INPUT", userInput);
-        
-        if (Parser.ParseChoiceIsYes(userInput))
+        else
         {
-            Logger.Write("DELETE", $"car with ID {id} was deleted ({car.GetCompany()} {car.GetModel()})");
-            CarRepository.Cars.Remove(car);
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"car with id '{id}' has been removed successfully");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"you are about to delete this car:");
             Console.ResetColor();
+            car.ShowInfoForDelete();
+            Console.WriteLine("are you sure you want to delete this car?");
+            Console.WriteLine("press 'Y' to confirm OR type anything to decline");
+            Logger.Write("DELETE", "waiting for user's confirmation");
+
+            string userInput = Console.ReadLine() ?? "";
+            Logger.Write("USER INPUT", userInput);
+        
+            if (Parser.ParseChoiceIsYes(userInput))
+            {
+                Logger.Write("DELETE", $"car with ID {id} was deleted ({car.GetCompany()} {car.GetModel()})");
+                CarRepository.Cars.Remove(car);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"car with id '{id}' has been removed successfully");
+                Console.ResetColor();
+            }
         }
     }
     public static void Exit()
@@ -817,6 +833,70 @@ public static class Commands
             Logger.LogError($"'add {argument}' invalid arguments");
         }
     }
+    
+    public static void Sell(string argument)
+    {
+        if (!Parser.IsValidNumberToParse(argument))
+        {
+            Console.WriteLine($"'sell {argument}' is not correct command. See '--help sell'");
+            Logger.LogError($"'sell {argument}' is not correct command");
+            return;
+        }
+
+        int id = Parser.ParseNumber(argument);
+        if (id < 1 || id > CarRepository.NextId - 1)
+        {
+            Console.WriteLine($"'sell {id}' invalid id. See '--help sell'");
+            Logger.LogError($"'sell {id}' invalid id");
+            return;
+        }
+        var car = CarRepository.Cars.FirstOrDefault(car => car.GetId() == id);
+
+        if (car == null)
+        {
+            Console.WriteLine($"there is no car with id '{id}'");
+            Logger.LogError($"'there is no car with id '{id}'");
+            return;
+        }
+
+        var soldCar = TransactionRepository.Transactions.FirstOrDefault(tr => tr.GetCarId() == id);
+        
+        if (soldCar == null)
+        {
+            Logger.Write("SELL", $"car with ID {id} was sold ({car.GetCompany()} {car.GetModel()})");
+            car.SetIsSold(true);
+            TransactionFactory transactionFactory = new();
+            var transaction = transactionFactory.Create(car, TransactionRepository.NextId);
+            TransactionRepository.Transactions.Add(transaction);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"car with id '{id}' has been sold successfully");
+            Console.ResetColor();
+        }
+
+        else
+        {
+            car.ShowInfo();
+            Logger.Write("ERROR", $"car with ID {id} was already sold");
+        }
+    }
+    
+    public static void Stats(string argument)
+    {
+        if (Statistics.Months.ContainsKey(argument))
+        {
+            DataVisualizer.DrawMonth(argument);
+        }
+        else if (argument.Equals("year", StringComparison.OrdinalIgnoreCase))
+        {
+            // DataVisualizer.Draw(year);
+            //return;
+        }
+        else
+        {
+            Console.WriteLine($"'stats {argument}' incorrect argument. See '--help stats'");
+            Logger.LogError($"'stats {argument}' incorrect argument");
+        }
+    }
 
     public static void Help()
     {
@@ -859,8 +939,11 @@ public static class Commands
         Console.WriteLine($"\tsave\tSave the current car list state into the initial file that you are working from - {Program.path}");
         Console.WriteLine("\tsaveAs\tSave the car list state into the path and file format that you choose yourself.");
         Console.WriteLine();
+        
+        Console.WriteLine("sell the car");
+        Console.WriteLine("\tsell [id]\tPass only [id] argument to be able to sell the particular car");
+        Console.WriteLine();
     }
-
     public static void Help(string command)
     {
         command = command.ToLower();
@@ -936,6 +1019,13 @@ public static class Commands
                 Logger.Write("HELP", $"displayed '--help {command}' menu");
                 Console.WriteLine("exit the application");
                 Console.WriteLine("\texit\tType this command in order to quit the application");
+                break;
+            
+            case "sell":
+                Logger.Write("HELP", $"displayed '--help {command}' menu");
+                Console.WriteLine("sell the car");
+                Console.WriteLine("\tsell [id]\tPass only [id] argument to be able to sell the particular car");
+                Console.WriteLine();
                 break;
             
             case "save":

@@ -24,6 +24,18 @@ public static class CarRepository
         _nextId++;
     }
 
+    public static Car Get(int id)
+    {
+        foreach (var car in Cars)
+        {
+            if (car.GetId() == id)
+            {
+                return car;
+            }
+        }
+        return null!;
+    }
+
     public static int NextId => _nextId;
 }
 

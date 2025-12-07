@@ -17,6 +17,16 @@ public class Controller
         {
             switch (command)
             {
+                case "stats":
+                    Console.WriteLine($"'{command}' you can't use this command without " +
+                                      $"passing the 'month' or 'year' parameter. See '--help {command}'");
+                    Logger.LogError($"'{command}' can't use this command without passing any parameter");
+                    break;
+                
+                case "sell":
+                    Console.WriteLine($"'{command}' you can't use this command without passing the 'id' parameter. See '--help {command}'");
+                    Logger.LogError($"'{command}' can't use this command without passing the 'id' parameter");
+                    break;
                 case "save":
                     FileSaver.Save();
                     break;
@@ -77,6 +87,14 @@ public class Controller
             
             switch (command)
             {
+                case "stats":
+                    Commands.Stats(argument);
+                    break;
+                
+                case "sell":
+                    Commands.Sell(argument);
+                    break;
+                
                 case "add":
                     Commands.Add(addArguments);
                     break;

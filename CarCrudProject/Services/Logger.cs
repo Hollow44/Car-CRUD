@@ -11,7 +11,6 @@ public static class Logger
     }
     public static void Write(string logType, string message)
     {
-        
         string line = $"[{DateTime.Now:G}] {logType}: {message}\n";
         File.AppendAllText(fullPath, line);
     }

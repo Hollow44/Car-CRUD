@@ -130,15 +130,24 @@ namespace CarCrudProject.Models
         
         public void ShowInfo()
         {
-            Console.WriteLine("_______________________________________________");
-            Console.WriteLine($"ID: {Id}");
-            Console.Write($"{Company}, Model: {Model}.\nIt has: {FuelType} fuel type, {Engine} engine, " +
-                          $"{HorsePower} HP, {Seat} seats.\n");
-            if (IsUsed) Console.Write($"Car status: used, mileage: {Mileage} km.\n");
-            else Console.Write("This car is brand new!\n");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Price: {Price} $");
-            Console.ResetColor();
+            if (!IsSold)
+            {
+                Console.WriteLine("_______________________________________________");
+                Console.WriteLine($"ID: {Id}");
+                Console.Write($"{Company}, Model: {Model}.\nIt has: {FuelType} fuel type, {Engine} engine, " +
+                              $"{HorsePower} HP, {Seat} seats.\n");
+                if (IsUsed) Console.Write($"Car status: used, mileage: {Mileage} km.\n");
+                else Console.Write("This car is brand new!\n");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Price: {Price} $");
+                Console.ResetColor();
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("This car been archived (sold)");
+                Console.ResetColor();
+            }
         }
 
         public void ShowInfoForEdit()
