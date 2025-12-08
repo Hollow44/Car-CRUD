@@ -888,8 +888,7 @@ public static class Commands
         }
         else if (argument.Equals("year", StringComparison.OrdinalIgnoreCase))
         {
-            // DataVisualizer.Draw(year);
-            //return;
+            DataVisualizer.DrawYear();
         }
         else
         {

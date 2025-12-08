@@ -27,28 +27,25 @@ public static class DataVisualizer
         return longestBrandName;
     }
 
-    public static int CalculateTotalCars(string timePeriod)
+    public static int CalculateTotalCars()
     {
         int totalCars = 0;
         
-        if (timePeriod.Equals("year", StringComparison.OrdinalIgnoreCase)) 
-            totalCars = TransactionRepository.Transactions.Count;
-        
-        else if (Statistics.Months.ContainsKey(timePeriod))
-        {
-            if (!Statistics.Analytcis.Any(tr => tr.Value.month == Statistics.Months[timePeriod]))
-            {
-                Console.WriteLine($"No cars were sold in {timePeriod.ToLower()}");
-                Logger.Write("STATS",$"No cars were sold in {timePeriod.ToLower()}");
-                return 0;
-            }
-            foreach (var pair in Statistics.Analytcis.Where(tr => tr.Value.month == Statistics.Months[timePeriod]))
-            {
-                totalCars += pair.Value.carsSold;
-            }
-        }
+        totalCars = TransactionRepository.Transactions.Count;
 
         return totalCars;
+    }
+    
+    public static int CalculateTotalRevenue()
+    {
+        int totalRevenue = 0;
+        
+        foreach (var stat in Statistics.Analytcis)
+        {
+            totalRevenue += stat.Value.revenue;
+        }
+        
+        return totalRevenue;
     }
     
     public static void DrawMonth(string month)
@@ -139,6 +136,20 @@ public static class DataVisualizer
 
     public static void DrawYear()
     {
+        // 1 stroka 108 simvolov
         
+        string bottomLine = " " + new string('_', 107);
+        string spaceBetweenMonths = "      ";
+        
+        Console.WriteLine(bottomLine);
+        Console.WriteLine($"   JAN{spaceBetweenMonths}FEB{spaceBetweenMonths}MAR{spaceBetweenMonths}" +
+                          $"APR{spaceBetweenMonths}MAY{spaceBetweenMonths}JUN{spaceBetweenMonths}" +
+                          $"JUL{spaceBetweenMonths}AUG{spaceBetweenMonths}SEP{spaceBetweenMonths}" +
+                          $"OCT{spaceBetweenMonths}NOV{spaceBetweenMonths}DEC");
+        int totalCarsSold = CalculateTotalCars();
+        int totalRevenue = CalculateTotalRevenue();
+        Console.WriteLine($"Total revenue: {totalRevenue.ToString("N0")}$");
+        Console.WriteLine($"Total cars sold: {totalCarsSold}");
+
     }
 }
