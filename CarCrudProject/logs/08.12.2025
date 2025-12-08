@@ -21,3 +21,118 @@
 [08.12.2025 19:59:50] LOAD: Dataset has been loaded (1214 cars) (401 cars sold)
 [08.12.2025 19:59:52] USER INPUT: stats year
 [08.12.2025 20:00:08] USER INPUT: 
+[08.12.2025 20:17:07] START: Application started
+[08.12.2025 20:17:07] LOAD: Dataset has been loaded (1214 cars) (424 cars sold)
+[08.12.2025 20:18:29] USER INPUT: stats june
+[08.12.2025 20:18:40] USER INPUT: stats july
+[08.12.2025 20:18:50] USER INPUT: stats august
+[08.12.2025 20:18:50] STATS: No cars were sold in august
+[08.12.2025 20:18:55] USER INPUT: stats september
+[08.12.2025 20:19:00] USER INPUT: stats october
+[08.12.2025 20:19:06] USER INPUT: stats november
+[08.12.2025 20:19:10] USER INPUT: stats january
+[08.12.2025 20:19:16] USER INPUT: stats february
+[08.12.2025 20:19:20] USER INPUT: stats march
+[08.12.2025 20:19:23] USER INPUT: stats april
+[08.12.2025 20:19:36] USER INPUT: stats may
+[08.12.2025 20:19:39] USER INPUT: stats december
+[08.12.2025 20:19:42] USER INPUT: clear
+[08.12.2025 20:19:42] CLEAR: console got cleared
+[08.12.2025 20:19:43] USER INPUT: stats year
+[08.12.2025 20:20:44] START: Application started
+[08.12.2025 20:20:44] LOAD: Dataset has been loaded (1214 cars) (412 cars sold)
+[08.12.2025 20:20:48] USER INPUT: stats june
+[08.12.2025 20:20:50] USER INPUT: stats july
+[08.12.2025 20:20:56] USER INPUT: stats september
+[08.12.2025 20:21:01] USER INPUT: stats october
+[08.12.2025 20:21:01] STATS: No cars were sold in october
+[08.12.2025 20:21:08] USER INPUT: stats november
+[08.12.2025 20:21:12] USER INPUT: stats december
+[08.12.2025 20:21:18] USER INPUT: stats march
+[08.12.2025 20:21:39] USER INPUT: clear
+[08.12.2025 20:21:39] CLEAR: console got cleared
+[08.12.2025 20:21:41] USER INPUT: stats year
+[08.12.2025 20:22:04] START: Application started
+[08.12.2025 20:22:04] LOAD: Dataset has been loaded (1214 cars) (387 cars sold)
+[08.12.2025 20:22:07] USER INPUT: stats year
+[08.12.2025 20:22:45] START: Application started
+[08.12.2025 20:22:45] LOAD: Dataset has been loaded (1214 cars) (393 cars sold)
+[08.12.2025 20:22:48] USER INPUT: stats year
+[08.12.2025 20:23:03] START: Application started
+[08.12.2025 20:23:03] LOAD: Dataset has been loaded (1214 cars) (419 cars sold)
+[08.12.2025 20:23:04] USER INPUT: stats year
+[08.12.2025 20:24:39] START: Application started
+[08.12.2025 20:24:39] LOAD: Dataset has been loaded (1214 cars) (409 cars sold)
+[08.12.2025 20:24:39] USER INPUT: clear
+[08.12.2025 20:24:39] CLEAR: console got cleared
+[08.12.2025 20:24:41] USER INPUT: test
+[08.12.2025 20:24:56] START: Application started
+[08.12.2025 20:24:56] LOAD: Dataset has been loaded (1214 cars) (378 cars sold)
+[08.12.2025 20:24:59] USER INPUT: clear
+[08.12.2025 20:24:59] CLEAR: console got cleared
+[08.12.2025 20:24:59] USER INPUT: test
+[08.12.2025 21:13:56] START: Application started
+[08.12.2025 21:13:56] LOAD: Dataset has been loaded (1214 cars) (403 cars sold)
+[08.12.2025 21:13:59] USER INPUT: stats year
+[08.12.2025 21:17:05] START: Application started
+[08.12.2025 21:17:05] LOAD: Dataset has been loaded (1214 cars) (399 cars sold)
+[08.12.2025 21:17:07] USER INPUT: stats year
+[08.12.2025 21:18:27] START: Application started
+[08.12.2025 21:18:27] LOAD: Dataset has been loaded (1214 cars) (404 cars sold)
+[08.12.2025 21:18:30] USER INPUT: stats year
+[08.12.2025 21:18:57] START: Application started
+[08.12.2025 21:18:57] LOAD: Dataset has been loaded (1214 cars) (402 cars sold)
+[08.12.2025 21:18:58] USER INPUT: stats year
+[08.12.2025 21:19:43] START: Application started
+[08.12.2025 21:19:43] LOAD: Dataset has been loaded (1214 cars) (381 cars sold)
+[08.12.2025 21:19:46] USER INPUT: stats year
+[08.12.2025 21:27:01] START: Application started
+[08.12.2025 21:27:01] LOAD: Dataset has been loaded (1214 cars) (384 cars sold)
+[08.12.2025 21:27:03] USER INPUT: stats year
+[08.12.2025 21:29:16] START: Application started
+[08.12.2025 21:29:16] LOAD: Dataset has been loaded (1214 cars) (383 cars sold)
+[08.12.2025 21:29:17] USER INPUT: stats year
+[08.12.2025 21:32:35] START: Application started
+[08.12.2025 21:32:35] LOAD: Dataset has been loaded (1214 cars) (405 cars sold)
+[08.12.2025 21:33:04] USER INPUT: stats year
+[08.12.2025 21:34:05] START: Application started
+[08.12.2025 21:34:05] LOAD: Dataset has been loaded (1214 cars) (429 cars sold)
+[08.12.2025 21:34:08] USER INPUT: stats year
+[08.12.2025 21:35:35] START: Application started
+[08.12.2025 21:35:35] LOAD: Dataset has been loaded (1214 cars) (386 cars sold)
+[08.12.2025 21:35:36] USER INPUT: stats year
+[08.12.2025 21:37:34] START: Application started
+[08.12.2025 21:37:34] LOAD: Dataset has been loaded (1214 cars) (399 cars sold)
+[08.12.2025 21:37:36] USER INPUT: stats year
+[08.12.2025 21:38:25] USER INPUT: clear
+[08.12.2025 21:38:25] CLEAR: console got cleared
+[08.12.2025 21:42:58] START: Application started
+[08.12.2025 21:42:58] LOAD: Dataset has been loaded (1214 cars) (375 cars sold)
+[08.12.2025 21:43:02] USER INPUT: stats year
+[08.12.2025 21:56:46] START: Application started
+[08.12.2025 21:56:46] LOAD: Dataset has been loaded (1214 cars) (419 cars sold)
+[08.12.2025 21:56:47] USER INPUT: clea
+[08.12.2025 21:56:47] ERROR: 'clea' is not correct command
+[08.12.2025 21:56:49] USER INPUT: clear
+[08.12.2025 21:56:49] CLEAR: console got cleared
+[08.12.2025 21:56:50] USER INPUT: stats year
+[08.12.2025 21:57:15] START: Application started
+[08.12.2025 21:57:15] LOAD: Dataset has been loaded (1214 cars) (408 cars sold)
+[08.12.2025 21:57:16] USER INPUT: clear
+[08.12.2025 21:57:16] CLEAR: console got cleared
+[08.12.2025 21:57:18] USER INPUT: stats year
+[08.12.2025 22:02:12] START: Application started
+[08.12.2025 22:02:12] LOAD: Dataset has been loaded (1214 cars) (394 cars sold)
+[08.12.2025 22:02:12] USER INPUT: stats year
+[08.12.2025 22:07:36] START: Application started
+[08.12.2025 22:07:36] LOAD: Dataset has been loaded (1214 cars) (390 cars sold)
+[08.12.2025 22:07:38] USER INPUT: stats year
+[08.12.2025 22:09:34] START: Application started
+[08.12.2025 22:09:34] LOAD: Dataset has been loaded (1214 cars) (409 cars sold)
+[08.12.2025 22:09:34] USER INPUT: stats year
+[08.12.2025 22:22:07] START: Application started
+[08.12.2025 22:22:08] LOAD: Dataset has been loaded (1214 cars) (407 cars sold)
+[08.12.2025 22:22:10] USER INPUT: stats year
+[08.12.2025 22:23:06] START: Application started
+[08.12.2025 22:23:06] LOAD: Dataset has been loaded (1214 cars) (356 cars sold)
+[08.12.2025 22:23:07] USER INPUT: stats year

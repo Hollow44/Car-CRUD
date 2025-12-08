@@ -2,6 +2,7 @@
 using CarCrudProject.Repositories;
 using CarCrudProject.Services;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 
 namespace CarCrudProject.Utilities;
 
@@ -10,6 +11,27 @@ public static class DataVisualizer
     private static char BarChart = '█';
     private static readonly int WindowWidth = 120;
     public static readonly int MaxNumbersInfo = 21; // 99.999.999$ (99 cars)
+
+    private static char graphPoint = '*';
+
+    public static string FormatNumber(double num)
+    {
+        var culture = new CultureInfo("en-US");
+        culture.NumberFormat.NumberGroupSeparator = ".";
+        if (num >= 1_000_000_000)
+        {
+            return (num / 1_000_000_000).ToString("0.#", culture) + "B";
+        }
+        if (num >= 1_000_000)
+        {
+            return (num / 1_000_000).ToString("0.#", culture) + "M";
+        }
+        if (num >= 1000)
+        {
+            return (num / 1000).ToString("0.#", culture) + "K";
+        }
+        return num.ToString("0");
+    }
 
     public static int CalculateLongestBrandName(string month)
     {
@@ -134,15 +156,61 @@ public static class DataVisualizer
         Console.WriteLine(line);
     }
 
+    public static int[] CalculateEachMonthsRevenue()
+    {
+        int[] revenue = new int[12];
+        for (int i = 0, j = 1; i < 12; i++, j++)
+        {
+            int monthRevenue = 0;
+            foreach(var month in Statistics.Analytcis)
+            {
+                if (month.Value.month == j)
+                {
+                    monthRevenue += month.Value.revenue;
+                }
+            }
+            revenue[i] = monthRevenue;
+        }
+        return revenue;
+    }
+
     public static void DrawYear()
     {
-        // 1 stroka 108 simvolov
+        // 1 stroka 144 simvolov
+
+        char[][] graph = new char[34][];
+
+        //graph 
+        for (int i = 0; i < graph.Length; i++)
+        {
+            graph[i] = new char[144];
+        }
+
+         for (int i = 1; i < 144; i+=12)
+        {
+            graph[33][i] = graphPoint;   
+        }
+
+        for (int i = 0; i < graph.Length; i++)
+        {
+            for (int j = 0; j < graph[i].Length; j++)
+            {
+                if (graph[i][j] == graphPoint) continue;
+                else graph[i][j] = '-';
+            }
+        }
         
-        string bottomLine = " " + new string('_', 107);
-        string spaceBetweenMonths = "      ";
+        string bottomLine = "" + new string('_', 144);
+        string spaceBetweenMonths = new string(' ', 9);
+
+        string tab = "     ";
+        for (int i = 0; i < graph.Length; i++)
+        {
+            Console.WriteLine(graph[i]);
+        }
         
         Console.WriteLine(bottomLine);
-        Console.WriteLine($"   JAN{spaceBetweenMonths}FEB{spaceBetweenMonths}MAR{spaceBetweenMonths}" +
+        Console.WriteLine($"JAN{spaceBetweenMonths}FEB{spaceBetweenMonths}MAR{spaceBetweenMonths}" +
                           $"APR{spaceBetweenMonths}MAY{spaceBetweenMonths}JUN{spaceBetweenMonths}" +
                           $"JUL{spaceBetweenMonths}AUG{spaceBetweenMonths}SEP{spaceBetweenMonths}" +
                           $"OCT{spaceBetweenMonths}NOV{spaceBetweenMonths}DEC");
@@ -151,5 +219,10 @@ public static class DataVisualizer
         Console.WriteLine($"Total revenue: {totalRevenue.ToString("N0")}$");
         Console.WriteLine($"Total cars sold: {totalCarsSold}");
 
+        int[] eachMonthRevenue = CalculateEachMonthsRevenue();
+        foreach(var month in eachMonthRevenue)
+        {
+            Console.WriteLine(FormatNumber(month));
+        }
     }
 }

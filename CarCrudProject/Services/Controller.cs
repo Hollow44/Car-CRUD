@@ -17,6 +17,13 @@ public class Controller
         {
             switch (command)
             {
+                case "test":
+                    for (int i = 1; i <= 35; i++)
+                    {
+                        Console.WriteLine(i);
+                    }
+                    break;
+
                 case "stats":
                     Console.WriteLine($"'{command}' you can't use this command without " +
                                       $"passing the 'month' or 'year' parameter. See '--help {command}'");
