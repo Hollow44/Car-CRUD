@@ -14,23 +14,9 @@ public static class DataVisualizer
 
     private static char graphPoint = '*';
 
-    public static string FormatNumber(double num)
+    public static double FormatNumber(int num)
     {
-        var culture = new CultureInfo("en-US");
-        culture.NumberFormat.NumberGroupSeparator = ".";
-        if (num >= 1_000_000_000)
-        {
-            return (num / 1_000_000_000).ToString("0.#", culture) + "B";
-        }
-        if (num >= 1_000_000)
-        {
-            return (num / 1_000_000).ToString("0.#", culture) + "M";
-        }
-        if (num >= 1000)
-        {
-            return (num / 1000).ToString("0.#", culture) + "K";
-        }
-        return num.ToString("0");
+        return num / 1_000_000.0;
     }
 
     public static int CalculateLongestBrandName(string month)
@@ -185,10 +171,48 @@ public static class DataVisualizer
         {
             graph[i] = new char[144];
         }
+        
+        string bottomLine = "" + new string('_', 144);
+        string spaceBetweenMonths = new string(' ', 9);
 
-         for (int i = 1; i < 144; i+=12)
+        string tab = "     ";
+
+        int[] eachMonthRevenue = CalculateEachMonthsRevenue();
+
+        double[] monthsRevenueDouble = new double[12];
+
+        for (int i = 0; i < eachMonthRevenue.Length; i++)
         {
-            graph[33][i] = graphPoint;   
+            monthsRevenueDouble[i] = FormatNumber(eachMonthRevenue[i]);
+        }
+
+        foreach (var num in monthsRevenueDouble)
+        {
+            Console.WriteLine(num);
+        }
+        
+        double max = monthsRevenueDouble.Max();
+        double min = monthsRevenueDouble.Min();
+        
+        // расстояние в ширину всегда одинаковое (каждый 12-ый символ), поэтому можно хранить только координаты вертикального положения (y) 
+        int[] verticalCoords = new int[12];
+        
+        for (int i = 1, j = 0; i < 144; i+=12, j++)
+        {
+            int vertical = NormalizeNumber(monthsRevenueDouble[j], max, min);
+            verticalCoords[j] = vertical;
+            if (vertical == 34) vertical--;
+            graph[vertical][i] = graphPoint;   
+        }
+
+        char goUp = '/';
+        char goDown = '\\';
+        char stay = '-';
+        char steapTurn = '|';
+
+        for (int i = 2; i < 13; i++)
+        {
+            double t = (i - 1) / (13 - 1);
         }
 
         for (int i = 0; i < graph.Length; i++)
@@ -196,15 +220,11 @@ public static class DataVisualizer
             for (int j = 0; j < graph[i].Length; j++)
             {
                 if (graph[i][j] == graphPoint) continue;
-                else graph[i][j] = '-';
+                else graph[i][j] = '.';
             }
         }
         
-        string bottomLine = "" + new string('_', 144);
-        string spaceBetweenMonths = new string(' ', 9);
-
-        string tab = "     ";
-        for (int i = 0; i < graph.Length; i++)
+        for (int i = graph.Length - 1; i >= 0; i--)
         {
             Console.WriteLine(graph[i]);
         }
@@ -218,11 +238,13 @@ public static class DataVisualizer
         int totalRevenue = CalculateTotalRevenue();
         Console.WriteLine($"Total revenue: {totalRevenue.ToString("N0")}$");
         Console.WriteLine($"Total cars sold: {totalCarsSold}");
+    }
 
-        int[] eachMonthRevenue = CalculateEachMonthsRevenue();
-        foreach(var month in eachMonthRevenue)
-        {
-            Console.WriteLine(FormatNumber(month));
-        }
+    public static int NormalizeNumber(double num, double max, double min)
+    {
+        Console.WriteLine($"revenue: {num}, max: {max}, min: {min}");
+        int normalizedNum = (int)Math.Round( (num - min) / (max - min) * (34 - 1) + 1);
+        Console.WriteLine($"NOMR NUM: {normalizedNum}");
+        return normalizedNum;
     }
 }
