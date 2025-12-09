@@ -12,6 +12,9 @@ public static class DataVisualizer
     private static readonly int WindowWidth = 120;
     public static readonly int MaxNumbersInfo = 21; // 99.999.999$ (99 cars)
 
+    
+    private static char[][] graph = new char[22][];
+        
     private static char graphPoint = '*';
 
     public static double FormatNumber(int num)
@@ -163,16 +166,13 @@ public static class DataVisualizer
     public static void DrawYear()
     {
         // 1 stroka 144 simvolov
-
-        char[][] graph = new char[34][];
-
         //graph 
         for (int i = 0; i < graph.Length; i++)
         {
             graph[i] = new char[144];
         }
         
-        string bottomLine = "" + new string('_', 144);
+        string bottomLine = "" + new string('-', 144);
         string spaceBetweenMonths = new string(' ', 9);
 
         string tab = "     ";
@@ -185,34 +185,20 @@ public static class DataVisualizer
         {
             monthsRevenueDouble[i] = FormatNumber(eachMonthRevenue[i]);
         }
-
-        foreach (var num in monthsRevenueDouble)
-        {
-            Console.WriteLine(num);
-        }
         
         double max = monthsRevenueDouble.Max();
         double min = monthsRevenueDouble.Min();
         
         // расстояние в ширину всегда одинаковое (каждый 12-ый символ), поэтому можно хранить только координаты вертикального положения (y) 
         int[] verticalCoords = new int[12];
+        int[] horizontalCoords = new int[12];
         
         for (int i = 1, j = 0; i < 144; i+=12, j++)
         {
             int vertical = NormalizeNumber(monthsRevenueDouble[j], max, min);
             verticalCoords[j] = vertical;
-            if (vertical == 34) vertical--;
+            horizontalCoords[j] = i;
             graph[vertical][i] = graphPoint;   
-        }
-
-        char goUp = '/';
-        char goDown = '\\';
-        char stay = '-';
-        char steapTurn = '|';
-
-        for (int i = 2; i < 13; i++)
-        {
-            double t = (i - 1) / (13 - 1);
         }
 
         for (int i = 0; i < graph.Length; i++)
@@ -220,10 +206,51 @@ public static class DataVisualizer
             for (int j = 0; j < graph[i].Length; j++)
             {
                 if (graph[i][j] == graphPoint) continue;
-                else graph[i][j] = '.';
+                graph[i][j] = ' ';
             }
         }
+
+        for (int i = 0; i < horizontalCoords.Length; i++)
+        {
+            int y = verticalCoords[i];
+            int x = horizontalCoords[i];
+            while (y >= 0)
+            {
+                if (graph[y][x] == graphPoint)
+                {
+                    y--;
+                    continue;
+                }
+                graph[y][x] = '|';
+                y--;
+            }
+        }
+
+        for (int i = 0; i < 11; i++)
+        {
+            DrawLine(horizontalCoords[i],verticalCoords[i],horizontalCoords[i+1],verticalCoords[i+1]);
+        }
+
+        // char higherStay = '‾';
+        // char lowerStay = '_';
+        // foreach (var row in graph)
+        // {
+        //     for (int i = 0; i < row.Length; i++)
+        //     {
+        //         int counter = 0;
+        //         for (int j = 0; j < row.Length; j++)
+        //         {
+        //             if (row[j] == '/' || row[j] == '\\')
+        //             {
+        //                 counter++;
+        //             }
+        //
+        //             if (counter > 1) row[j] = lowerStay;
+        //         }
+        //     }
+        // }
         
+
         for (int i = graph.Length - 1; i >= 0; i--)
         {
             Console.WriteLine(graph[i]);
@@ -236,15 +263,42 @@ public static class DataVisualizer
                           $"OCT{spaceBetweenMonths}NOV{spaceBetweenMonths}DEC");
         int totalCarsSold = CalculateTotalCars();
         int totalRevenue = CalculateTotalRevenue();
-        Console.WriteLine($"Total revenue: {totalRevenue.ToString("N0")}$");
-        Console.WriteLine($"Total cars sold: {totalCarsSold}");
+
+        Console.WriteLine($"Total revenue: {totalRevenue.ToString("N0")}$, total cars sold: {totalCarsSold}");
+        foreach (var month in eachMonthRevenue)
+        {
+            Console.WriteLine(month);
+        }
     }
 
+    public static void DrawLine(int x1, int y1, int x2, int y2)
+    {
+        int dx = x2 - x1;
+        int dy = y2 - y1;
+        
+        for (int i = x1 + 1; i < x2; i++)
+        {
+            double t = (double)(i - x1) / (x2 - x1);
+            double y = y1 + (y2 - y1) * t;
+            int yi = (int)Math.Round(y);
+            
+            yi = Math.Clamp(yi, 0, graph.Length - 1);
+            graph[yi][i] = GetSymbol(dx, dy);
+        }
+    }
+
+    public static char GetSymbol(int dx, int dy)
+    {
+        if (dy == 0) return '-';
+        if (dx == 0) return '|';
+        return dy > 0 ? '/' : '\\';
+    }
     public static int NormalizeNumber(double num, double max, double min)
     {
-        Console.WriteLine($"revenue: {num}, max: {max}, min: {min}");
-        int normalizedNum = (int)Math.Round( (num - min) / (max - min) * (34 - 1) + 1);
-        Console.WriteLine($"NOMR NUM: {normalizedNum}");
-        return normalizedNum;
+        if (max == min) return 0;
+
+        double t = (num - min) / (max - min);
+        int normalizedNum = (int)Math.Round( t * (graph.Length - 1) );
+        return Math.Clamp(normalizedNum,0,graph.Length - 1);
     }
 }
