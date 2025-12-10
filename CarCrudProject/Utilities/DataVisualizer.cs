@@ -11,6 +11,8 @@ public static class DataVisualizer
     private static char BarChart = '█';
     private static readonly int WindowWidth = 120;
     public static readonly int MaxNumbersInfo = 21; // 99.999.999$ (99 cars)
+    private static int[] verticalCoords = new int[12];
+    private static int[] horizontalCoords = new int[12];
 
     
     private static char[][] graph = new char[22][];
@@ -145,7 +147,7 @@ public static class DataVisualizer
         Console.WriteLine(line);
     }
 
-    public static int[] CalculateEachMonthsRevenue()
+    public static double[] CalculateEachMonthsRevenue()
     {
         int[] revenue = new int[12];
         for (int i = 0, j = 1; i < 12; i++, j++)
@@ -160,42 +162,25 @@ public static class DataVisualizer
             }
             revenue[i] = monthRevenue;
         }
-        return revenue;
-    }
-
-    public static void DrawYear()
-    {
-        // 1 stroka 144 simvolov
-        //graph 
-        for (int i = 0; i < graph.Length; i++)
-        {
-            graph[i] = new char[144];
-        }
-        
-        string bottomLine = "" + new string('_', 135);
-        string spaceBetweenMonths = new string(' ', 9);
-
-        string tab = "     ";
-
-        int[] eachMonthRevenue = CalculateEachMonthsRevenue();
-
         double[] monthsRevenueDouble = new double[12];
 
-        for (int i = 0; i < eachMonthRevenue.Length; i++)
+        for (int i = 0; i < revenue.Length; i++)
         {
-            monthsRevenueDouble[i] = FormatNumber(eachMonthRevenue[i]);
+            monthsRevenueDouble[i] = FormatNumber(revenue[i]);
         }
+        return monthsRevenueDouble;
+    }
+
+    private static void SetupGraph(double[] revenue)
+    {
+        for (int i = 0; i < graph.Length; i++) graph[i] = new char[144];
         
-        double max = monthsRevenueDouble.Max();
-        double min = monthsRevenueDouble.Min();
-        
-        // расстояние в ширину всегда одинаковое (каждый 12-ый символ), поэтому можно хранить только координаты вертикального положения (y) 
-        int[] verticalCoords = new int[12];
-        int[] horizontalCoords = new int[12];
+        double max = revenue.Max();
+        double min = revenue.Min();
         
         for (int i = 1, j = 0; i < 144; i+=12, j++)
         {
-            int vertical = NormalizeNumber(monthsRevenueDouble[j], max, min);
+            int vertical = NormalizeNumber(revenue[j], max, min);
             verticalCoords[j] = vertical;
             horizontalCoords[j] = i;
             graph[vertical][i] = graphPoint;   
@@ -229,39 +214,57 @@ public static class DataVisualizer
         // тут соединяются точки между месяцами *----*
         for (int i = 0; i < 11; i++)
         {
-            DrawLine(horizontalCoords[i],verticalCoords[i],horizontalCoords[i+1],verticalCoords[i+1]);
+            ConnectLine(horizontalCoords[i],verticalCoords[i],horizontalCoords[i+1],verticalCoords[i+1]);
         }
+    }
+
+    public static void DrawYear()
+    {
+        Console.WriteLine($"Total revenue: {CalculateTotalRevenue().ToString("N0")}$");
+        // 1 stroka = 144 simvola
+        double[] eachMonthRevenue = CalculateEachMonthsRevenue();
         
-        monthsRevenueDouble.Sort();
-        Array.Reverse(monthsRevenueDouble);
+        SetupGraph(eachMonthRevenue);
+        
+        eachMonthRevenue.Sort();
+        Array.Reverse(eachMonthRevenue);
         
         verticalCoords.Sort();
         Array.Reverse(verticalCoords);
 
         var numbersLeftSide = new Dictionary<int, double>();
+        
         for (int i = 0; i < verticalCoords.Length; i++)
         {
-            numbersLeftSide[verticalCoords[i]] = monthsRevenueDouble[i];
+            numbersLeftSide[verticalCoords[i]] = eachMonthRevenue[i];
         }
 
-        for (int i = 21, j = 21; i >= 0; i--)
+        DrawGraph(numbersLeftSide);
+    }
+
+    private static void DrawGraph(Dictionary<int, double> normalizedRevenueNumbers)
+    {
+        string bottomLine = "" + new string('_', 135);
+        string spaceBetweenMonths = new string(' ', 9);
+        
+        for (int i = graph.Length - 1, j = graph.Length - 1; i >= 0; i--)
         {
             if (i == j)
             {
-                if (!numbersLeftSide.ContainsKey(j))
+                if (!normalizedRevenueNumbers.ContainsKey(j))
                 {
                     j--;
                     Console.WriteLine($"       |{new string(graph[i])}");
                     continue;
                 }
-                if (numbersLeftSide[j] < 10.0)
+                if (normalizedRevenueNumbers[j] < 10.0)
                 {
-                    Console.WriteLine($" {numbersLeftSide[j]:F1} M |{new string(graph[i])}");
+                    Console.WriteLine($" {normalizedRevenueNumbers[j]:F1} M |{new string(graph[i])}");
                     j--;
                 }
                 else
                 {
-                    Console.WriteLine($"{numbersLeftSide[j]:F1} M |{new string(graph[i])}");
+                    Console.WriteLine($"{normalizedRevenueNumbers[j]:F1} M |{new string(graph[i])}");
                     j--;
                 }
             }
@@ -273,18 +276,9 @@ public static class DataVisualizer
                           $"APR{spaceBetweenMonths}MAY{spaceBetweenMonths}JUN{spaceBetweenMonths}" +
                           $"JUL{spaceBetweenMonths}AUG{spaceBetweenMonths}SEP{spaceBetweenMonths}" +
                           $"OCT{spaceBetweenMonths}NOV{spaceBetweenMonths}DEC");
-        int totalCarsSold = CalculateTotalCars();
-        int totalRevenue = CalculateTotalRevenue();
-
-        Console.WriteLine($"Total revenue: {totalRevenue.ToString("N0")}$, total cars sold: {totalCarsSold}");
-
-        for (int i = 0; i < monthsRevenueDouble.Length; i++)
-        {
-            Console.WriteLine($"revenue: {monthsRevenueDouble[i]}, coord: {verticalCoords[i]}");
-        }
     }
 
-    public static void DrawLine(int x1, int y1, int x2, int y2)
+    public static void ConnectLine(int x1, int y1, int x2, int y2)
     {
         int dx = x2 - x1;
         int dy = y2 - y1;
