@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarCrudProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59dd55c8bc7f5e4c4dd5cbb19089670adc6964ea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2380b9dda25c639bde282b68b13e0a05b9cf4886")]
 [assembly: System.Reflection.AssemblyProductAttribute("CarCrudProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarCrudProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
