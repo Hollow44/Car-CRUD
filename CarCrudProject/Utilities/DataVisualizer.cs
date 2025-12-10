@@ -172,7 +172,7 @@ public static class DataVisualizer
             graph[i] = new char[144];
         }
         
-        string bottomLine = "" + new string('-', 144);
+        string bottomLine = "" + new string('_', 135);
         string spaceBetweenMonths = new string(' ', 9);
 
         string tab = "     ";
@@ -225,39 +225,51 @@ public static class DataVisualizer
                 y--;
             }
         }
-
+        
+        // тут соединяются точки между месяцами *----*
         for (int i = 0; i < 11; i++)
         {
             DrawLine(horizontalCoords[i],verticalCoords[i],horizontalCoords[i+1],verticalCoords[i+1]);
         }
-
-        // char higherStay = '‾';
-        // char lowerStay = '_';
-        // foreach (var row in graph)
-        // {
-        //     for (int i = 0; i < row.Length; i++)
-        //     {
-        //         int counter = 0;
-        //         for (int j = 0; j < row.Length; j++)
-        //         {
-        //             if (row[j] == '/' || row[j] == '\\')
-        //             {
-        //                 counter++;
-        //             }
-        //
-        //             if (counter > 1) row[j] = lowerStay;
-        //         }
-        //     }
-        // }
         
+        monthsRevenueDouble.Sort();
+        Array.Reverse(monthsRevenueDouble);
+        
+        verticalCoords.Sort();
+        Array.Reverse(verticalCoords);
 
-        for (int i = graph.Length - 1; i >= 0; i--)
+        var numbersLeftSide = new Dictionary<int, double>();
+        for (int i = 0; i < verticalCoords.Length; i++)
         {
-            Console.WriteLine(graph[i]);
+            numbersLeftSide[verticalCoords[i]] = monthsRevenueDouble[i];
+        }
+
+        for (int i = 21, j = 21; i >= 0; i--)
+        {
+            if (i == j)
+            {
+                if (!numbersLeftSide.ContainsKey(j))
+                {
+                    j--;
+                    Console.WriteLine($"       |{new string(graph[i])}");
+                    continue;
+                }
+                if (numbersLeftSide[j] < 10.0)
+                {
+                    Console.WriteLine($" {numbersLeftSide[j]:F1} M |{new string(graph[i])}");
+                    j--;
+                }
+                else
+                {
+                    Console.WriteLine($"{numbersLeftSide[j]:F1} M |{new string(graph[i])}");
+                    j--;
+                }
+            }
+            
         }
         
-        Console.WriteLine(bottomLine);
-        Console.WriteLine($"JAN{spaceBetweenMonths}FEB{spaceBetweenMonths}MAR{spaceBetweenMonths}" +
+        Console.WriteLine("       |" + bottomLine);
+        Console.WriteLine($"        JAN{spaceBetweenMonths}FEB{spaceBetweenMonths}MAR{spaceBetweenMonths}" +
                           $"APR{spaceBetweenMonths}MAY{spaceBetweenMonths}JUN{spaceBetweenMonths}" +
                           $"JUL{spaceBetweenMonths}AUG{spaceBetweenMonths}SEP{spaceBetweenMonths}" +
                           $"OCT{spaceBetweenMonths}NOV{spaceBetweenMonths}DEC");
@@ -265,9 +277,10 @@ public static class DataVisualizer
         int totalRevenue = CalculateTotalRevenue();
 
         Console.WriteLine($"Total revenue: {totalRevenue.ToString("N0")}$, total cars sold: {totalCarsSold}");
-        foreach (var month in eachMonthRevenue)
+
+        for (int i = 0; i < monthsRevenueDouble.Length; i++)
         {
-            Console.WriteLine(month);
+            Console.WriteLine($"revenue: {monthsRevenueDouble[i]}, coord: {verticalCoords[i]}");
         }
     }
 
@@ -291,7 +304,7 @@ public static class DataVisualizer
     {
         if (dy == 0) return '-';
         if (dx == 0) return '|';
-        return dy > 0 ? '/' : '\\';
+        return '-';
     }
     public static int NormalizeNumber(double num, double max, double min)
     {
